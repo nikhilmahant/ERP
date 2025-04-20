@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Calculation - G.V.Mahant Brothers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #34495e;
+      --accent-color: #3498db;
+      --success-color: #27ae60;
+      --warning-color: #f39c12;
+      --danger-color: #e74c3c;
+      --light-bg: #f8f9fa;
+      --dark-bg: #343a40;
+    }
+    body {
+      background-color: var(--light-bg);
+      color: var(--primary-color);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    .app-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .nav-pills .nav-link {
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      margin: 0 0.25rem;
+      transition: all 0.3s ease;
+    }
+    .nav-pills .nav-link:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    .nav-pills .nav-link.active {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    .customer-card {
+      background-color: var(--light-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .table-container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .table {
+      margin-bottom: 0;
+    }
+    .table thead th {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 500;
+      border: none;
+    }
+    .form-control {
+      border-radius: 6px;
+      border: 1px solid #dee2e6;
+      padding: 0.5rem 0.75rem;
+      transition: border-color 0.15s ease-in-out;
+    }
+    .form-control:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    }
+    .btn {
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-right: 0.5rem;
+    }
+    .btn:last-child {
+      margin-right: 0;
+    }
+    .btn-group {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .btn-group .btn {
+      margin-right: 0;
+    }
+    .btn-primary {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    .btn-success {
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+    }
+    .total-section {
+      background-color: var(--light-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .total-amount {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+    input[type="number"].is-zero {
+      color: #adb5bd;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    #additionalAmountSection {
+      display: none;
+    }
+    #additionalAmountSection.visible {
+      display: block;
+    }
+    @media print {
+      body {
+        background-color: white !important;
+        font-family: monospace !important;
+        font-size: 12px !important;
+        margin: 0;
+        padding: 0;
+      }
+      .app-container {
+        box-shadow: none !important;
+        padding: 0 !important;
+        width: 100%;
+      }
+      .header {
+        background: none !important;
+        color: black !important;
+        padding: 1rem !important;
+        text-align: center;
+        border-bottom: 1px dashed #000;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .table {
+        width: 100%;
+        font-size: 11px;
+        border-collapse: collapse;
+        margin-top: 10px;
+        page-break-inside: auto !important;
+      }
+      .table thead th {
+        background-color: #f8f9fa !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        border-bottom: 1px dashed #000 !important;
+      }
+      .table td, .table th {
+        border-color: #dee2e6 !important;
+        padding: 2px 4px;
+      }
+      .table tr {
+        page-break-inside: avoid !important;
+        page-break-after: auto !important;
+      }
+      .form-control {
+        border: none !important;
+        padding: 0 !important;
+        background-color: transparent !important;
+        font-size: 11px;
+      }
+      .total-section {
+        background-color: transparent !important;
+        border: 1px solid #dee2e6 !important;
+        margin-top: 10px;
+      }
+      .total-amount {
+        border-top: 1px dashed #000;
+        padding-top: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+      }
+      .verification-text {
+        font-size: 10px;
+        font-style: italic;
+        margin-top: 5px;
+      }
+      .customer-card {
+        font-size: 12px;
+        padding: 5px 0;
+        border-bottom: 1px dashed #000;
+      }
+      #datetime {
+        font-size: 11px;
+      }
+    }
+    @media print and (width: 72mm) {
+      @page { 
+        size: 72mm auto; 
+        margin: 0; 
+      }
+      body {
+        font-family: 'Courier New', monospace !important;
+        font-size: 10px !important;
+        width: 72mm !important;
+        margin: 0 !important;
+        padding: 10px !important;
+      }
+      .app-container {
+        max-width: 72mm !important;
+        padding: 5px !important;
+        box-shadow: none !important;
+      }
+      .header {
+        padding: 5px !important;
+      }
+      .header h1 {
+        font-size: 14px !important;
+      }
+      .header h2 {
+        font-size: 12px !important;
+      }
+      .table {
+        font-size: 9px !important;
+      }
+      .table th, .table td {
+        padding: 2px !important;
+        border-bottom: 1px dashed #000 !important;
+      }
+      .total-section {
+        margin-top: 5px !important;
+        border-top: 1px dashed #000 !important;
+      }
+      .total-amount {
+        font-size: 11px !important;
+      }
+      .no-print, .nav-pills, .btn-group {
+        display: none !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .app-container {
+        padding: 1rem;
+      }
+      .header {
+        padding: 1.5rem;
+      }
+      .table-responsive {
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header class="header text-center">
+      <h1 class="display-6 mb-2">|ಶ್ರೀ|</h1>
+      <h2 class="h3 mb-3">G.V.Mahant Brothers</h2>
+      <p class="fs-5 mb-0" id="datetime">Loading Date...</p>
+    </header>
+    <nav class="no-print mb-4">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#patti" data-mode="patti" onclick="switchMode('patti')">
+            <i class="bi bi-file-text"></i> Patti
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kata" data-mode="kata" onclick="switchMode('kata')">
+            <i class="bi bi-calculator"></i> Kata
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#barthe" data-mode="barthe" onclick="switchMode('barthe')">
+            <i class="bi bi-journal-check"></i> Barthe
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="customer-card">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <label for="customerName" class="form-label fw-bold">Customer Name</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="customerName" placeholder="Enter customer name">
+        </div>
+      </div>
+    </div>
+    <div class="table-container">
+      <div class="table-responsive">
+        <table id="invoiceTable" class="table table-hover mb-0">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="total-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 no-print">
+          <div class="btn-group">
+            <button class="btn btn-success" onclick="addRow()">
+              <i class="bi bi-plus-lg"></i> Add Row
+            </button>
+            <button class="btn btn-info text-white" onclick="saveData()">
+              <i class="bi bi-save"></i> Save
+            </button>
+            <button class="btn btn-primary" onclick="saveAndPrint()">
+              <i class="bi bi-printer"></i> Print
+            </button>
+            <button class="btn btn-danger" onclick="clearForm()">
+              <i class="bi bi-trash"></i> Clear
+            </button>
+            <button class="btn btn-warning" onclick="showInvoice()">
+              <i class="bi bi-eye"></i> Show Invoice
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div id="additionalAmountSection" class="mb-2">
+                <div class="input-group">
+                  <span class="input-group-text" id="additionalAmountLabel">Kata Amount</span>
+                  <input type="number" class="form-control text-end" id="additionalAmount" min="0" step="0.01" title="Enter kata amount" oninput="calculateTotals()" onchange="calculateTotals()">
+                </div>
+              </div>
+              <div class="total-amount text-end" id="totalAmount">
+                Amount: ₹0.00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Notification Modal -->
+  <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="notificationModalBody"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let currentMode = 'patti';
+    let rowCount = 0;
+    const itemOptions = `
+      <option value="">-- Select an item --</option>
+      <option value="MAIZE">MAIZE</option>
+      <option value="SOYABEAN">SOYABEAN</option>
+      <option value="LOBHA">LOBHA</option>
+      <option value="HULLI">HULLI</option>
+      <option value="KADLI">KADLI</option>
+      <option value="BLACK MOONG">BLACK MOONG</option>
+      <option value="CHAMAKI MOONG">CHAMAKI MOONG</option>
+      <option value="RAGI">RAGI</option>
+      <option value="WHEAT">WHEAT</option>
+      <option value="RICE">RICE</option>
+      <option value="BILAJOLA">BILAJOLA</option>
+      <option value="BIJAPUR">BIJAPUR</option>
+      <option value="CHS-5">CHS-5</option>
+      <option value="FEEDS">FEEDS</option>
+      <option value="KUSUBI">KUSUBI</option>
+      <option value="SASAVI">SASAVI</option>
+      <option value="SAVI">SAVI</option>
+      <option value="CASTER SEEDS">CASTER SEEDS</option>
+      <option value="TOOR RED">TOOR RED</option>
+      <option value="TOOR WHITE">TOOR WHITE</option>
+      <option value="HUNASIBIKA">HUNASIBIKA</option>
+      <option value="SF">SF</option>
+      <option value="AWARI">AWARI</option>
+      <option value="MADIKI">MADIKI</option>
+      <option value="NAVANI">NAVANI</option>
+      <option value="PADDY">PADDY</option>
+      <option value="UDDU">UDDU</option>
+      <option value="__custom__">Custom...</option>
+    `;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateDateTime();
+      setInterval(updateDateTime, 60000);
+      switchMode('patti');
+      document.getElementById('tableBody').addEventListener('input', function(event) {
+        if (event.target.tagName === 'INPUT' && event.target.closest('tr')) {
+          const nameMatch = event.target.name.match(/\d+$/);
+          if (nameMatch) {
+            calculateRow(parseInt(nameMatch[0], 10));
+          }
+        }
+      });
+      document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 'Enter') {
+          event.preventDefault();
+          addRow();
+        }
+      });
+    });
+
+    function updateDateTime() {
+      const datetime = document.getElementById('datetime');
+      if (datetime) {
+        datetime.textContent = new Date().toLocaleString('en-IN', {
+          weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+          hour: '2-digit', minute: '2-digit'
+        });
+      }
+    }
+
+    function getCurrentDateString() {
+      return new Date().toISOString().split('T')[0]; // e.g., '2025-04-18'
+    }
+
+    function formatCurrency(amount) {
+      const numericAmount = typeof amount === 'number' ? amount : parseFloat(amount) || 0;
+      return new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      }).format(numericAmount);
+    }
+
+    function formatNumber(number) {
+      const numericValue = typeof number === 'number' ? number : parseFloat(number) || 0;
+      return new Intl.NumberFormat('en-IN', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      }).format(numericValue);
+    }
+
+    function validateNumericInput(value) {
+      const num = parseFloat(value) || 0;
+      return isFinite(num) ? num : 0;
+    }
+
+    function switchMode(mode) {
+      currentMode = mode;
+      rowCount = 0;
+      document.getElementById('tableBody').innerHTML = '';
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.mode === mode);
+      });
+      const additionalAmountSection = document.getElementById('additionalAmountSection');
+      additionalAmountSection.classList.toggle('visible', mode === 'kata');
+      if (mode !== 'kata') {
+        document.getElementById('additionalAmount').value = '';
+      }
+      updateTableHead();
+      addRow();
+      calculateTotals();
+    }
+
+    function updateTableHead() {
+      const tableHead = document.getElementById('tableHead');
+      if (currentMode === 'patti') {
+        tableHead.innerHTML = `
+          <tr>
+            <th class="text-center" style="width: 60px">Sl.No</th>
+            <th style="min-width: 200px">Item</th>
+            <th class="text-center">Packet</th>
+            <th class="text-center">Quantity</th>
+            <th class="text-center">Rate</th>
+            <th class="text-center">Hamali</th>
+            <th class="text-center">Amount</th>
+          </tr>
+        `;
+      } else if (currentMode === 'kata') {
+        tableHead.innerHTML = `
+          <tr>
+            <th class="text-center" style="width: 60px">Sl.No</th>
+            <th style="min-width: 200px">Item</th>
+            <th class="text-center">Net Weight</th>
+            <th class="text-center">Less%</th>
+            <th class="text-center">Final Weight</th>
+            <th class="text-center">Rate</th>
+            <th class="text-center">Packets</th>
+            <th class="text-center">Hamali Rate</th>
+            <th class="text-center">Amount</th>
+          </tr>
+        `;
+      } else if (currentMode === 'barthe') {
+        tableHead.innerHTML = `
+          <tr>
+            <th class="text-center" style="width: 60px">Sl.No</th>
+            <th style="min-width: 200px">Item</th>
+            <th class="text-center">Packet</th>
+            <th class="text-center">Weight</th>
+            <th class="text-center">+/-</th>
+            <th class="text-center">Quantity</th>
+            <th class="text-center">Rate</th>
+            <th class="text-center">Hamali Rate</th>
+            <th class="text-center">Amount</th>
+          </tr>
+        `;
+      }
+    }
+
+    function addRow() {
+      rowCount++;
+      const tableBody = document.getElementById('tableBody');
+      if (!tableBody) return;
+
+      const row = document.createElement('tr');
+      if (currentMode === 'patti') {
+        row.innerHTML = `
+          <td class="text-center align-middle">${rowCount}</td>
+          <td>
+            <div class="input-group">
+              <select class="form-select form-select-sm" name="itemDropdown${rowCount}" onchange="handleDropdownChange(this, ${rowCount})">
+                ${itemOptions}
+              </select>
+              <input type="text" class="form-control form-control-sm d-none" name="item${rowCount}" placeholder="Enter custom item" />
+            </div>
+          </td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="packet${rowCount}" min="0" step="1" placeholder="Packet" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="quantity${rowCount}" min="0" step="0.01" placeholder="Quantity" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="rate${rowCount}" min="0" step="0.01" placeholder="Rate" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="hamali${rowCount}" min="0" step="0.01" placeholder="Hamali" /></td>
+          <td class="text-end align-middle">
+            <span id="total${rowCount}" class="calculated-value item-total">₹0.00</span>
+            <button class="btn btn-sm btn-danger ms-2 no-print" onclick="deleteRow(this)">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        `;
+      } else if (currentMode === 'kata') {
+        row.innerHTML = `
+          <td class="text-center align-middle">${rowCount}</td>
+          <td>
+            <div class="input-group">
+              <select class="form-select form-select-sm" name="itemDropdown${rowCount}" onchange="handleDropdownChange(this, ${rowCount})">
+                ${itemOptions}
+              </select>
+              <input type="text" class="form-control form-control-sm d-none" name="item${rowCount}" placeholder="Enter custom item" />
+            </div>
+          </td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="netWeight${rowCount}" min="0" step="0.01" placeholder="Net Weight" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="lessPercent${rowCount}" min="0" max="100" step="0.01" placeholder="Less %" /></td>
+          <td class="text-end align-middle"><span id="finalWeight${rowCount}" class="calculated-value">0.00</span></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="rate${rowCount}" min="0" step="0.01" placeholder="Rate" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="packets${rowCount}" min="0" step="1" placeholder="Packets" readonly /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="hamaliRate${rowCount}" min="0" step="0.01" placeholder="Hamali Rate" /></td>
+          <td class="text-end align-middle">
+            <span id="total${rowCount}" class="calculated-value item-total">₹0.00</span>
+            <button class="btn btn-sm btn-danger ms-2 no-print" onclick="deleteRow(this)">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        `;
+      } else if (currentMode === 'barthe') {
+        row.innerHTML = `
+          <td class="text-center align-middle">${rowCount}</td>
+          <td>
+            <div class="input-group">
+              <select class="form-select form-select-sm" name="itemDropdown${rowCount}" onchange="handleDropdownChange(this, ${rowCount})">
+                ${itemOptions}
+              </select>
+              <input type="text" class="form-control form-control-sm d-none" name="item${rowCount}" placeholder="Enter custom item" />
+            </div>
+          </td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="packet${rowCount}" min="0" step="1" placeholder="Packets" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="weight${rowCount}" min="0" step="0.01" placeholder="Weight" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="adjustment${rowCount}" min="0" step="0.01" placeholder="+/-" /></td>
+          <td class="text-end align-middle"><span id="quantity${rowCount}" class="calculated-value">0.00</span></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="rate${rowCount}" min="0" step="0.01" placeholder="Rate" /></td>
+          <td><input type="number" class="form-control form-control-sm text-end" name="hamaliRate${rowCount}" min="0" step="0.01" placeholder="Hamali Rate" /></td>
+          <td class="text-end align-middle">
+            <span id="total${rowCount}" class="calculated-value item-total">₹0.00</span>
+            <button class="btn btn-sm btn-danger ms-2 no-print" onclick="deleteRow(this)">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        `;
+      }
+      tableBody.appendChild(row);
+      const forceRepaint = () => {
+        document.body.style.display = 'none';
+        document.body.offsetHeight;
+        document.body.style.display = '';
+      };
+      forceRepaint();
+      if (typeof row.scrollIntoView === 'function') row.scrollIntoView(false);
+      const firstInput = row.querySelector('input, select');
+      if (firstInput) firstInput.focus();
+      calculateRow(rowCount);
+    }
+
+    function handleDropdownChange(select, rowNum) {
+      const input = select.parentElement.querySelector(`input[name='item${rowNum}']`);
+      if (select.value === '__custom__') {
+        input.classList.remove('d-none');
+        input.value = '';
+        input.focus();
+      } else {
+        input.classList.add('d-none');
+        input.value = select.value;
+      }
+      calculateRow(rowNum);
+    }
+
+    function deleteRow(button) {
+      const row = button.closest('tr');
+      if (row) {
+        row.remove();
+        updateRowNumbers();
+        calculateTotals();
+      }
+    }
+
+    function updateRowNumbers() {
+      const tbody = document.getElementById('tableBody');
+      if (!tbody) return;
+      const rows = tbody.querySelectorAll('tr');
+      rows.forEach((row, index) => {
+        const slNoCell = row.cells[0];
+        if (slNoCell) {
+          slNoCell.textContent = index + 1;
+        }
+      });
+      rowCount = rows.length;
+    }
+
+    function calculateRow(rowNum) {
+      try {
+        const row = document.querySelector(`#tableBody tr:nth-child(${rowNum})`);
+        if (!row) return;
+
+        if (currentMode === 'patti') {
+          const inputs = {
+            packet: row.querySelector(`[name='packet${rowNum}']`),
+            quantity: row.querySelector(`[name='quantity${rowNum}']`),
+            rate: row.querySelector(`[name='rate${rowNum}']`),
+            hamali: row.querySelector(`[name='hamali${rowNum}']`)
+          };
+          const totalSpan = row.querySelector(`#total${rowNum}`);
+          if (!Object.values(inputs).every(input => input) || !totalSpan) return;
+
+          const packet = validateNumericInput(inputs.packet.value);
+          const quantity = validateNumericInput(inputs.quantity.value);
+          const rate = validateNumericInput(inputs.rate.value);
+          const hamali = validateNumericInput(inputs.hamali.value);
+
+          const subTotal = quantity * rate;
+          const hamaliTotal = packet * hamali;
+          const total = subTotal + hamaliTotal;
+
+          totalSpan.textContent = formatCurrency(total);
+        } else if (currentMode === 'kata') {
+          const inputs = {
+            netWeight: row.querySelector(`[name='netWeight${rowNum}']`),
+            lessPercent: row.querySelector(`[name='lessPercent${rowNum}']`),
+            rate: row.querySelector(`[name='rate${rowNum}']`),
+            packets: row.querySelector(`[name='packets${rowNum}']`),
+            hamaliRate: row.querySelector(`[name='hamaliRate${rowNum}']`)
+          };
+          const outputs = {
+            finalWeight: row.querySelector(`#finalWeight${rowNum}`),
+            total: row.querySelector(`#total${rowNum}`)
+          };
+          if (!Object.values(inputs).every(input => input) || !Object.values(outputs).every(output => output)) return;
+
+          const values = {
+            netWeight: validateNumericInput(inputs.netWeight.value),
+            lessPercent: validateNumericInput(inputs.lessPercent.value),
+            rate: validateNumericInput(inputs.rate.value),
+            hamaliRate: validateNumericInput(inputs.hamaliRate.value)
+          };
+
+          const calculatedPackets = Math.ceil(values.netWeight / 60);
+          inputs.packets.value = calculatedPackets;
+
+          const lessDeduction = (values.netWeight * values.lessPercent) / 100;
+          const finalWeight = values.netWeight - lessDeduction;
+          const amount = finalWeight * values.rate;
+          const hamali = calculatedPackets * values.hamaliRate;
+          const total = amount + hamali;
+
+          outputs.finalWeight.textContent = formatNumber(finalWeight);
+          outputs.total.textContent = formatCurrency(total);
+        } else if (currentMode === 'barthe') {
+          const inputs = {
+            packet: row.querySelector(`[name='packet${rowNum}']`),
+            weight: row.querySelector(`[name='weight${rowNum}']`),
+            adjustment: row.querySelector(`[name='adjustment${rowNum}']`),
+            rate: row.querySelector(`[name='rate${rowNum}']`),
+            hamaliRate: row.querySelector(`[name='hamaliRate${rowNum}']`)
+          };
+          const outputs = {
+            quantity: row.querySelector(`#quantity${rowNum}`),
+            total: row.querySelector(`#total${rowNum}`)
+          };
+          if (!Object.values(inputs).every(input => input) || !Object.values(outputs).every(output => output)) return;
+
+          const packets = validateNumericInput(inputs.packet.value);
+          const weight = validateNumericInput(inputs.weight.value);
+          const adjustment = validateNumericInput(inputs.adjustment.value);
+          const rate = validateNumericInput(inputs.rate.value);
+          const hamaliRate = validateNumericInput(inputs.hamaliRate.value);
+
+          const quantity = (packets * weight) + adjustment;
+          const amount = quantity * rate;
+          const hamali = packets * hamaliRate;
+          const total = amount + hamali;
+
+          outputs.quantity.textContent = formatNumber(quantity);
+          outputs.total.textContent = formatCurrency(total);
+        }
+        calculateTotals();
+      } catch (error) {
+        console.error(`Error calculating row ${rowNum}:`, error);
+      }
+    }
+
+    function calculateTotals() {
+      try {
+        let grandTotal = 0;
+        const totalAmountSpan = document.getElementById('totalAmount');
+        if (!totalAmountSpan) {
+          console.error('Total amount span not found');
+          return;
+        }
+
+        const rows = document.querySelectorAll('#tableBody tr');
+        rows.forEach((row, index) => {
+          const totalSpan = row.querySelector(`#total${index + 1}`);
+          if (totalSpan) {
+            const rowTotal = parseFloat(totalSpan.textContent.replace('₹', '').replace(/,/g, '')) || 0;
+            grandTotal += rowTotal;
+          }
+        });
+
+        let additionalAmount = 0;
+        if (currentMode === 'kata') {
+          const additionalAmountInput = document.getElementById('additionalAmount');
+          additionalAmount = validateNumericInput(additionalAmountInput?.value);
+          grandTotal += additionalAmount;
+        }
+
+        console.log(`Row totals: ${grandTotal - additionalAmount}, Additional amount: ${additionalAmount}, Grand total: ${grandTotal}`);
+        totalAmountSpan.textContent = `Amount: ${formatCurrency(grandTotal)}`;
+        return grandTotal;
+      } catch (error) {
+        console.error('Error calculating totals:', error);
+      }
+    }
+
+    function clearForm() {
+      try {
+        // Clear customer name
+        const customerNameInput = document.getElementById('customerName');
+        if (customerNameInput) {
+          customerNameInput.value = '';
+        }
+
+        // Clear table body and reset rows
+        const tableBody = document.getElementById('tableBody');
+        if (tableBody) {
+          tableBody.innerHTML = '';
+        }
+
+        // Clear additional amount (for Kata mode)
+        const additionalAmountInput = document.getElementById('additionalAmount');
+        if (additionalAmountInput) {
+          additionalAmountInput.value = '';
+        }
+
+        // Reset row count and add one empty row
+        rowCount = 0;
+        addRow();
+
+        // Recalculate totals
+        calculateTotals();
+
+        // Focus on customer name input
+        if (customerNameInput) {
+          customerNameInput.focus();
+        }
+      } catch (error) {
+        console.error('Error clearing form:', error);
+        setTimeout(() => showNotification('Error clearing form. Please try again.', 'Error'), 0);
+      }
+    }
+
+    function buildCurrentInvoice() {
+      try {
+        const customerName = document.getElementById('customerName').value || "Customer";
+        const date = new Date().toISOString();
+        const additionalAmount = currentMode === 'kata' ? validateNumericInput(document.getElementById('additionalAmount')?.value) : 0;
+        const rows = document.querySelectorAll('#tableBody tr');
+        let items = [];
+        let grandTotal = 0;
+
+        rows.forEach((row, index) => {
+          const slNo = index + 1;
+          const item = row.querySelector(`input[name='item${slNo}']`)?.value || row.querySelector(`select[name='itemDropdown${slNo}']`)?.value || "";
+          let itemData = { slNo, item };
+          let amount;
+
+          if (currentMode === 'patti') {
+            itemData.packet = validateNumericInput(row.querySelector(`input[name='packet${slNo}']`)?.value);
+            itemData.quantity = validateNumericInput(row.querySelector(`input[name='quantity${slNo}']`)?.value);
+            itemData.rate = validateNumericInput(row.querySelector(`input[name='rate${slNo}']`)?.value);
+            itemData.hamali = validateNumericInput(row.querySelector(`input[name='hamali${slNo}']`)?.value);
+            amount = (itemData.quantity * itemData.rate) + (itemData.packet * itemData.hamali);
+          } else if (currentMode === 'kata') {
+            itemData.netWeight = validateNumericInput(row.querySelector(`input[name='netWeight${slNo}']`)?.value);
+            itemData.lessPercent = validateNumericInput(row.querySelector(`input[name='lessPercent${slNo}']`)?.value);
+            itemData.finalWeight = validateNumericInput(row.querySelector(`#finalWeight${slNo}`)?.textContent);
+            itemData.rate = validateNumericInput(row.querySelector(`input[name='rate${slNo}']`)?.value);
+            itemData.packets = validateNumericInput(row.querySelector(`input[name='packets${slNo}']`)?.value);
+            itemData.hamaliRate = validateNumericInput(row.querySelector(`input[name='hamaliRate${slNo}']`)?.value);
+            amount = validateNumericInput(row.querySelector(`#total${slNo}`)?.textContent.replace('₹', '').replace(/,/g, ''));
+          } else if (currentMode === 'barthe') {
+            itemData.packet = validateNumericInput(row.querySelector(`input[name='packet${slNo}']`)?.value);
+            itemData.weight = validateNumericInput(row.querySelector(`input[name='weight${slNo}']`)?.value);
+            itemData.adjustment = validateNumericInput(row.querySelector(`input[name='adjustment${slNo}']`)?.value);
+            itemData.quantity = validateNumericInput(row.querySelector(`#quantity${slNo}`)?.textContent);
+            itemData.rate = validateNumericInput(row.querySelector(`input[name='rate${slNo}']`)?.value);
+            itemData.hamaliRate = validateNumericInput(row.querySelector(`input[name='hamaliRate${slNo}']`)?.value);
+            amount = validateNumericInput(row.querySelector(`#total${slNo}`)?.textContent.replace('₹', '').replace(/,/g, ''));
+          }
+
+          itemData.amount = amount;
+          grandTotal += amount;
+          items.push(itemData);
+        });
+
+        grandTotal += additionalAmount;
+        return { date, customerName, items, additionalAmount, grandTotal };
+      } catch (error) {
+        console.error('Error building invoice:', error);
+        return null;
+      }
+    }
+
+    function saveData() {
+      try {
+        const invoice = buildCurrentInvoice();
+        if (!invoice) {
+          setTimeout(() => showNotification('Cannot save due to calculation error.', 'Error'), 0);
+          return;
+        }
+
+        sendInvoiceToServer(invoice).catch(err => {
+          setTimeout(() => showNotification('Failed to send to backend: ' + (err.message || err), 'Error'), 0);
+          console.error('sendInvoiceToServer error:', err);
+        });
+        setTimeout(() => showNotification('Data saved successfully!', 'Success'), 0);
+      } catch (error) {
+        console.error('Error saving data:', error);
+        setTimeout(() => showNotification('Error saving data. Please try again.', 'Error'), 0);
+      }
+    }
+
+    // Send invoice data to backend server for daily Excel append
+    async function sendInvoiceToServer(invoice) {
+      try {
+        let page = '';
+        if (currentMode === 'barthe') page = 'Barthe';
+        else if (currentMode === 'kata') page = 'Kata';
+        else page = 'Patti';
+
+        const API_URL = 'http://localhost:4000/api/save';
+        const response = await fetch(API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ page, invoice })
+        });
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error('HTTP ' + response.status + ': ' + text);
+        }
+        const result = await response.json();
+        if (result && result.error) {
+          setTimeout(() => showNotification('Excel save error: ' + result.error, 'Error'), 0);
+        }
+      } catch (err) {
+        setTimeout(() => showNotification('Failed to save to Excel: ' + (err.message || err), 'Error'), 0);
+        console.error('sendInvoiceToServer error:', err);
+      }
+    }
+
+    const { ipcRenderer } = window.require ? window.require('electron') : {};
+
+    function downloadDailyExcel() {
+      if (ipcRenderer && ipcRenderer.invoke) {
+        ipcRenderer.invoke('open-excel-folder');
+      } else {
+        const excelPath = 'G:/GVM invoice/excel_data';
+        showNotification('Excel files are stored at: <br><b>' + excelPath + '</b>', 'Info');
+      }
+    }
+
+    function showInvoice() {
+      try {
+        const invoice = buildCurrentInvoice();
+        if (!invoice) {
+          setTimeout(() => showNotification('Cannot show invoice due to calculation error.', 'Error'), 0);
+          return;
+        }
+
+        let tableRows = '';
+        if (currentMode === 'patti') {
+          invoice.items.forEach(item => {
+            tableRows += `<tr>
+              <td>${item.slNo}</td>
+              <td>${item.item}</td>
+              <td class="right">${formatNumber(item.packet)}</td>
+              <td class="right">${formatNumber(item.quantity)}</td>
+              <td class="right">${formatNumber(item.rate)}</td>
+              <td class="right">${formatNumber(item.hamali)}</td>
+              <td class="right">${formatCurrency(item.amount)}</td>
+            </tr>`;
+          });
+        } else if (currentMode === 'kata') {
+          invoice.items.forEach(item => {
+            tableRows  += `<tr>
+              <td>${item.slNo}</td>
+              <td>${item.item}</td>
+              <td class="right">${formatNumber(item.netWeight)}</td>
+              <td class="right">${formatNumber(item.lessPercent)}</td>
+              <td class="right">${formatNumber(item.finalWeight)}</td>
+              <td class="right">${formatNumber(item.rate)}</td>
+              <td class="right">${formatNumber(item.packets)}</td>
+              <td class="right">${formatNumber(item.hamaliRate)}</td>
+              <td class="right">${formatCurrency(item.amount)}</td>
+            </tr>`;
+          });
+        } else if (currentMode === 'barthe') {
+          invoice.items.forEach(item => {
+            tableRows += `<tr>
+              <td>${item.slNo}</td>
+              <td>${item.item}</td>
+              <td class="right">${formatNumber(item.packet)}</td>
+              <td class="right">${formatNumber(item.weight)}</td>
+              <td class="right">${formatNumber(item.adjustment)}</td>
+              <td class="right">${formatNumber(item.quantity)}</td>
+              <td class="right">${formatNumber(item.rate)}</td>
+              <td class="right">${formatNumber(item.hamaliRate)}</td>
+              <td class="right">${formatCurrency(item.amount)}</td>
+            </tr>`;
+          });
+        }
+
+        const previewWindow = window.open('', 'Invoice Preview', 'width=800,height=600');
+        if (previewWindow) {
+          previewWindow.document.write(generatePrintHTML(invoice.customerName, invoice.date, tableRows, invoice.additionalAmount, invoice.grandTotal));
+          previewWindow.document.close();
+        } else {
+          setTimeout(() => showNotification('Please allow popups to show the invoice.', 'Error'), 0);
+        }
+      } catch (error) {
+        console.error("Error showing invoice:", error);
+        setTimeout(() => showNotification("Error showing invoice. Please try again.", 'Error'), 0);
+      }
+    }
+
+    function saveAndPrint() {
+      try {
+        const invoice = buildCurrentInvoice();
+        if (!invoice) {
+          setTimeout(() => showNotification('Cannot print due to calculation error.', 'Error'), 0);
+          return;
+        }
+
+        let tableRows = '';
+        if (currentMode === 'patti') {
+          invoice.items.forEach(item => {
+            tableRows += `<tr>
+              <td>${item.slNo}</td>
+              <td>${item.item}</td>
+              <td class="right">${formatNumber(item.packet)}</td>
+              <td class="right">${formatNumber(item.quantity)}</td>
+              <td class="right">${formatNumber(item.rate)}</td>
+              <td class="right">${formatNumber(item.hamali)}</td>
+              <td class="right">${formatCurrency(item.amount)}</td>
+            </tr>`;
+          });
+        } else if (currentMode === 'kata') {
+          invoice.items.forEach(item => {
+            tableRows  += `<tr>
+              <td>${item.slNo}</td>
+              <td>${item.item}</td>
+              <td class="right">${formatNumber(item.netWeight)}</td>
+              <td class="right">${formatNumber(item.lessPercent)}</td>
+              <td class="right">${formatNumber(item.finalWeight)}</td>
+              <td class="right">${formatNumber(item.rate)}</td>
+              <td class="right">${formatNumber(item.packets)}</td>
+              <td class="right">${formatNumber(item.hamaliRate)}</td>
+              <td class="right">${formatCurrency(item.amount)}</td>
+            </tr>`;
+          });
+        } else if (currentMode === 'barthe') {
+          invoice.items.forEach(item => {
+            tableRows += `<tr>
+              <td>${item.slNo}</td>
+              <td>${item.item}</td>
+              <td class="right">${formatNumber(item.packet)}</td>
+              <td class="right">${formatNumber(item.weight)}</td>
+              <td class="right">${formatNumber(item.adjustment)}</td>
+              <td class="right">${formatNumber(item.quantity)}</td>
+              <td class="right">${formatNumber(item.rate)}</td>
+              <td class="right">${formatNumber(item.hamaliRate)}</td>
+              <td class="right">${formatCurrency(item.amount)}</td>
+            </tr>`;
+          });
+        }
+
+        const printWindow = window.open('', 'Thermal Print', 'width=300,height=600');
+        if (printWindow) {
+          printWindow.document.write(generatePrintHTML(invoice.customerName, invoice.date, tableRows, invoice.additionalAmount, invoice.grandTotal));
+          printWindow.document.close();
+          setTimeout(() => {
+            printWindow.print();
+            setTimeout(() => printWindow.close(), 500);
+          }, 250);
+        } else {
+          setTimeout(() => showNotification('Please allow popups to print the document.', 'Error'), 0);
+        }
+      } catch (error) {
+        console.error("Error printing:", error);
+        setTimeout(() => showNotification("Error printing. Please try again.", 'Error'), 0);
+      }
+    }
+
+    function generatePrintHTML(customerName, dateTime, tableRows, additionalAmount, total) {
+      dateTime = new Date(dateTime).toLocaleString('en-IN');
+      let headers = '';
+      if (currentMode === 'patti') {
+        headers = `
+          <tr>
+            <th>No</th>
+            <th>Item</th>
+            <th class="right">Pkt</th>
+            <th class="right">Qty</th>
+            <th class="right">Rate</th>
+            <th class="right">Ham</th>
+            <th class="right">Total</th>
+          </tr>
+        `;
+      } else if (currentMode === 'kata') {
+        headers = `
+          <tr>
+            <th>No</th>
+            <th>Item</th>
+            <th class="right">Net</th>
+            <th class="right">Less%</th>
+            <th class="right">Final</th>
+            <th class="right">Rate</th>
+            <th class="right">Pkt</th>
+            <th class="right">Ham</th>
+            <th class="right">Total</th>
+          </tr>
+        `;
+      } else if (currentMode === 'barthe') {
+        headers = `
+          <tr>
+            <th>No</th>
+            <th>Item</th>
+            <th class="right">Pkt</th>
+            <th class="right">Wt</th>
+            <th class="right">+/-</th>
+            <th class="right">Qty</th>
+            <th class="right">Rate</th>
+            <th class="right">Ham</th>
+            <th class="right">Total</th>
+          </tr>
+        `;
+      }
+
+      const amountLabel = currentMode === 'kata' ? 'Kata Amount' : '';
+      const additionalAmountRow = currentMode === 'kata' ? `<div>${amountLabel}: ${formatNumber(additionalAmount)}</div>` : '';
+
+      return `<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Print Receipt</title>
+    <style>
+        @page { size: 72mm auto; margin: 5mm; }
+        body { 
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+            width: 72mm;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #000;
+            padding-bottom: 5px;
+        }
+        .customer-info {
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #000;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        th, td {
+            text-align: left;
+            padding: 2px;
+            font-size: 9px;
+        }
+        .right {
+            text-align: right;
+        }
+        .total-section {
+            border-top: 1px dashed #000;
+            padding-top: 5px;
+            text-align: right;
+        }
+        .signature-section {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>|ಶ್ರೀ|</h2>
+        <h1>G.V.Mahant Brothers</h1>
+    </div>
+    <div class="customer-info">
+        <div>Customer: ${customerName}</div>
+        <div>Date: ${dateTime}</div>
+    </div>
+    <table>
+        <thead>
+            ${headers}
+        </thead>
+        <tbody>
+            ${tableRows}
+        </tbody>
+    </table>
+    <div class="total-section">
+        ${additionalAmountRow}
+        <div><strong>Total Amount: ${formatCurrency(total)}</strong></div>
+    </div>
+    <div class="signature-section">
+        <p>ನಾನು ಎಲ್ಲವೂ ಸರಿಯಾಗಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಿದ್ದೇನೆ.</p>
+        <p>____________________</p>
+        <p>Customer Signature</p>
+    </div>
+</body>
+</html>`;
+    }
+
+    function showNotification(message, title = 'Notification') {
+      document.getElementById('notificationModalLabel').textContent = title;
+      document.getElementById('notificationModalBody').textContent = message;
+      const modal = new bootstrap.Modal(document.getElementById('notificationModal'));
+      modal.show();
+    }
+  </script>
+</body>
+</html>
