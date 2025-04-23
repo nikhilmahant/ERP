@@ -35,13 +35,23 @@ def validate_float(value):
         return 0
 
 # Define font configurations
-HEADER_FONT = ("Segoe UI", 24, "bold")
-SUBHEADER_FONT = ("Segoe UI", 14)
-LABEL_FONT = ("Segoe UI", 12)
-ENTRY_FONT = ("Segoe UI", 12)
-TABLE_HEADER_FONT = ("Segoe UI", 12, "bold")
-TABLE_FONT = ("Segoe UI", 12)
-BUTTON_FONT = ("Segoe UI", 12)
+HEADER_FONT = ("Segoe UI", 28, "bold")
+SUBHEADER_FONT = ("Segoe UI", 16)
+LABEL_FONT = ("Segoe UI", 13)
+ENTRY_FONT = ("Segoe UI", 13)
+TABLE_HEADER_FONT = ("Segoe UI", 13, "bold")
+TABLE_FONT = ("Segoe UI", 13)
+BUTTON_FONT = ("Segoe UI", 13)
+
+# Define color scheme for light theme
+PRIMARY_COLOR = "#1976d2"      # Blue
+SECONDARY_COLOR = "#2196f3"    # Lighter blue
+ACCENT_COLOR = "#64b5f6"       # Even lighter blue
+BACKGROUND_COLOR = "#ffffff"    # White
+FRAME_COLOR = "#f5f5f5"        # Light gray
+BORDER_COLOR = "#e0e0e0"       # Border gray
+TEXT_COLOR = "#212121"         # Dark gray for text
+ERROR_COLOR = "#f44336"        # Red
 
 class InvoiceApp(ctk.CTk):
     def __init__(self):
@@ -55,7 +65,7 @@ class InvoiceApp(ctk.CTk):
     def load_config(self):
         """Load application configuration from file"""
         self.config = {
-            "theme": "light",
+            "theme": "Green",
             "window_size": "1200x800",
             "autosave": True
         }
@@ -76,21 +86,28 @@ class InvoiceApp(ctk.CTk):
 
     def setup_ui(self):
         """Initialize the user interface"""
-        ctk.set_appearance_mode(self.config["theme"])
-        ctk.set_default_color_theme("blue")
+        ctk.set_appearance_mode("light")  # Modes: system (default), light, dark
+        ctk.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
         
         self.title("GV Mahant Brothers - Invoice")
         self.geometry(self.config["window_size"])
-        self.minsize(1000, 700)
-        self.configure(padx=20, pady=20)
+        self.minsize(1200, 800)
+        self.configure(padx=30, pady=30)
 
         self.current_mode = ctk.StringVar(value="Patti")
         self.rows = []
         self.row_counter = 0
         self.autosave_var = ctk.BooleanVar(value=self.config["autosave"])
 
-        # Create tooltip label
-        self.tooltip = ttk.Label(self, background="#ffffe0", relief="solid", borderwidth=1)
+        # Create tooltip label with improved styling
+        self.tooltip = ttk.Label(
+            self,
+            background="#2c2c2c",
+            foreground="white",
+            relief="flat",
+            borderwidth=0,
+            padding=8
+        )
         self.tooltip_timer = None
 
         self.kata_amount_entry = None
@@ -98,70 +115,163 @@ class InvoiceApp(ctk.CTk):
         self.build_ui()
 
     def build_ui(self):
-        # Spacer and Header
-        ctk.CTkLabel(self, text="", height=1).pack()  # Spacer
-        ctk.CTkLabel(self, text="|ಶ್ರೀ|", font=HEADER_FONT, text_color="#1976d2").pack()
-        ctk.CTkLabel(self, text="G.V. Mahant Brothers", font=HEADER_FONT, text_color="#1976d2").pack()
-        ctk.CTkLabel(self, text=datetime.now().strftime("%A, %d %B %Y %I:%M %p"), font=SUBHEADER_FONT).pack()
+        # Main container frame with rounded corners and padding
+        main_frame = ctk.CTkFrame(
+            self,
+            fg_color=BACKGROUND_COLOR,
+            corner_radius=15,
+            border_width=1,
+            border_color=BORDER_COLOR
+        )
+        main_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
-        # Mode navigation
-        nav_frame = ctk.CTkFrame(self, fg_color="transparent")
+        # Header section with improved spacing
+        header_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
+        header_frame.pack(pady=(20, 10))
+        
+        ctk.CTkLabel(
+            header_frame,
+            text="|ಶ್ರೀ|",
+            font=HEADER_FONT,
+            text_color=PRIMARY_COLOR
+        ).pack()
+        
+        ctk.CTkLabel(
+            header_frame,
+            text="G.V. Mahant Brothers",
+            font=HEADER_FONT,
+            text_color=PRIMARY_COLOR
+        ).pack()
+        
+        ctk.CTkLabel(
+            header_frame,
+            text=datetime.now().strftime("%A, %d %B %Y %I:%M %p"),
+            font=SUBHEADER_FONT,
+            text_color=TEXT_COLOR
+        ).pack()
+
+        # Mode navigation with improved styling
+        nav_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
+        nav_frame.pack(pady=20)
+        
         for i, mode in enumerate(["Patti", "Kata", "Barthe"]):
-            rb = ctk.CTkRadioButton(nav_frame, text=mode, variable=self.current_mode, value=mode, command=self.switch_mode, font=LABEL_FONT)
-            rb.grid(row=0, column=i, padx=20, pady=10)  # Increased spacing
-        nav_frame.pack(pady=(30, 20))
+            rb = ctk.CTkRadioButton(
+                nav_frame,
+                text=mode,
+                variable=self.current_mode,
+                value=mode,
+                command=self.switch_mode,
+                font=LABEL_FONT,
+                fg_color=PRIMARY_COLOR,
+                border_color=SECONDARY_COLOR,
+                hover_color=SECONDARY_COLOR
+            )
+            rb.grid(row=0, column=i, padx=25, pady=10)
 
-        # Customer name
-        customer_frame = ctk.CTkFrame(self, fg_color="transparent")
-        ctk.CTkLabel(customer_frame, text="Customer Name:", font=LABEL_FONT).pack(side="left", padx=(0, 10))
-        self.customer_entry = ctk.CTkEntry(customer_frame, width=400, font=ENTRY_FONT, height=35)  # Increased width and height
+        # Customer name section with improved styling
+        customer_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
+        customer_frame.pack(pady=20)
+        
+        ctk.CTkLabel(
+            customer_frame,
+            text="Customer Name:",
+            font=LABEL_FONT,
+            text_color=TEXT_COLOR
+        ).pack(side="left", padx=(0, 10))
+        
+        self.customer_entry = ctk.CTkEntry(
+            customer_frame,
+            width=400,
+            font=ENTRY_FONT,
+            height=38,
+            corner_radius=8,
+            border_color=BORDER_COLOR,
+            fg_color="#ffffff"
+        )
         self.customer_entry.pack(side="left")
-        customer_frame.pack(pady=(20, 30))
 
-        # Table container Frame (Define it here)
-        self.table_frame = ctk.CTkFrame(self, fg_color="transparent")
-        # self.rows is already initialized in __init__
-        # self.create_table_headers() # Create headers *after* frames are packed
+        # Table container with improved styling
+        self.table_frame = ctk.CTkFrame(
+            main_frame,
+            fg_color=FRAME_COLOR,
+            corner_radius=10,
+            border_width=1,
+            border_color=BORDER_COLOR
+        )
+        self.table_frame.pack(fill="both", expand=True, padx=20, pady=(20, 10))
 
-        # --- Buttons and Total Frame --- (Define and PACK this FIRST)
-        self.bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
-        # Pack bottom frame against the window bottom, with some padding
-        self.bottom_frame.pack(fill="x", pady=(10, 10), side="bottom", anchor="sw") # pady can be adjusted
+        # Bottom frame with improved styling
+        self.bottom_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
+        self.bottom_frame.pack(fill="x", pady=(10, 20), padx=20)
 
-        # --- Left side: Action Buttons (inside bottom_frame) ---
+        # Action buttons with improved styling
         left_buttons_frame = ctk.CTkFrame(self.bottom_frame, fg_color="transparent")
-        left_buttons_frame.pack(side="left", padx=(0, 20)) 
-        # (Button creation remains the same)
-        button_params = {"font": BUTTON_FONT, "width": 120, "height": 35}
-        ctk.CTkButton(left_buttons_frame, text="Add Row", command=self.add_row, **button_params).pack(side="left", padx=5)
-        ctk.CTkButton(left_buttons_frame, text="Clear", command=self.clear_rows, **button_params).pack(side="left", padx=5)
-        ctk.CTkButton(left_buttons_frame, text="Save", command=self.save_to_excel, **button_params).pack(side="left", padx=5) 
-        ctk.CTkButton(left_buttons_frame, text="Print", command=self.show_print_preview, **button_params).pack(side="left", padx=5) 
+        left_buttons_frame.pack(side="left", padx=(0, 20))
 
-        # --- Right side: Total and Optional Kata Field (inside bottom_frame) ---
+        button_style = {
+            "font": BUTTON_FONT,
+            "width": 130,
+            "height": 38,
+            "corner_radius": 8,
+            "border_width": 1,
+            "border_color": BORDER_COLOR,
+            "fg_color": PRIMARY_COLOR,
+            "hover_color": SECONDARY_COLOR,
+            "text_color": "white"
+        }
+
+        ctk.CTkButton(
+            left_buttons_frame,
+            text="Add Row",
+            command=self.add_row,
+            **button_style
+        ).pack(side="left", padx=5)
+
+        ctk.CTkButton(
+            left_buttons_frame,
+            text="Clear",
+            command=self.clear_rows,
+            **button_style
+        ).pack(side="left", padx=5)
+
+        ctk.CTkButton(
+            left_buttons_frame,
+            text="Save",
+            command=self.save_to_excel,
+            **button_style
+        ).pack(side="left", padx=5)
+
+        ctk.CTkButton(
+            left_buttons_frame,
+            text="Print",
+            command=self.show_print_preview,
+            **button_style
+        ).pack(side="left", padx=5)
+
+        # Total section with improved styling
         right_total_frame = ctk.CTkFrame(self.bottom_frame, fg_color="transparent")
         right_total_frame.pack(side="right")
+
         self.kata_field_frame = ctk.CTkFrame(right_total_frame, fg_color="transparent")
-        self.kata_field_frame.pack(side="left", padx=(0, 10)) 
-        self.total_label = ctk.CTkLabel(right_total_frame, text="Amount: ₹0.00", font=("Segoe UI", 16, "bold"))
-        self.total_label.pack(side="left") 
-        # --- End Buttons and Total Frame Setup ---
+        self.kata_field_frame.pack(side="left", padx=(0, 15))
 
-        # --- Now PACK the Table Frame ABOVE the bottom_frame ---
-        # Make it fill available space horizontally and vertically, add padding
-        self.table_frame.pack(fill="both", expand=True, padx=0, pady=(0, 10)) # pady adds space above bottom_frame
+        self.total_label = ctk.CTkLabel(
+            right_total_frame,
+            text="Amount: ₹0.00",
+            font=("Segoe UI", 18, "bold"),
+            text_color=PRIMARY_COLOR
+        )
+        self.total_label.pack(side="left")
 
-        # Create initial table content AFTER packing frames
-        self.create_table_headers() 
-        self.add_row() 
-        self.switch_mode() 
+        # Create initial table content
+        self.create_table_headers()
+        self.add_row()
+        self.switch_mode()
 
     def create_table_headers(self):
-        # Remove all widgets in table_frame
+        # Remove existing widgets
         for widget in self.table_frame.winfo_children():
             widget.destroy()
-        # self.rows should be cleared in switch_mode or clear_rows, not here
-        # self.rows.clear() 
 
         headers = []
         if self.current_mode.get() == "Patti":
@@ -171,22 +281,22 @@ class InvoiceApp(ctk.CTk):
         elif self.current_mode.get() == "Barthe":
             headers = ["Item", "Packet", "Weight", "+/-", "Rate", "Hamali", "Amount"]
 
-        # Store headers for reference if needed elsewhere (optional)
-        self._current_headers = headers 
+        self._current_headers = headers
 
+        # Create headers with improved styling
         for i, h in enumerate(headers):
-            ctk.CTkLabel(
+            header_label = ctk.CTkLabel(
                 self.table_frame,
                 text=h,
                 font=TABLE_HEADER_FONT,
                 text_color="white",
-                fg_color="#1976d2", # Or use theme color
-                corner_radius=5,
-                # width=100, # Let grid weight handle width
-                height=35,  # Added height
+                fg_color=PRIMARY_COLOR,
+                corner_radius=8,
+                height=38,
                 anchor="center"
-            ).grid(row=0, column=i, sticky="nsew", padx=2, pady=2)
-            self.table_frame.grid_columnconfigure(i, weight=1) # Make columns resize
+            )
+            header_label.grid(row=0, column=i, sticky="nsew", padx=3, pady=3)
+            self.table_frame.grid_columnconfigure(i, weight=1)
 
     def switch_mode(self):
         # --- Clear Kata field if it exists ---
@@ -209,7 +319,7 @@ class InvoiceApp(ctk.CTk):
             self.kata_amount_entry = ctk.CTkEntry(
                 self.kata_field_frame, 
                 font=ENTRY_FONT,
-                height=35,
+                height=38,
                 width=120
             )
             self.kata_amount_entry.pack(side="left")
@@ -223,66 +333,61 @@ class InvoiceApp(ctk.CTk):
 
     def add_row(self):
         mode = self.current_mode.get()
-        # Determine the number of entry fields based on mode (excluding the Amount label)
         if mode == "Patti":
-            num_entry_fields = 5 # Item, Pkt, Qty, Rate, Hamali
+            num_entry_fields = 5
         elif mode == "Kata":
-            num_entry_fields = 5 # Item, Net, Less, Rate, Hamali Rate
+            num_entry_fields = 5
         elif mode == "Barthe":
-            num_entry_fields = 6 # Item, Pkt, Wt, +/-, Rate, Hamali
-        else: # Default or fallback
-            num_entry_fields = 5 
+            num_entry_fields = 6
+        else:
+            num_entry_fields = 5
 
         entries = []
-        # Start grid row below the header (row 0) and subsequent rows
-        row_idx = len(self.rows) + 1 
-        
-        # --- Create Item Dropdown (ttk.Combobox for the first column) ---
+        row_idx = len(self.rows) + 1
+
+        # Item dropdown with improved styling
         item_dropdown = ttk.Combobox(
             self.table_frame,
             values=ITEM_LIST,
             font=TABLE_FONT,
-            # height=10, # Height isn't directly settable like CTkEntry
-            state="readonly" # Prevent typing custom values
+            state="readonly"
         )
-        item_dropdown.grid(row=row_idx, column=0, padx=2, pady=2, sticky="nsew")
-        # Bind selection event to update amounts
-        item_dropdown.bind("<<ComboboxSelected>>", self.update_amounts) 
-        self.table_frame.grid_columnconfigure(0, weight=1) # Ensure column resizes
+        item_dropdown.grid(row=row_idx, column=0, padx=3, pady=3, sticky="nsew")
+        item_dropdown.bind("<<ComboboxSelected>>", self.update_amounts)
+        self.table_frame.grid_columnconfigure(0, weight=1)
         entries.append(item_dropdown)
-        # --- End Item Dropdown ---
 
-        # --- Create remaining entry widgets (starting from column 1) ---
-        for i in range(1, num_entry_fields): # Start loop from 1
+        # Entry fields with improved styling
+        for i in range(1, num_entry_fields):
             entry = ctk.CTkEntry(
                 self.table_frame,
                 font=TABLE_FONT,
                 justify="center",
-                height=35  # Increased height
+                height=38,
+                corner_radius=8,
+                border_color=BORDER_COLOR,
+                fg_color="#ffffff"
             )
-            entry.grid(row=row_idx, column=i, padx=2, pady=2, sticky="nsew")
-            # Update amounts whenever a key is released in any entry
-            entry.bind("<KeyRelease>", self.update_amounts) # Simplified binding
-            self.table_frame.grid_columnconfigure(i, weight=1) # Ensure column resizes
+            entry.grid(row=row_idx, column=i, padx=3, pady=3, sticky="nsew")
+            entry.bind("<KeyRelease>", self.update_amounts)
+            self.table_frame.grid_columnconfigure(i, weight=1)
             entries.append(entry)
-        # --- End remaining entries ---
 
-        # Create the Amount label for this row (last column)
+        # Amount label with improved styling
         amount_label = ctk.CTkLabel(
             self.table_frame,
             text="₹0.00",
             font=TABLE_FONT,
-            anchor="e", # Align text to the right
-            height=35  # Increased height
+            anchor="e",
+            height=38,
+            corner_radius=8,
+            fg_color="#ffffff",
+            text_color=TEXT_COLOR
         )
-        # Place it in the column after the last entry field
-        amount_label.grid(row=row_idx, column=num_entry_fields, padx=2, pady=2, sticky="nsew")
-        self.table_frame.grid_columnconfigure(num_entry_fields, weight=1) # Ensure column resizes
-        
-        # Append the amount label to the list of widgets for this row
-        entries.append(amount_label) 
+        amount_label.grid(row=row_idx, column=num_entry_fields, padx=3, pady=3, sticky="nsew")
+        self.table_frame.grid_columnconfigure(num_entry_fields, weight=1)
+        entries.append(amount_label)
 
-        # Store the row index and the list of widgets (dropdown + entries + amount label)
         self.rows.append({"row_index": row_idx, "widgets": entries})
         # Don't call update_amounts here, it's called by events or explicitly elsewhere
         # self.update_amounts()
@@ -376,99 +481,94 @@ class InvoiceApp(ctk.CTk):
 
         self.total_label.configure(text=f"Amount: ₹{total:.2f}")
 
-    def save_to_excel(self): # Renamed from save_invoice for clarity
+    def save_to_excel(self):
         try:
-            # --- Construct the full path to the Documents folder ---
-            try:
-                # Get user's home directory
-                home_dir = os.path.expanduser("~") 
-                # Create the full path to the Documents folder
-                documents_path = os.path.join(home_dir, "Documents")
-                
-                # Ensure the Documents directory exists, create if not
-                os.makedirs(documents_path, exist_ok=True) 
-                
-                # Create the filename based on the current date
-                date_str = datetime.now().strftime('%Y-%m-%d')
-                base_filename = f"Invoice_{date_str}.xlsx"
-                
-                # Combine documents path and filename
-                full_save_path = os.path.join(documents_path, base_filename)
-                
-                logging.info(f"Target save path: {full_save_path}")
+            # Get user's home directory
+            home_dir = os.path.expanduser("~") 
+            # Create the full path to the Documents folder
+            documents_path = os.path.join(home_dir, "Documents")
+            
+            # Ensure the Documents directory exists, create if not
+            os.makedirs(documents_path, exist_ok=True) 
+            
+            # Create the filename based on the current date
+            date_str = datetime.now().strftime('%Y-%m-%d')
+            base_filename = f"Invoice_{date_str}.xlsx"
+            
+            # Combine documents path and filename
+            full_save_path = os.path.join(documents_path, base_filename)
+            
+            logging.info(f"Target save path: {full_save_path}")
 
-            except Exception as path_e:
-                 logging.error(f"Error determining save path: {path_e}")
-                 messagebox.showerror("Path Error", f"Could not determine the Documents folder path.\nError: {path_e}")
-                 return # Stop if we can't get the path
-
-            # --- Get Invoice Data ---
+            # Get Invoice Data
             customer = self.customer_entry.get().strip() or "Unknown Customer"
             mode = self.current_mode.get()
             
             headers = getattr(self, '_current_headers', []) 
-            if not headers: # Fallback
-                 # (Fallback header logic remains the same)
-                 if mode == "Patti":
-                     headers = ["Item", "Packet", "Quantity", "Rate", "Hamali", "Amount"]
-                 elif mode == "Kata":
-                     headers = ["Item", "Net Wt", "Less%", "Rate", "Hamali Rate", "Amount"]
-                 elif mode == "Barthe":
-                     headers = ["Item", "Packet", "Weight", "+/-", "Rate", "Hamali", "Amount"]
-                 else: 
-                     headers = ["Col1", "Col2", "Col3", "Col4", "Col5", "Col6", "Amount"]
+            if not headers:
+                if mode == "Patti":
+                    headers = ["Item", "Packet", "Quantity", "Rate", "Hamali", "Amount"]
+                elif mode == "Kata":
+                    headers = ["Item", "Net Wt", "Less%", "Rate", "Hamali Rate", "Amount"]
+                elif mode == "Barthe":
+                    headers = ["Item", "Packet", "Weight", "+/-", "Rate", "Hamali", "Amount"]
+                else: 
+                    headers = ["Col1", "Col2", "Col3", "Col4", "Col5", "Col6", "Amount"]
 
             data_rows = []
             for row_data in self.rows:
-                 widgets = row_data["widgets"]
-                 # Use .get() for Combobox and CTkEntry, .cget() for CTkLabel
-                 row_values = []
-                 for w in widgets:
-                      if isinstance(w, (ctk.CTkEntry, ttk.Combobox)):
-                           row_values.append(w.get())
-                      elif isinstance(w, ctk.CTkLabel):
-                           row_values.append(w.cget("text"))
-                      else: # Fallback for unexpected widget types
-                           row_values.append("") 
+                widgets = row_data["widgets"]
+                row_values = []
+                for w in widgets:
+                    if isinstance(w, (ctk.CTkEntry, ttk.Combobox)):
+                        row_values.append(w.get())
+                    elif isinstance(w, ctk.CTkLabel):
+                        row_values.append(w.cget("text").replace('₹', '').replace('Error', '0'))
+                    else:
+                        row_values.append("")
 
-                 if row_values:
-                     # Clean amount (assuming it's the last value)
-                     row_values[-1] = row_values[-1].replace('₹', '').replace('Error', '0')
-                     # Only include rows with actual item data (check first column)
-                     if row_values[0] and row_values[0].strip(): 
-                          data_rows.append(row_values)
+                if row_values and row_values[0].strip():
+                    data_rows.append(row_values)
 
             if not data_rows:
                 messagebox.showwarning("No Data", "No data entered to save.")
                 return
 
-            # --- Excel Writing Logic ---
-            if os.path.exists(full_save_path): # Check existence using the full path
-                try:
-                    wb = load_workbook(full_save_path)
-                    if mode in wb.sheetnames:
-                         ws = wb[mode]
-                    else:
-                         ws = wb.create_sheet(title=mode)
-                         ws.append(["Timestamp", "Customer"] + headers) 
-                except Exception as e:
-                     logging.error(f"Error loading workbook '{full_save_path}', creating new one: {e}")
-                     wb = Workbook()
-            ws = wb.active
-            ws.title = mode 
-            ws.append(["Timestamp", "Customer"] + headers)
-
-            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            for row in data_rows:
-                ws.append([timestamp, customer] + row)
-
-            # --- Save Workbook ---
+            # Excel Writing Logic with proper workbook handling
             try:
-                # Save using the full path to the Documents folder
-                wb.save(full_save_path) 
+                if os.path.exists(full_save_path):
+                    wb = load_workbook(full_save_path)
+                else:
+                    wb = Workbook()
+                    
+                # Check if mode sheet exists, create or get it
+                if mode in wb.sheetnames:
+                    ws = wb[mode]
+                else:
+                    if len(wb.sheetnames) > 0:
+                        # If there are sheets but none match our mode, create new one
+                        ws = wb.create_sheet(title=mode)
+                    else:
+                        # If it's a new workbook, rename the default sheet
+                        ws = wb.active
+                        ws.title = mode
+
+                # Clear the existing content in the sheet
+                ws.delete_rows(1, ws.max_row)
+                
+                # Write headers
+                ws.append(["Timestamp", "Customer"] + headers)
+
+                # Write data
+                timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                for row in data_rows:
+                    ws.append([timestamp, customer] + row)
+
+                # Save the workbook
+                wb.save(full_save_path)
                 logging.info(f"Successfully saved invoice data to {full_save_path} (Sheet: {mode})")
-                # Update message box to show the full path
-                messagebox.showinfo("Saved", f"Invoice data saved to:\n{full_save_path}\n(Sheet: {mode})") 
+                messagebox.showinfo("Saved", f"Invoice data saved to:\n{full_save_path}\n(Sheet: {mode})")
+
             except PermissionError:
                 error_msg = f"Cannot save '{base_filename}'.\nThe file might be open in Excel.\n\nLocation: {documents_path}"
                 logging.error(error_msg)
@@ -479,9 +579,8 @@ class InvoiceApp(ctk.CTk):
                 messagebox.showerror("Save Error", error_msg)
 
         except Exception as e:
-            # Catch any other unexpected errors during the process
             error_msg = f"Unexpected error during save operation: {str(e)}"
-            logging.exception(error_msg) # Log the full traceback
+            logging.exception(error_msg)
             messagebox.showerror("Error", error_msg)
 
     def generate_print_content(self):
@@ -499,116 +598,94 @@ class InvoiceApp(ctk.CTk):
             datetime.now().strftime("%d-%b-%Y %H:%M").center(max_width),
             "-" * max_width,
             f"Customer: {customer}",
-            f"Mode: {mode}",
             "-" * max_width,
         ])
 
         # --- Column Headers ---
-        # Revised widths and spacing for better alignment within 40 chars
+        # Optimized format strings for better space utilization
         header_fmt = ""
         if mode == "Patti":
-            # Item(8) Pkt(5) Qty(6) Rate(6) Ham(5) Amt(7) = 37 chars + 5 spaces = 42 -> Adjust
-            # Try: Item(8) Pkt(5) Qty(5) Rate(6) Ham(5) Amt(7) = 36 chars + 5 spaces = 41 -> Adjust
-            # Try: Item(8) Pkt(4) Qty(5) Rate(6) Ham(5) Amt(7) = 35 chars + 5 spaces = 40
-            header_fmt = "{:<8} {:>4} {:>5} {:>6} {:>5} {:>7}" 
-            headers = ["Item", "Pkt", "Qty", "Rate", "Hamali", "Amount"]
+            # Item(6) Pkt(4) Qty(4) Rate(6) Ham(4) Amt(7) = 31 + 5 spaces = 36
+            header_fmt = "{:<6} {:>4} {:>4} {:>6} {:>4} {:>7}"
+            headers = ["Item", "Pkt", "Qty", "Rate", "Ham", "Amt"]
         elif mode == "Kata":
-            # Item(8) Net(7) Less(5) Rate(6) Ham(5) Amt(7) = 38 chars + 5 spaces = 43 -> Adjust
-            # Try: Item(8) Net(6) Less(4) Rate(6) Ham(5) Amt(7) = 36 chars + 5 spaces = 41 -> Adjust
-            # Try: Item(8) Net(6) Less(4) Rate(5) Ham(5) Amt(7) = 35 chars + 5 spaces = 40
-            header_fmt = "{:<8} {:>6} {:>4} {:>5} {:>5} {:>7}"
-            headers = ["Item", "Net Wt", "Less%", "Rate", "Hamali", "Amount"]
+            # Item(6) Net(4) Les(3) Rate(6) Ham(4) Amt(7) = 30 + 5 spaces = 35
+            header_fmt = "{:<6} {:>4} {:>3} {:>6} {:>4} {:>7}"
+            headers = ["Item", "Net", "Les", "Rate", "Ham", "Amt"]
         elif mode == "Barthe":
-             # Item(7) Pkt(5) Wt(5) +/- (5) Rate(6) Ham(5) Amt(7) = 40 chars + 6 spaces = 46 -> Adjust
-             # Try: Item(7) Pkt(4) Wt(5) +/- (4) Rate(5) Ham(5) Amt(7) = 37 chars + 6 spaces = 43 -> Adjust
-             # Try: Item(7) Pkt(4) Wt(4) +/- (4) Rate(5) Ham(5) Amt(7) = 36 chars + 6 spaces = 42 -> Adjust
-             # Try: Item(7) Pkt(4) Wt(4) +/- (4) Rate(5) Ham(4) Amt(7) = 35 chars + 6 spaces = 41 -> Adjust
-             # Try: Item(6) Pkt(4) Wt(4) +/- (4) Rate(5) Ham(4) Amt(7) = 34 chars + 6 spaces = 40
-             header_fmt = "{:<6} {:>4} {:>4} {:>4} {:>5} {:>4} {:>7}"
-             headers = ["Item", "Pkt", "Wt", "+/-", "Rate", "Hamali", "Amount"]
+            # Item(6) Pkt(3) Wt(3) +/-(3) Rate(5) Ham(4) Amt(7) = 31 + 6 spaces = 37
+            header_fmt = "{:<6} {:>3} {:>3} {:>3} {:>5} {:>4} {:>7}"
+            headers = ["Item", "Pkt", "Wt", "+/-", "Rate", "Ham", "Amt"]
         
-        if header_fmt: # Check if format string was set
-             lines.append(header_fmt.format(*headers)) # Use tuple unpacking
+        if header_fmt:
+            lines.append(header_fmt.format(*headers))
         else:
-             lines.append("Error: Mode not recognized for printing.") # Fallback
+            lines.append("Error: Mode not recognized for printing.")
         
         lines.append("-" * max_width)
 
         # --- Data Rows ---
         for row_data in self.rows:
             widgets = row_data["widgets"]
-            # Extract values using .get() or .cget()
             row_values = []
             for w in widgets:
                 if isinstance(w, (ctk.CTkEntry, ttk.Combobox)):
-                    row_values.append(w.get().strip()) # Get and strip whitespace
+                    row_values.append(w.get().strip())
                 elif isinstance(w, ctk.CTkLabel):
-                     # Get text, remove currency symbol and errors for formatting
                     text = w.cget("text").replace('₹', '').replace('Error', '0').strip()
                     row_values.append(text)
                 else: 
-                    row_values.append("") 
+                    row_values.append("")
 
-            # Skip if item name (first field) is empty or only whitespace
             if not row_values or not row_values[0]:
-                 continue
+                continue
             
-            # Use the same format string as headers for data alignment
-            # No truncation (.N) applied here to avoid cutting numbers, 
-            # but extremely long entries might still misalign.
             try:
                 if mode == "Patti" and len(row_values) >= 6:
-                     lines.append(header_fmt.format(
-                         row_values[0][:8],  # Item (limit length)
-                         row_values[1],      # Pkt
-                         row_values[2],      # Qty
-                         row_values[3],      # Rate
-                         row_values[4],      # Hamali
-                         row_values[5]       # Amount (already cleaned)
-                     ))
+                    # Truncate item name to 6 chars and format numbers
+                    lines.append(header_fmt.format(
+                        row_values[0][:6],
+                        row_values[1][:4],  # Limit Pkt to 4 chars
+                        row_values[2][:4],  # Limit Qty to 4 chars
+                        row_values[3][:6],  # Limit Rate to 6 chars
+                        row_values[4][:4],  # Limit Hamali to 4 chars
+                        row_values[5][:7]   # Limit Amount to 7 chars
+                    ))
                 elif mode == "Kata" and len(row_values) >= 6:
-                      lines.append(header_fmt.format(
-                         row_values[0][:8],  # Item (limit length)
-                         row_values[1],      # Net Wt
-                         row_values[2],      # Less%
-                         row_values[3],      # Rate
-                         row_values[4],      # Hamali
-                         row_values[5]       # Amount (already cleaned)
-                      ))
+                    lines.append(header_fmt.format(
+                        row_values[0][:6],
+                        row_values[1][:4],  # Net
+                        row_values[2][:3],  # Less
+                        row_values[3][:6],  # Rate
+                        row_values[4][:4],  # Hamali
+                        row_values[5][:7]   # Amount
+                    ))
                 elif mode == "Barthe" and len(row_values) >= 7:
-                     lines.append(header_fmt.format(
-                         row_values[0][:6],  # Item (limit length)
-                         row_values[1],      # Pkt
-                         row_values[2],      # Wt
-                         row_values[3],      # +/-
-                         row_values[4],      # Rate
-                         row_values[5],      # Hamali
-                         row_values[6]       # Amount (already cleaned)
-                     ))
-            except IndexError:
-                 lines.append("Error formatting row data...")
-                 logging.warning(f"IndexError formatting print data row: {row_values}")
+                    lines.append(header_fmt.format(
+                        row_values[0][:6],
+                        row_values[1][:3],  # Pkt
+                        row_values[2][:3],  # Weight
+                        row_values[3][:3],  # +/-
+                        row_values[4][:5],  # Rate
+                        row_values[5][:4],  # Hamali
+                        row_values[6][:7]   # Amount
+                    ))
             except Exception as fmt_e:
-                 lines.append(f"Fmt Error: {fmt_e}")
-                 logging.warning(f"Exception formatting print data row: {fmt_e} - {row_values}")
+                lines.append(f"Fmt Error: {fmt_e}")
 
         # --- Add Kata Amount if applicable ---
         if mode == "Kata" and self.kata_amount_entry:
-             kata_val_str = self.kata_amount_entry.get().strip()
-             kata_amount = validate_float(kata_val_str)
-             # Format nicely, right-aligned
-             lines.append(f"Kata Amount: {kata_amount:>10.2f}".rjust(max_width))
-        # --- End Add Kata Amount ---
+            kata_val_str = self.kata_amount_entry.get().strip()
+            kata_amount = validate_float(kata_val_str)
+            lines.append(f"Kata Amount: {kata_amount:>10.2f}".rjust(max_width))
 
         # --- Footer ---
         lines.extend([
             "-" * max_width,
-            # Right-align the total amount string within the max_width
-            f"Total Amount: {self.total_label.cget('text')}".rjust(max_width), 
+            f"Total Amount: {self.total_label.cget('text')}".rjust(max_width),
             "-" * max_width,
             "",
-            # Optional Kannada text - ensure your printer supports it
-            # "ನಾನು ಎಲ್ಲವೂ ಸರಿಯಾಗಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಿದ್ದೇನೆ.".center(max_width), 
+            "ನಾನು ಎಲ್ಲವೂ ಸರಿಯಾಗಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಿದ್ದೇನೆ.".center(max_width),
             "",
             "_" * max_width,
             "Customer Signature".center(max_width),
@@ -617,7 +694,6 @@ class InvoiceApp(ctk.CTk):
 
         # Add printer cut command (ESC/POS standard)
         lines.append(chr(27) + chr(105)) # Full cut
-        # lines.append(chr(27) + chr(109)) # Partial cut
 
         return lines
 
