@@ -1,0 +1,118 @@
+import tkinter as tk
+from tkinter import ttk, messagebox
+import win32print
+import win32ui
+from datetime import datetime
+
+class PrintApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Print Dialog Demo")
+        self.root.geometry("400x300")
+        
+        # Create and pack the form
+        self.create_form()
+        
+    def create_form(self):
+        # Name input
+        ttk.Label(self.root, text="Name:").pack(pady=5, padx=10, anchor="w")
+        self.name_entry = ttk.Entry(self.root, width=40)
+        self.name_entry.pack(pady=5, padx=10)
+        
+        # Email input
+        ttk.Label(self.root, text="Email:").pack(pady=5, padx=10, anchor="w")
+        self.email_entry = ttk.Entry(self.root, width=40)
+        self.email_entry.pack(pady=5, padx=10)
+        
+        # Message input
+        ttk.Label(self.root, text="Message:").pack(pady=5, padx=10, anchor="w")
+        self.message_text = tk.Text(self.root, height=6, width=40)
+        self.message_text.pack(pady=5, padx=10)
+        
+        # Print button
+        ttk.Button(self.root, text="Print", command=self.print_data).pack(pady=20)
+        
+    def get_form_data(self):
+        return {
+            'name': self.name_entry.get(),
+            'email': self.email_entry.get(),
+            'message': self.message_text.get("1.0", tk.END).strip(),
+            'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
+        
+    def format_print_data(self, data):
+        return f"""
+=== Print Form Data ===
+Date: {data['timestamp']}
+
+Name: {data['name']}
+Email: {data['email']}
+
+Message:
+{data['message']}
+
+====================
+"""
+        
+    def print_data(self):
+        data = self.get_form_data()
+        
+        if not all([data['name'], data['email'], data['message']]):
+            messagebox.showerror("Error", "Please fill in all fields")
+            return
+            
+        try:
+            # Get default printer and show it to user
+            printer_name = win32print.GetDefaultPrinter()
+            messagebox.showinfo("Printer Info", f"Using printer: {printer_name}")
+            
+            # Create printer DC
+            hprinter = win32print.OpenPrinter(printer_name)
+            printer_info = win32print.GetPrinter(hprinter, 2)
+            
+            dc = win32ui.CreateDC()
+            dc.CreatePrinterDC(printer_name)
+            
+            # Start document
+            dc.StartDoc('Form Data')
+            dc.StartPage()
+            
+            # Set up the font with larger size for better visibility
+            font = win32ui.CreateFont({
+                'name': 'Arial',
+                'height': 40,  # Increased font size
+                'weight': 400
+            })
+            dc.SelectObject(font)
+            
+            # Format and print the text
+            formatted_text = self.format_print_data(data)
+            y_position = 200  # Increased starting position
+            
+            # Print each line separately with more spacing
+            for line in formatted_text.split('\n'):
+                if line.strip():  # Only print non-empty lines
+                    dc.TextOut(200, y_position, line)
+                    y_position += 80  # Increased line spacing
+            
+            # End page and document
+            dc.EndPage()
+            dc.EndDoc()
+            
+            # Clean up
+            del dc
+            win32print.ClosePrinter(hprinter)
+            
+            messagebox.showinfo("Success", "Data sent to printer!")
+            
+        except win32print.error as we:
+            messagebox.showerror("Printer Error", f"Windows printer error: {str(we)}")
+        except win32ui.error as ue:
+            messagebox.showerror("UI Error", f"Windows UI error: {str(ue)}")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to print: {str(e)}")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = PrintApp(root)
+    root.mainloop()  # Fixed incomplete line

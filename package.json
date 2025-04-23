@@ -1,0 +1,7 @@
+{
+  "name": "print-dialog-app",
+  "private": true,
+  "scripts": {
+    "start": "python main.py"
+  }
+}
