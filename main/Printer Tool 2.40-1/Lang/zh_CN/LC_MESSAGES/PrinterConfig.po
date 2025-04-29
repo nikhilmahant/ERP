@@ -1,0 +1,2157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DriverInstall_zh_CN\n"
+"POT-Creation-Date: 2020-03-26 15:21+0800\n"
+"PO-Revision-Date: 2020-03-26 15:24+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: C:\\Users\\Administrator\\Desktop\\RongTaPrinterTool_New"
+"\\RongTaPrinterTool_Newwc\\RongtaPrinterTool\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: showErrMsg;getPoTextW;showSuccessMsg;checkPortType\n"
+"X-Poedit-SearchPath-0: MainDlg.h\n"
+"X-Poedit-SearchPath-1: MainDlg.cpp\n"
+"X-Poedit-SearchPath-2: ParamSetDialog.h\n"
+"X-Poedit-SearchPath-3: ParamSetDialog.cpp\n"
+"X-Poedit-SearchPath-4: SendUDP.cpp\n"
+"X-Poedit-SearchPath-5: SendTcp.cpp\n"
+"X-Poedit-SearchPath-6: 2DBARTabDialog.h\n"
+"X-Poedit-SearchPath-7: 2DBARTabDialog.cpp\n"
+"X-Poedit-SearchPath-8: BaseTabDialog.h\n"
+"X-Poedit-SearchPath-9: BaseTabDialog.cpp\n"
+"X-Poedit-SearchPath-10: Big5TabDialog.h\n"
+"X-Poedit-SearchPath-11: Big5TabDialog.cpp\n"
+"X-Poedit-SearchPath-12: BlackMarkTabDialog.h\n"
+"X-Poedit-SearchPath-13: BlackMarkTabDialog.cpp\n"
+"X-Poedit-SearchPath-14: cmd.h\n"
+"X-Poedit-SearchPath-15: cmd.cpp\n"
+"X-Poedit-SearchPath-16: Config.h\n"
+"X-Poedit-SearchPath-17: Config.cpp\n"
+"X-Poedit-SearchPath-18: DownloadDialog.h\n"
+"X-Poedit-SearchPath-19: DownloadDialog.cpp\n"
+"X-Poedit-SearchPath-20: EthernetDialog.h\n"
+"X-Poedit-SearchPath-21: EthernetDialog.cpp\n"
+"X-Poedit-SearchPath-22: HotTabDialog.h\n"
+"X-Poedit-SearchPath-23: HotTabDialog.cpp\n"
+"X-Poedit-SearchPath-24: LogoTabDialog.h\n"
+"X-Poedit-SearchPath-25: LogoTabDialog.cpp\n"
+"X-Poedit-SearchPath-26: Monitor.h\n"
+"X-Poedit-SearchPath-27: Monitor.cpp\n"
+"X-Poedit-SearchPath-28: NetTabDialog.h\n"
+"X-Poedit-SearchPath-29: NetTabDialog.cpp\n"
+"X-Poedit-SearchPath-30: PrinterSetDialog.h\n"
+"X-Poedit-SearchPath-31: PrinterSetDialog.cpp\n"
+"X-Poedit-SearchPath-32: ProgramTabDialog.h\n"
+"X-Poedit-SearchPath-33: ProgramTabDialog.cpp\n"
+"X-Poedit-SearchPath-34: RppTabDialog.h\n"
+"X-Poedit-SearchPath-35: RppTabDialog.cpp\n"
+"X-Poedit-SearchPath-36: SerialTabDialog.h\n"
+"X-Poedit-SearchPath-37: SerialTabDialog.cpp\n"
+"X-Poedit-SearchPath-38: UDPSearchTabDialog.h\n"
+"X-Poedit-SearchPath-39: UDPSearchTabDialog.cpp\n"
+"X-Poedit-SearchPath-40: util.h\n"
+"X-Poedit-SearchPath-41: util.cpp\n"
+"X-Poedit-SearchPath-42: WifiTabDialog.h\n"
+"X-Poedit-SearchPath-43: WifiTabDialog.cpp\n"
+"X-Poedit-SearchPath-44: GlobalString.h\n"
+"X-Poedit-SearchPath-45: LptDialog.cpp\n"
+"X-Poedit-SearchPath-46: ParamSetDialog.h\n"
+"X-Poedit-SearchPath-47: OtherTabDialog.h\n"
+"X-Poedit-SearchPath-48: OtherTabDialog.cpp\n"
+"X-Poedit-SearchPath-49: PaperSaveDialog.h\n"
+"X-Poedit-SearchPath-50: PaperSaveDialog.cpp\n"
+"X-Poedit-SearchPath-51: BitmapHelper.cpp\n"
+"X-Poedit-SearchPath-52: BitmapHelper.h\n"
+"X-Poedit-SearchPath-53: BitmapUtil.cpp\n"
+"X-Poedit-SearchPath-54: BitmapUtil.h\n"
+"X-Poedit-SearchPath-55: BlueToothDialog.cpp\n"
+"X-Poedit-SearchPath-56: BlueToothDialog.h\n"
+"X-Poedit-SearchPath-57: ComDevice.cpp\n"
+"X-Poedit-SearchPath-58: ComDevice.h\n"
+"X-Poedit-SearchPath-59: Device.h\n"
+"X-Poedit-SearchPath-60: DeviceFactory.h\n"
+"X-Poedit-SearchPath-61: DownloadDialog.cpp\n"
+"X-Poedit-SearchPath-62: DownloadDialog.h\n"
+"X-Poedit-SearchPath-63: ENetDevice.cpp\n"
+"X-Poedit-SearchPath-64: ENetDevice.h\n"
+"X-Poedit-SearchPath-65: EthernetDialog.cpp\n"
+"X-Poedit-SearchPath-66: EthernetDialog.h\n"
+"X-Poedit-SearchPath-67: GrayscalePrintDialog.cpp\n"
+"X-Poedit-SearchPath-68: GrayscalePrintDialog.h\n"
+"X-Poedit-SearchPath-69: LPTDevice.cpp\n"
+"X-Poedit-SearchPath-70: LPTDevice.h\n"
+"X-Poedit-SearchPath-71: LptDialog.h\n"
+"X-Poedit-SearchPath-72: maindlg.CPP\n"
+"X-Poedit-SearchPath-73: PrinterDevice.cpp\n"
+"X-Poedit-SearchPath-74: PrinterDevice.h\n"
+"X-Poedit-SearchPath-75: USBDevice.cpp\n"
+"X-Poedit-SearchPath-76: USBDevice.h\n"
+"X-Poedit-SearchPath-77: Util.cpp\n"
+"X-Poedit-SearchPath-78: CheckInfoDialog.h\n"
+"X-Poedit-SearchPath-79: CheckInfoDialog.cpp\n"
+"X-Poedit-SearchPath-80: CmdSettingTabDialog.cpp\n"
+"X-Poedit-SearchPath-81: CmdSettingTabDialog.h\n"
+"X-Poedit-SearchPath-82: 80CmdTestDlg.cpp\n"
+"X-Poedit-SearchPath-83: 80CmdTestDlg.h\n"
+"X-Poedit-SearchPath-84: Print80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-85: Print80CmdDlg.h\n"
+"X-Poedit-SearchPath-86: 80cmd.cpp\n"
+"X-Poedit-SearchPath-87: 80cmd.h\n"
+"X-Poedit-SearchPath-88: Format80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-89: Format80CmdDlg.h\n"
+"X-Poedit-SearchPath-90: CharSet80CmdDlg.h\n"
+"X-Poedit-SearchPath-91: CharSet80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-92: GraphicalSet80CmdDlg.h\n"
+"X-Poedit-SearchPath-93: GraphicalSet80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-94: NvBitmap80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-95: NvBitmap80CmdDlg.h\n"
+"X-Poedit-SearchPath-96: BarCode80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-97: BarCode80CmdDlg.h\n"
+"X-Poedit-SearchPath-98: State80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-99: State80CmdDlg.h\n"
+"X-Poedit-SearchPath-100: Control80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-101: Control80CmdDlg.h\n"
+"X-Poedit-SearchPath-102: PageMode80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-103: PageMode80CmdDlg.h\n"
+"X-Poedit-SearchPath-104: CloudServer.cpp\n"
+"X-Poedit-SearchPath-105: CloudServer.h\n"
+"X-Poedit-SearchPath-106: CharacterLibAddrDialog.cpp\n"
+"X-Poedit-SearchPath-107: CharacterLibAddrDialog.h\n"
+"X-Poedit-SearchPath-108: CharacterLibTabDialog.cpp\n"
+"X-Poedit-SearchPath-109: CharacterLibTabDialog.h\n"
+
+#: 2DBARTabDialog.cpp:13
+msgid "PO_IDC_STATIC_2DBAR_TYPE"
+msgstr "类型:"
+
+#: 2DBARTabDialog.cpp:15 BarCode80CmdDlg.cpp:25 BarCode80CmdDlg.cpp:26
+#: BarCode80CmdDlg.cpp:27 BarCode80CmdDlg.cpp:28 BarCode80CmdDlg.cpp:29
+#: BarCode80CmdDlg.cpp:30 BarCode80CmdDlg.cpp:31 BaseTabDialog.cpp:25
+#: Big5TabDialog.cpp:22 Big5TabDialog.cpp:23 Big5TabDialog.cpp:24
+#: Big5TabDialog.cpp:25 Big5TabDialog.cpp:26 Big5TabDialog.cpp:27
+#: BlackMarkTabDialog.cpp:23 BlackMarkTabDialog.cpp:24
+#: BlackMarkTabDialog.cpp:25 BlackMarkTabDialog.cpp:26 BlueToothDialog.cpp:20
+#: BlueToothDialog.cpp:21 BlueToothDialog.cpp:22 CharSet80CmdDlg.cpp:49
+#: CharSet80CmdDlg.cpp:50 CharSet80CmdDlg.cpp:51 CharSet80CmdDlg.cpp:52
+#: CharSet80CmdDlg.cpp:53 CharSet80CmdDlg.cpp:54 CharSet80CmdDlg.cpp:55
+#: CharSet80CmdDlg.cpp:56 CharSet80CmdDlg.cpp:57 CharSet80CmdDlg.cpp:58
+#: CharSet80CmdDlg.cpp:59 CharSet80CmdDlg.cpp:60 CharSet80CmdDlg.cpp:61
+#: CharSet80CmdDlg.cpp:62 CharSet80CmdDlg.cpp:63 CharSet80CmdDlg.cpp:64
+#: CharSet80CmdDlg.cpp:65 CheckInfoDialog.cpp:148 CloudServer.cpp:16
+#: CmdSettingTabDialog.cpp:17 CmdSettingTabDialog.cpp:18
+#: GraphicalSet80CmdDlg.cpp:26 GraphicalSet80CmdDlg.cpp:27
+#: GraphicalSet80CmdDlg.cpp:28 HotTabDialog.cpp:17 NetTabDialog.cpp:25
+#: NetTabDialog.cpp:26 NetTabDialog.cpp:27 NetTabDialog.cpp:29
+#: OtherTabDialog.cpp:15 OtherTabDialog.cpp:17 OtherTabDialog.cpp:20
+#: OtherTabDialog.cpp:21 OtherTabDialog.cpp:23 OtherTabDialog.cpp:25
+#: OtherTabDialog.cpp:28 OtherTabDialog.cpp:30 OtherTabDialog.cpp:31
+#: RppTabDialog.cpp:306 SerialTabDialog.cpp:19 SerialTabDialog.cpp:20
+#: UDPSearchTabDialog.cpp:247 WifiTabDialog.cpp:29 WifiTabDialog.cpp:30
+#: WifiTabDialog.cpp:31
+msgid "PO_GSTR_SET"
+msgstr "设置"
+
+#: BarCode80CmdDlg.cpp:17
+msgid "PO_IDC_STATIC_80_BAR_CODE_HRI_POSITION"
+msgstr "HRI打印方式:"
+
+#: BarCode80CmdDlg.cpp:18
+msgid "PO_IDC_STATIC_80_BAR_CODE_BAR_WIDTH"
+msgstr "条码宽度:"
+
+#: BarCode80CmdDlg.cpp:19
+msgid "PO_IDC_STATIC_80_BAR_CODE_HRI_FONT"
+msgstr "HRI字形:"
+
+#: BarCode80CmdDlg.cpp:20
+msgid "PO_IDC_STATIC_80_BAR_CODE_BAR_HEIGHT"
+msgstr "条码高度:"
+
+#: BarCode80CmdDlg.cpp:21
+msgid "PO_IDC_STATIC_80_BAR_LEFT_SPACING"
+msgstr "左侧间距:"
+
+#: BarCode80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_BAR_CODE_BARCODE_TYPE"
+msgstr "条码类型:"
+
+#: BarCode80CmdDlg.cpp:23
+msgid "PO_IDC_BUTTON_80_BAR_CODE_SET_ALL"
+msgstr "一键设置"
+
+#: BarCode80CmdDlg.cpp:32
+msgid "PO_IDC_BUTTON_80_PRINT_2DBAR"
+msgstr "二维码打印"
+
+#: BarCode80CmdDlg.cpp:33
+msgid "PO_IDC_STATIC_80_2DBAR_PRINT"
+msgstr "二维码大小:"
+
+#: BarCode80CmdDlg.cpp:34
+msgid "PO_IDC_STATIC_80_2DBAR_COMPONENT_TYPE"
+msgstr "组件类型:"
+
+#: BarCode80CmdDlg.cpp:35
+msgid "PO_IDC_STATIC_80_2DBAR_CHECK_LEVEL"
+msgstr "校验等级:"
+
+#: BarCode80CmdDlg.cpp:36
+msgid "PO_IDC_STATIC_80_2DBAR_DATA"
+msgstr "二维码数据:"
+
+#: BarCode80CmdDlg.cpp:38
+msgid "PO_IDC_BUTTON_80_PRINT_PDF417"
+msgstr "打印 PDF417"
+
+#: BarCode80CmdDlg.cpp:39
+msgid "PO_IDC_STATIC_80_PDF417_COLUMN"
+msgstr "PDF417 列数:"
+
+#: BarCode80CmdDlg.cpp:40
+msgid "PO_IDC_STATIC_80_PDF417_RECOVERY_LEVEL"
+msgstr "恢复等级:"
+
+#: BarCode80CmdDlg.cpp:41
+msgid "PO_IDC_STATIC_80_PDF417_RATIO"
+msgstr "水平垂直比率:"
+
+#: BarCode80CmdDlg.cpp:42
+msgid "PO_IDC_STATIC_80_PDF417_DATA"
+msgstr "PDF417 数据:"
+
+#: BarCode80CmdDlg.cpp:51
+msgid "PO_GSTR_80_BAR_CODE_NOT_PRINT"
+msgstr "不打印"
+
+#: BarCode80CmdDlg.cpp:52
+msgid "PO_GSTR_80_BAR_CODE_UPPER_PRINT"
+msgstr "上方"
+
+#: BarCode80CmdDlg.cpp:53
+msgid "PO_GSTR_80_BAR_CODE_BELOW_PRINT"
+msgstr "下方"
+
+#: BarCode80CmdDlg.cpp:54
+msgid "PO_GSTR_80_BAR_CODE_UPPER_AND_BELOW_PRINT"
+msgstr "上方及下方"
+
+#: BarCode80CmdDlg.cpp:58 CharSet80CmdDlg.cpp:77
+msgid "PO_GSTR_80_CHAR_FONT_A"
+msgstr "字形-A"
+
+#: BarCode80CmdDlg.cpp:59 CharSet80CmdDlg.cpp:78
+msgid "PO_GSTR_80_CHAR_FONT_B"
+msgstr "字形-B"
+
+#: BarCode80CmdDlg.cpp:202 CharSet80CmdDlg.cpp:374 CharSet80CmdDlg.cpp:504
+#: CharSet80CmdDlg.cpp:547 Control80CmdDlg.cpp:118 Format80CmdDlg.cpp:137
+#: Print80CmdDlg.cpp:106 Print80CmdDlg.cpp:139 Print80CmdDlg.cpp:172
+#: State80CmdDlg.cpp:375 State80CmdDlg.cpp:387
+msgid "PO_GSTR_80_NUMBER_ERR"
+msgstr "请指定一个介于1和255间的值。"
+
+#: BarCode80CmdDlg.cpp:313
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR"
+msgstr "请输入11位数字字符!(1~9)"
+
+#: BarCode80CmdDlg.cpp:322
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_JAN13"
+msgstr "请输入12位字符!"
+
+#: BarCode80CmdDlg.cpp:331
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_JAN8"
+msgstr "请输入7位字符!"
+
+#: BarCode80CmdDlg.cpp:345
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_ITF"
+msgstr "请输入小于30位的偶数位字符!"
+
+#: BarCode80CmdDlg.cpp:353
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_CODE39"
+msgstr "请输入一个1到30位的字符，字符范围：(1~9) (A~Z)($ % + - . /)"
+
+#: BarCode80CmdDlg.cpp:362
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_CODEBAR"
+msgstr "请输入一个1到30位的字符，字符范围：(1~9) (A~D)( $ + - . / : )"
+
+#: BarCode80CmdDlg.cpp:376
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_CODE"
+msgstr "请输入1到30位字符!"
+
+#: BarCode80CmdDlg.cpp:464
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_SPACING"
+msgstr "请输入一个介于1和255间的值."
+
+#: BarCode80CmdDlg.cpp:499 BarCode80CmdDlg.cpp:539
+msgid "PO_GSTR_80_2DBAR_DATA_ERROR"
+msgstr "请输入一个小于20位的数字"
+
+#: BaseTabDialog.cpp:14 RppTabDialog.cpp:294
+msgid "PO_GSTR_CODE_PAGE"
+msgstr "字符集:"
+
+#: BaseTabDialog.cpp:15 RppTabDialog.cpp:295
+msgid "PO_GSTR_BAUD_RATE"
+msgstr "波特率:"
+
+#: BaseTabDialog.cpp:16 RppTabDialog.cpp:296
+msgid "PO_GSTR_CHARACTER"
+msgstr "字体:"
+
+#: BaseTabDialog.cpp:17 RppTabDialog.cpp:297
+msgid "PO_GSTR_CHS"
+msgstr "每行字数:"
+
+#: BaseTabDialog.cpp:18 RppTabDialog.cpp:299
+msgid "PO_GSTR_DENSITY"
+msgstr "浓度:"
+
+#: BaseTabDialog.cpp:19 SerialTabDialog.cpp:17
+msgid "PO_GSTR_PARITY"
+msgstr "奇偶校验:"
+
+#: BaseTabDialog.cpp:20
+msgid "PO_IDC_CHECK_BASE_BUZZER"
+msgstr "蜂鸣"
+
+#: BaseTabDialog.cpp:21
+msgid "PO_IDC_CHECK_BASE_CUTTER"
+msgstr "切刀"
+
+#: BaseTabDialog.cpp:22
+msgid "PO_IDC_CHECK_BASE_DRAWER"
+msgstr "钱箱"
+
+#: BaseTabDialog.cpp:23
+msgid "PO_IDC_CHECK_BASE_BUZZER_AFTER_PRINT"
+msgstr "打印后蜂鸣"
+
+#: BaseTabDialog.cpp:24
+msgid "PO_IDC_CHECK_BASE_AUTO_REPRINT"
+msgstr "最后一张票据重打印"
+
+#: BaseTabDialog.cpp:26 RppTabDialog.cpp:307 UDPSearchTabDialog.cpp:249
+msgid "PO_GSTR_SELF_TEST"
+msgstr "打印自检"
+
+#: Big5TabDialog.cpp:15
+msgid "PO_IDC_STATIC_BIG5_E"
+msgstr "指令集:"
+
+#: Big5TabDialog.cpp:16
+msgid "PO_IDC_STATIC_BIG5_LANGUAGE"
+msgstr "语言:"
+
+#: Big5TabDialog.cpp:17
+msgid "PO_IDC_STATIC_BIG5_SPEED"
+msgstr "打印速度:"
+
+#: Big5TabDialog.cpp:18
+msgid "PO_IDC_STATIC_BIG5_BARDCODE_WIDE"
+msgstr "条码宽度:"
+
+#: Big5TabDialog.cpp:19
+msgid "PO_IDC_STATIC_BIG5_PAPER_WIDTH"
+msgstr "纸张大小:"
+
+#: Big5TabDialog.cpp:20
+msgid "PO_IDC_STATIC_BIG5_AUTO_REPRINT"
+msgstr "重打印:"
+
+#: BlackMarkTabDialog.cpp:14
+msgid "PO_IDC_STATIC_BM_LENGHT"
+msgstr "黑标纸张长度:"
+
+#: BlackMarkTabDialog.cpp:15
+msgid "PO_IDC_STATIC_BM_WIDTH"
+msgstr "黑标最大宽度:"
+
+#: BlackMarkTabDialog.cpp:16
+msgid "PO_IDC_STATIC_BM_PRINT"
+msgstr "起始在黑标后:"
+
+#: BlackMarkTabDialog.cpp:17
+msgid "PO_IDC_STATIC_BM_CUT"
+msgstr "切纸在黑标后："
+
+#: BlackMarkTabDialog.cpp:18 OtherTabDialog.cpp:84 PaperSaveDialog.cpp:435
+#: PaperSaveDialog.cpp:440
+msgid "PO_GSTR_ENABLE"
+msgstr "启用"
+
+#: BlackMarkTabDialog.cpp:19 OtherTabDialog.cpp:83 OtherTabDialog.cpp:85
+#: PaperSaveDialog.cpp:434 PaperSaveDialog.cpp:439
+msgid "PO_GSTR_DISABLE"
+msgstr "关闭"
+
+#: BlackMarkTabDialog.cpp:20
+msgid "PO_IDC_BUTTON_BLACK_NEXT_MARK"
+msgstr "进纸到下一黑标页"
+
+#: BlackMarkTabDialog.cpp:21
+msgid "PO_IDC_BUTTON_BLACK_NEXT_CUT"
+msgstr "进纸到下一位置切纸"
+
+#: BlackMarkTabDialog.cpp:97 BlackMarkTabDialog.cpp:105
+#: BlackMarkTabDialog.cpp:142 BlackMarkTabDialog.cpp:150
+#: BlackMarkTabDialog.cpp:187 BlackMarkTabDialog.cpp:195
+#: BlackMarkTabDialog.cpp:243 BlackMarkTabDialog.cpp:251 HotTabDialog.cpp:42
+#: HotTabDialog.cpp:50 OtherTabDialog.cpp:125 OtherTabDialog.cpp:133
+#: RppTabDialog.cpp:52 RppTabDialog.cpp:60 RppTabDialog.cpp:73
+#: RppTabDialog.cpp:81 RppTabDialog.cpp:94 RppTabDialog.cpp:102
+#: RppTabDialog.cpp:115 RppTabDialog.cpp:123
+msgid "PO_GSTR_BM_NUMBER_ERR"
+msgstr "请输入一个数字"
+
+#: BlueToothDialog.cpp:15
+msgid "PO_IDC_STATIC_RPP_DEV_NAME"
+msgstr "设备名:"
+
+#: BlueToothDialog.cpp:16 RppTabDialog.cpp:304
+msgid "PO_IDC_STATIC_RPP_PIN"
+msgstr "Pin:"
+
+#: BlueToothDialog.cpp:17
+msgid "PO_IDC_STATIC_RPP_MODEL_NAME"
+msgstr "模板名称:"
+
+#: BlueToothDialog.cpp:18
+msgid "PO_IDC_STATIC_RPP_SERIAL"
+msgstr "设备号："
+
+#: BlueToothDialog.cpp:93 RppTabDialog.cpp:199
+msgid "PO_GSTR_RPP_DEV_NAME_EMPTY_ERR"
+msgstr "请输入设备名称"
+
+#: BlueToothDialog.cpp:110 RppTabDialog.cpp:214
+msgid "PO_GSTR_RPP_PIN_EMPTY_ERR"
+msgstr "请输入pin"
+
+#: BlueToothDialog.cpp:118
+msgid "PO_GSTR_RPP_PIN_FORMAT_ERR"
+msgstr "pin只能为纯数字"
+
+#: BlueToothDialog.cpp:149 RppTabDialog.cpp:247
+msgid "PO_GSTR_RPP_MODEL_NAME_EMPTY_ERR"
+msgstr "请输入模型名称"
+
+#: BlueToothDialog.cpp:164 RppTabDialog.cpp:261
+msgid "PO_GSTR_RPP_SERIAL_EMPTY_ERR"
+msgstr "请输入系列号"
+
+#: CharSet80CmdDlg.cpp:20
+msgid "PO_IDC_CHECK_80_CHAR_FONTB"
+msgstr "字形 B"
+
+#: CharSet80CmdDlg.cpp:21
+msgid "PO_IDC_CHECK_80_CHAR_BOLD"
+msgstr "粗体"
+
+#: CharSet80CmdDlg.cpp:22
+msgid "PO_IDC_CHECK_80_CHAR_TIMES_HIGH"
+msgstr "倍高"
+
+#: CharSet80CmdDlg.cpp:23
+msgid "PO_IDC_CHECK_80_CHAR_DOUBLE_WIDTH"
+msgstr "倍宽"
+
+#: CharSet80CmdDlg.cpp:24
+msgid "PO_IDC_CHECK_80_CHAR_UNDERLINE"
+msgstr "下划线"
+
+#: CharSet80CmdDlg.cpp:26
+msgid "PO_IDC_CHECK_80_CHAR_INVERSE"
+msgstr "反白"
+
+#: CharSet80CmdDlg.cpp:27
+msgid "PO_IDC_CHECK_80_CHAR_ROTATE"
+msgstr "90°旋转"
+
+#: CharSet80CmdDlg.cpp:28
+msgid "PO_IDC_CHECK_80_CHAR_CHINESE"
+msgstr "汉字"
+
+#: CharSet80CmdDlg.cpp:29
+msgid "PO_IDC_CHECK_80_CHAR_OVERLAP"
+msgstr "重叠"
+
+#: CharSet80CmdDlg.cpp:30
+msgid "PO_IDC_CHECK_80_CHAR_BOLD_PRINT"
+msgstr "字体加粗"
+
+#: CharSet80CmdDlg.cpp:31
+msgid "PO_IDC_CHECK_80_CHAR_USER_CHARACTER"
+msgstr "自定义字符集"
+
+#: CharSet80CmdDlg.cpp:32
+msgid "PO_IDC_CHECK_80_CHAR_RESUPINATE"
+msgstr "倒置"
+
+#: CharSet80CmdDlg.cpp:34
+msgid "PO_IDC_STATIC_80_CHAR_CHARACTER_SET"
+msgstr "国际字符集："
+
+#: CharSet80CmdDlg.cpp:35
+msgid "PO_IDC_STATIC_80_CHAR_UNDERLINE_SET"
+msgstr "下划线："
+
+#: CharSet80CmdDlg.cpp:36
+msgid "PO_IDC_STATIC_80_CHAR_CODE_PAGE"
+msgstr "字符集："
+
+#: CharSet80CmdDlg.cpp:37
+msgid "PO_IDC_STATIC_80_CHAR_FONT"
+msgstr "字体："
+
+#: CharSet80CmdDlg.cpp:38
+msgid "PO_IDC_STATIC_80_CHAR_CHARACTER_SIZE"
+msgstr "字符大小："
+
+#: CharSet80CmdDlg.cpp:39
+msgid "PO_IDC_STATIC_H"
+msgstr "高"
+
+#: CharSet80CmdDlg.cpp:40
+msgid "PO_IDC_STATIC_W"
+msgstr "宽"
+
+#: CharSet80CmdDlg.cpp:42
+msgid "PO_IDC_STATIC_80_CHAR_RIGHT_SPACING"
+msgstr "右侧字符间距："
+
+#: CharSet80CmdDlg.cpp:43
+msgid "PO_IDC_STATIC_80_CHAR_CANCEL"
+msgstr "取消自定义字符："
+
+#: CharSet80CmdDlg.cpp:44
+msgid "PO_IDC_STATIC_80_CHAR_CHINESE_SPACING"
+msgstr "汉字间距："
+
+#: CharSet80CmdDlg.cpp:45
+msgid "PO_IDC_STATIC_L"
+msgstr "左"
+
+#: CharSet80CmdDlg.cpp:46
+msgid "PO_IDC_STATIC_R"
+msgstr "右"
+
+#: CharSet80CmdDlg.cpp:47
+msgid "PO_IDC_STATIC_80_CHAR_USER_CHINESE"
+msgstr "自定义汉字："
+
+#: CharSet80CmdDlg.cpp:66 Format80CmdDlg.cpp:31 PageMode80CmdDlg.cpp:29
+#: Print80CmdDlg.h:47
+msgid "PO_IDC_BUTTON_80_KEY_SET"
+msgstr "一键设置"
+
+#: CharSet80CmdDlg.cpp:68 Format80CmdDlg.cpp:33 PageMode80CmdDlg.cpp:13
+#: Print80CmdDlg.h:49
+msgid "PO_80_IDC_RICHEDIT2_PRINT_TEST"
+msgstr "Please enter the test content!（123456789）"
+
+#: CharSet80CmdDlg.cpp:82
+msgid "PO_GSTR_80_CHAR_UNERLINE_CLOSE"
+msgstr "关闭"
+
+#: CharSet80CmdDlg.cpp:83
+msgid "PO_GSTR_80_CHAR_UNERLINE_1"
+msgstr "下划线-1"
+
+#: CharSet80CmdDlg.cpp:84
+msgid "PO_GSTR_80_CHAR_UNERLINE_2"
+msgstr "下划线-2"
+
+#: CharSet80CmdDlg.cpp:491
+msgid "PO_GSTR_80_USER_CHINESE_NUMBER_ERR"
+msgstr "请指定一个介于161和254间的值。"
+
+#: CharSet80CmdDlg.cpp:604
+msgid "PO_GSTR_80_CANCEL_CHAR_NUMBER_ERR"
+msgstr "请指定一个介于32和126间的值。"
+
+#: CharacterLibAddrDialog.cpp:12
+msgid "PO_DLG_CHARACTER_ADDRESS"
+msgstr "地址"
+
+#: CharacterLibAddrDialog.cpp:15
+msgid "PO_IDC_STATIC_ADDR"
+msgstr "地址:"
+
+#: CharacterLibAddrDialog.cpp:16
+msgid "PO_IDC_BUTTON_ADDR_OK"
+msgstr "确定"
+
+#: CharacterLibAddrDialog.cpp:17
+msgid "PO_IDC_BUTTON_ADDR_CANCEL"
+msgstr "取消"
+
+#: CharacterLibAddrDialog.cpp:42
+msgid "PO_GSTR_CHAR_LIB_ADDR_ERROR"
+msgstr "地址范围:0~4294967295"
+
+#: CharacterLibTabDialog.cpp:117
+msgid "PO_IDC_STATIC_CHARACTER_LIBRARY_SELECT"
+msgstr "选择一个字库:"
+
+#: CharacterLibTabDialog.cpp:119
+msgid "PO_IDC_BUTTON_CHARACTER_LIBRARY_OPEN"
+msgstr "打开文件"
+
+#: CharacterLibTabDialog.cpp:120
+msgid "PO_IDC_BUTTON_CHARACTER_LIBRARY_UPDATE"
+msgstr "更新"
+
+#: CharacterLibTabDialog.cpp:156 CharacterLibTabDialog.cpp:252
+#: CharacterLibTabDialog.cpp:630 ProgramTabDialog.cpp:29
+#: ProgramTabDialog.cpp:37 ProgramTabDialog.cpp:126
+msgid "PO_GSTR_INVALID_FIRMWARE"
+msgstr "无效的程序文件"
+
+#: CharacterLibTabDialog.cpp:200 CharacterLibTabDialog.cpp:573
+msgid "PO_GSTR_FONT_DATALEN_MAX_ERROR"
+msgstr "超出打印机所支持的最大数据量!(最大数据量:4M 字节)"
+
+#: CharacterLibTabDialog.cpp:206 CharacterLibTabDialog.cpp:579
+msgid "PO_GSTR_FONT_DATALEN_MIN_ERROR"
+msgstr "超出打印机所支持的最小数据量!(最小数据量:256 字节)"
+
+#: CharacterLibTabDialog.cpp:372
+msgid "PO_GSTR_SETTING_SUCCESS"
+msgstr "设置成功"
+
+#: CharacterLibTabDialog.cpp:376
+msgid "PO_GSTR_SETTING_FAIL"
+msgstr "设置失败"
+
+#: CharacterLibTabDialog.cpp:437
+msgid "PO_GSTR_DOWNLOAD_CHARACTER_LIB"
+msgstr "下载字库中..........."
+
+#: CharacterLibTabDialog.cpp:507
+msgid "PO_GSTR_UPDATE_SUCCESS"
+msgstr "更新成功!"
+
+#: CharacterLibTabDialog.cpp:512 CharacterLibTabDialog.cpp:588
+msgid "PO_GSTR_UPDATE_FAIL"
+msgstr "更新失败!"
+
+#: CharacterLibTabDialog.cpp:517
+msgid "PO_GSTR_FONT_UPDATE_START_FAIL"
+msgstr "当前版本不支持字库更新"
+
+#: CharacterLibTabDialog.cpp:522
+msgid "PO_GSTR_FONT_UPDATE_END_FAIL"
+msgstr "字库更新结束指令失败"
+
+#: CheckInfoDialog.cpp:27 CheckInfoDialog.cpp:35
+msgid "PO_GSTR_CHECK_INFO_SN_ERR"
+msgstr "请输入有效的序列号"
+
+#: CheckInfoDialog.cpp:43
+msgid "PO_GSTR_CHECK_INFO_SN_LEN_ERR"
+msgstr "所输入的序列号长度应在6~37之间"
+
+#: CheckInfoDialog.cpp:150
+msgid "PO_IDC_STATIC_FIRMWARE"
+msgstr "固件版本："
+
+#: CheckInfoDialog.cpp:151
+msgid "PO_IDC_STATIC_FACTORY"
+msgstr "厂商名称："
+
+#: CheckInfoDialog.cpp:152
+msgid "PO_IDC_STATIC_DEVICE"
+msgstr "打印机名称："
+
+#: CheckInfoDialog.cpp:153
+msgid "PO_IDC_STATIC_SN"
+msgstr "序列号："
+
+#: CheckInfoDialog.cpp:158
+msgid "PO_GSTR_LOAD_INFO_ERR"
+msgstr "“信息查询”功能数据获取失败"
+
+#: CloudServer.cpp:57 NetTabDialog.cpp:236 ParamSetDialog.cpp:221
+#: ParamSetDialog.cpp:490
+msgid "PO_GSTR_INVALID_IP_FIRST_PART"
+msgstr " 不是有效项。请指定一个介于 1 和 223 间的值。"
+
+#: CloudServer.cpp:64 NetTabDialog.cpp:243 ParamSetDialog.cpp:228
+#: ParamSetDialog.cpp:497
+msgid "PO_GSTR_INVALID_IP_FIRST_PART_127"
+msgstr ""
+"以 127 开头的 IP 地址无效，因为这些地址是为环回地址保留的。请指定介于 1 和 "
+"223 间的其他某个有效值。"
+
+#: CloudServer.cpp:77 CloudServer.cpp:84 CloudServer.cpp:94
+#: EthernetDialog.cpp:42 EthernetDialog.cpp:49 EthernetDialog.cpp:59
+msgid "PO_GSTR_NET_INPUT_VALID_PORT"
+msgstr "请输入有效端口"
+
+#: CmdSettingTabDialog.cpp:14
+msgid "PO_IDC_STATIC_CMD_SETTING_CMD_TYPE"
+msgstr "指令类型:"
+
+#: CmdSettingTabDialog.cpp:15
+msgid "PO_IDC_STATIC_CMD_SETTING_PAPER_WIDTH"
+msgstr "纸张宽度:"
+
+#: CmdSettingTabDialog.cpp:26
+msgid "PO_GSTR_LABEL_COMMAND"
+msgstr "标签指令"
+
+#: CmdSettingTabDialog.cpp:27
+msgid "PO_GSTR_ESC_POS"
+msgstr "ESC/POS"
+
+#: Control80CmdDlg.cpp:13
+msgid "PO_IDC_STATIC_80_CONTROL_CUTTING_MODE"
+msgstr "切纸模式:"
+
+#: Control80CmdDlg.cpp:14
+msgid "PO_IDC_STATIC_80_CONTROL_FEED_POINTS"
+msgstr "进纸点行:"
+
+#: Control80CmdDlg.cpp:15
+msgid "PO_IDC_STATIC_80_CONTROL_BUZZER_TIMES"
+msgstr "蜂鸣次数:"
+
+#: Control80CmdDlg.cpp:16
+msgid "PO_IDC_STATIC_80_CONTROL_BUZZER_TIME"
+msgstr "蜂鸣时间:"
+
+#: Control80CmdDlg.cpp:17
+msgid "PO_IDC_STATIC_80_CONTROL_CHINESE_FORMAT"
+msgstr "中文格式:"
+
+#: Control80CmdDlg.cpp:18
+msgid "PO_IDC_STATIC_80_CONTROL_PANEL_BUTTON"
+msgstr "面板按键:"
+
+#: Control80CmdDlg.cpp:20 Control80CmdDlg.cpp:21 Control80CmdDlg.cpp:22
+#: Control80CmdDlg.cpp:23 Format80CmdDlg.cpp:25 Format80CmdDlg.cpp:26
+#: Format80CmdDlg.cpp:27 Format80CmdDlg.cpp:28 Format80CmdDlg.cpp:29
+#: Format80CmdDlg.cpp:30 PageMode80CmdDlg.cpp:31 PageMode80CmdDlg.cpp:32
+#: PageMode80CmdDlg.cpp:33 PageMode80CmdDlg.cpp:34 PageMode80CmdDlg.cpp:35
+#: Print80CmdDlg.h:42 Print80CmdDlg.h:43 Print80CmdDlg.h:44
+#: Print80CmdDlg.h:45
+msgid "PO_IDC_BUTTON_80_SET"
+msgstr "设置"
+
+#: Control80CmdDlg.cpp:24
+msgid "PO_IDC_BUTTON_80_CONTROL_FULL_CUT"
+msgstr "全切"
+
+#: Control80CmdDlg.cpp:25
+msgid "PO_IDC_BUTTON_80_CONTROL_HALF_CUT"
+msgstr "半切"
+
+#: Control80CmdDlg.cpp:27
+msgid "PO_IDC_BUTTON_80_CONTROL_SET_ALL"
+msgstr "一键设置"
+
+#: Control80CmdDlg.cpp:36
+msgid "PO_GSTR_80_CONTROL_PANEL_BUTTON_ACTIVATION"
+msgstr "激活"
+
+#: Control80CmdDlg.cpp:37
+msgid "PO_GSTR_80_CONTROL_PANEL_BUTTON_PROHIBIT"
+msgstr "禁止"
+
+#: Control80CmdDlg.cpp:41
+msgid "PO_GSTR_80_CONTROL_CUTTING_MODE_CUTTING"
+msgstr "切纸"
+
+#: Control80CmdDlg.cpp:42
+msgid "PO_GSTR_80_CONTROL_CUTTING_MODE_FEED_CUTTING"
+msgstr "进纸并切纸"
+
+#: Control80CmdDlg.cpp:147 Control80CmdDlg.cpp:159
+msgid "PO_GSTR_80_CONTROL_BUZZER_SET"
+msgstr "请指定一个介于1和9间的值。"
+
+#: DownloadDialog.cpp:55
+msgid "PO_DOWNLOAD_DLG_CAPTION"
+msgstr "下载"
+
+#: DownloadDialog.cpp:73
+msgid "PO_DOWNLOAD_DLG_PROGRAM"
+msgstr "程序"
+
+#: DownloadDialog.cpp:78
+msgid "PO_DOWNLOAD_DLG_LOGO"
+msgstr "Logo"
+
+#: DownloadDialog.cpp:81
+msgid "PO_DOWNLOAD_DLG_CHARACTER_LIB"
+msgstr "字库"
+
+#: EthernetDialog.cpp:26
+msgid "PO_IDD_DIALOG_ETHERNET"
+msgstr "以太网"
+
+#: EthernetDialog.cpp:27
+msgid "PO_GSTR_OK"
+msgstr "确定"
+
+#: EthernetDialog.cpp:28 ParamSetDialog.cpp:33
+msgid "PO_GSTR_CANCEL"
+msgstr "退出"
+
+#: Format80CmdDlg.cpp:17
+msgid "PO_IDC_STATIC_80_FORMAT_LINE_SPACING"
+msgstr "行间距："
+
+#: Format80CmdDlg.cpp:18
+msgid "PO_IDC_STATIC_80_FORMAT_BLANK_AMOUNT"
+msgstr "左侧空白点数："
+
+#: Format80CmdDlg.cpp:19
+msgid "PO_IDC_STATIC_80_FORMAT_PRINT_POSITION"
+msgstr "相对打印位置："
+
+#: Format80CmdDlg.cpp:20
+msgid "PO_IDC_STATIC_80_FORMAT_PRINT_AREA"
+msgstr "打印区域宽度："
+
+#: Format80CmdDlg.cpp:21
+msgid "PO_IDC_STATIC_80_FORMAT_A_PRINT_POSITION"
+msgstr "绝对打印位置："
+
+#: Format80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_FORMAT_ALIGN_MODE"
+msgstr "对齐方式："
+
+#: Format80CmdDlg.cpp:24
+msgid "PO_IDC_BUTTON_80_SET_DEFAIT_LINE_SPACING"
+msgstr "缺省行间距"
+
+#: Format80CmdDlg.cpp:42
+msgid "PO_GSTR_80_FORMAT_ALIGN_LEFT"
+msgstr "左对齐"
+
+#: Format80CmdDlg.cpp:43
+msgid "PO_GSTR_80_FORMAT_ALIGN_CENTER"
+msgstr "居中"
+
+#: Format80CmdDlg.cpp:44
+msgid "PO_GSTR_80_FORMAT_ALIGN_RIGHT"
+msgstr "右对齐"
+
+#: Format80CmdDlg.cpp:189 Format80CmdDlg.cpp:223 Format80CmdDlg.cpp:256
+#: Format80CmdDlg.cpp:290 PageMode80CmdDlg.cpp:319 PageMode80CmdDlg.cpp:354
+#: PageMode80CmdDlg.cpp:387 PageMode80CmdDlg.cpp:455
+msgid "PO_GSTR_80_PAGE_PRINT_AREA_NUMBER_ERR"
+msgstr "请输入一个介于1到65535间的数值"
+
+#: GraphicalSet80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_GRAPHICAL_PRINT_BITMAP"
+msgstr "打印下传位图："
+
+#: GraphicalSet80CmdDlg.cpp:23
+msgid "PO_IDC_STATIC_80_GRAPHICAL_PRINT_RASTER_BITMAP"
+msgstr "打印光栅位图:"
+
+#: GraphicalSet80CmdDlg.cpp:24
+msgid "PO_IDC_STATIC_80_GRAPHICAL_BITMAP"
+msgstr "位图："
+
+#: GraphicalSet80CmdDlg.cpp:30
+msgid "PO_IDC_BUTTON_80_GRAPHICAL_SELECT_BITMAP"
+msgstr "选择位图"
+
+#: GraphicalSet80CmdDlg.cpp:31
+msgid "PO_IDC_BUTTON_80_PRINT_NV_BITMAP"
+msgstr "打印NV位图"
+
+#: GraphicalSet80CmdDlg.cpp:32
+msgid "PO_IDC_BUTTON_80_GRAPHICAL_SET_ALL"
+msgstr "一键设置"
+
+#: GraphicalSet80CmdDlg.cpp:41
+msgid "PO_GSTR_80_GRAPHICAL_8_SINGLE_DENSITY"
+msgstr "8-点 单密度"
+
+#: GraphicalSet80CmdDlg.cpp:42
+msgid "PO_GSTR_80_GRAPHICAL_8_DOUBLE_DENSITY"
+msgstr "8-点 双密度"
+
+#: GraphicalSet80CmdDlg.cpp:43
+msgid "PO_GSTR_80_GRAPHICAL_24_SINGLE_DENSITY"
+msgstr "24-点 单密度"
+
+#: GraphicalSet80CmdDlg.cpp:44
+msgid "PO_GSTR_80_GRAPHICAL_24_DOUBLE_DENSITY"
+msgstr "24-点 双密度"
+
+#: GraphicalSet80CmdDlg.cpp:48 GraphicalSet80CmdDlg.cpp:55
+msgid "PO_GSTR_80_GRAPHICAL_COMMON_MODE"
+msgstr "普通"
+
+#: GraphicalSet80CmdDlg.cpp:49 GraphicalSet80CmdDlg.cpp:56
+msgid "PO_GSTR_80_GRAPHICAL_DOUBLE_WIDTH"
+msgstr "倍宽"
+
+#: GraphicalSet80CmdDlg.cpp:50 GraphicalSet80CmdDlg.cpp:57
+msgid "PO_GSTR_80_GRAPHICAL_TIMES_HIGHER"
+msgstr "倍高"
+
+#: GraphicalSet80CmdDlg.cpp:51 GraphicalSet80CmdDlg.cpp:58
+msgid "PO_GSTR_80_GRAPHICAL_FOURFOLD"
+msgstr "四倍"
+
+#: GraphicalSet80CmdDlg.cpp:450 GraphicalSet80CmdDlg.cpp:462
+#: GraphicalSet80CmdDlg.cpp:475 GraphicalSet80CmdDlg.cpp:504
+msgid "PO_GSTR_80_PRINT_BITMAP_ERROR"
+msgstr "请选择一张位图."
+
+#: GrayscalePrintDialog.cpp:129
+msgid "PO_IDD_DIALOG_GRAYSCALE_PRINT"
+msgstr "灰度打印"
+
+#: GrayscalePrintDialog.cpp:132
+msgid "PO_IDC_STATIC_BASE_OLD_IMAGE"
+msgstr "原始图像："
+
+#: GrayscalePrintDialog.cpp:133
+msgid "PO_IDC_STATIC_BASE_NEW_IMAGE"
+msgstr "转换后："
+
+#: GrayscalePrintDialog.cpp:134
+msgid "PO_IDC_BUTTON_TEST_PRINT"
+msgstr "测试打印"
+
+#: GrayscalePrintDialog.cpp:135
+msgid "PO_IDC_BUTTON_OK"
+msgstr "确定"
+
+#: GrayscalePrintDialog.cpp:136
+msgid "PO_IDC_BUTTON_CANCLE"
+msgstr "取消"
+
+#: HotTabDialog.cpp:15
+msgid "PO_IDC_STATIC_HEART_TIME"
+msgstr "加热时间:"
+
+#: HotTabDialog.cpp:59
+msgid "PO_GSTR_HOTTIME_NUMBER_ERR"
+msgstr "请输入大于300小于800的值"
+
+#: HotTabDialog.cpp:65
+msgid "PO_GSTR_HOTTIME_NUMBER_OVER_ERR"
+msgstr "请输入大于300小于800的值"
+
+#: LogoTabDialog.cpp:79 LogoTabDialog.cpp:877 NvBitmap80CmdDlg.cpp:118
+msgid "PO_GSTR_LOGO_LIST_MAX"
+msgstr "无法继续添加logo"
+
+#: LogoTabDialog.cpp:109
+msgid "PO_GSTR_INFO_DELETE_LOGO"
+msgstr "正在删除logo............"
+
+#: LogoTabDialog.cpp:125
+msgid "PO_GSTR_DELETE_LOGO_ERR"
+msgstr "删除Logo失败"
+
+#: LogoTabDialog.cpp:135 LogoTabDialog.cpp:174
+msgid "PO_GSTR_DELETE_LOGO_SUCCESS"
+msgstr "删除成功!"
+
+#: LogoTabDialog.cpp:282
+msgid "PO_GSTR_SHOW_ONLY_ONE_ERR"
+msgstr "批量选择时，只显示第一张图片。"
+
+#: LogoTabDialog.cpp:321 LogoTabDialog.cpp:796 LogoTabDialog.cpp:825
+#: LogoTabDialog.cpp:848
+msgid "PO_GSTR_SELECT_LOGO_ERR"
+msgstr "请选择一个logo"
+
+#: LogoTabDialog.cpp:644
+msgid "PO_GSTR_INFO_DOWNLOAD_LOGO"
+msgstr "正在下载 "
+
+#: LogoTabDialog.cpp:644
+msgid "PO_GSTR_INFO_DOWNLOAD_LOGO_BMP"
+msgstr " logo............"
+
+#: LogoTabDialog.cpp:662 LogoTabDialog.cpp:672
+msgid "PO_GSTR_DOWNLOAD_LOGO_ERR"
+msgstr "下载logo失败"
+
+#: LogoTabDialog.cpp:681
+msgid "PO_GSTR_DOWNLOAD_LOGO_SUCCESS"
+msgstr "下载成功"
+
+#: LogoTabDialog.cpp:742
+msgid "PO_GSTR_DOWNLOADING_LOGO"
+msgstr "下载Logo中......"
+
+#: LogoTabDialog.cpp:781
+msgid "PO_GSTR_PRINTER_CAPACITY_OVERSTEP"
+msgstr "超出打印机所支持的最大数据容量，请选择大小合适的Logo重新下载。"
+
+#: LogoTabDialog.cpp:891
+msgid "PO_GSTR_ONLY_ONE_FILE_SELECT"
+msgstr "一次只能选择一个bmp文件"
+
+#: LogoTabDialog.cpp:1095
+msgid "PO_GSTR_INFO_GET_LOGO"
+msgstr "正在获取 "
+
+#: LogoTabDialog.cpp:1095
+msgid "PO_GSTR_INFO_GET_LOGO_BMP"
+msgstr " logo............"
+
+#: LogoTabDialog.cpp:1128 LogoTabDialog.cpp:1190
+msgid "PO_IDC_STATIC_GET_LOGO_FAIL_NOTICE"
+msgstr "从打印机获取 logo 失败"
+
+#: LogoTabDialog.cpp:1196
+msgid "PO_GSTR_ERROR_LOGO_MAX"
+msgstr "超出打印机所支持的最大Logo数量，默认获取出前64张Logo."
+
+#: LogoTabDialog.cpp:1202
+msgid "PO_GSTR_GETING_LOGO"
+msgstr "获取Logo中......"
+
+#: LogoTabDialog.cpp:1227
+msgid "PO_IDC_STATIC_LOGO_NOTICE"
+msgstr "从打印机获取到的 logo 数量为"
+
+#: LogoTabDialog.cpp:1260 Util.cpp:20 util.cpp:20
+msgid "PO_GSTR_SET_SUCCESS"
+msgstr "设置成功"
+
+#: LogoTabDialog.cpp:1264
+msgid "PO_GSTR_SET_FAIL"
+msgstr "设置失败"
+
+#: LogoTabDialog.cpp:1273 ProgramTabDialog.cpp:187
+msgid "PO_IDC_STATIC_PROGRAM_SELECT"
+msgstr "选择一个程序文件:"
+
+#: LogoTabDialog.cpp:1275
+msgid "PO_GSTR_ADD"
+msgstr "添加"
+
+#: LogoTabDialog.cpp:1276
+msgid "PO_GSTR_DELETE"
+msgstr "删除"
+
+#: LogoTabDialog.cpp:1277 NvBitmap80CmdDlg.cpp:31
+msgid "PO_GSTR_DOWNLOAD"
+msgstr "下载"
+
+#: LogoTabDialog.cpp:1278
+msgid "PO_GSTR_PRINT_LOGO_EXIST"
+msgstr "打印Logo"
+
+#: LogoTabDialog.cpp:1280
+msgid "PO_GSTR_GET_LOGO"
+msgstr "获取"
+
+#: LogoTabDialog.cpp:1281
+msgid "PO_GSTR_MODIFY_LOGO"
+msgstr "修改"
+
+#: LogoTabDialog.cpp:1282
+msgid "PO_IDC_BUTTON_LOGO_LOOK_UP"
+msgstr "查看"
+
+#: LptDialog.cpp:104
+msgid "PO_GSTR_CONFIG_LPT"
+msgstr "配置 LPT 端口"
+
+#: LptDialog.cpp:106
+msgid "PO_GSTR_TIMEOUT"
+msgstr "超时(秒)"
+
+#: LptDialog.cpp:108
+msgid "PO_GSTR_RETRY"
+msgstr "传输重试(T)"
+
+#: LptDialog.cpp:110
+msgid "PO_GSTR_LPT_OK"
+msgstr "确定"
+
+#: LptDialog.cpp:111
+msgid "PO_GSTR_LPT_CANCEL"
+msgstr "取消"
+
+#: LptDialog.cpp:158
+msgid "PO_GSTR_CONFIG_PORT_ERROR"
+msgstr "无法设置端口"
+
+#: MainDlg.cpp:87 maindlg.CPP:87
+msgid "PO_GSTR_RONGTA_MAIN_DLG_CAPTION"
+msgstr "容大打印机设置工具"
+
+#: MainDlg.cpp:89 maindlg.CPP:89
+msgid "PO_GSTR_MAIN_DLG_CAPTION"
+msgstr "打印机设置工具"
+
+#: MainDlg.cpp:97 maindlg.CPP:97
+msgid "PO_IDC_STATIC_MAIN_GROUP"
+msgstr "连接打印机"
+
+#: MainDlg.cpp:98 maindlg.CPP:98
+msgid "PO_IDC_RADIO_SELECT_PORT"
+msgstr "端口:"
+
+#: MainDlg.cpp:99 maindlg.CPP:99
+msgid "PO_IDC_RADIO_SELECT_DRIVER"
+msgstr "打印驱动:"
+
+#: MainDlg.cpp:100 maindlg.CPP:100
+msgid "PO_IDC_BUTTON_CONFIG_PORT"
+msgstr "配置端口"
+
+#: MainDlg.cpp:101 maindlg.CPP:101
+msgid "PO_IDC_BUTTON_SET"
+msgstr "设置打印机"
+
+#: MainDlg.cpp:102 maindlg.CPP:102
+msgid "PO_IDC_BUTTON_DOWNLOAD"
+msgstr "下载"
+
+#: MainDlg.cpp:353 Util.cpp:29 maindlg.CPP:353 util.cpp:29
+msgid "PO_GSTR_SET_COM_NEED_CONFIG"
+msgstr "请先配置串口"
+
+#: MainDlg.cpp:359 maindlg.CPP:359
+msgid "PO_GSTR_SET_ENET_NEED_CONFIG"
+msgstr "请先配置ip"
+
+#: MainDlg.cpp:422 maindlg.CPP:422
+msgid "PO_GSTR_CANNOT_CONFIG_PORT"
+msgstr "该端口不需配置"
+
+#: NetTabDialog.cpp:22
+msgid "PO_IDC_STATIC_NET_PORT"
+msgstr "端口:"
+
+#: NetTabDialog.cpp:23
+msgid "PO_IDC_STATIC_NET_DUPLEX_MODE"
+msgstr "双工模式:"
+
+#: NetTabDialog.cpp:178 ParamSetDialog.cpp:354 ParamSetDialog.cpp:446
+#: WifiTabDialog.cpp:307
+msgid "PO_GSTR_CHECK_MAC_FAIL"
+msgstr "不是有效MAC地址。请指定一个介于00和ff间的值"
+
+#: NetTabDialog.cpp:194 ParamSetDialog.cpp:369 ParamSetDialog.cpp:460
+#: WifiTabDialog.cpp:323
+msgid "PO_GSTR_CHECK_MAC_ALL_ZERO"
+msgstr "MAC不能全为0。请指定一个介于00和ff间的值"
+
+#: NvBitmap80CmdDlg.cpp:25
+msgid "PO_80_CMD_TEST_DLG_NVBITMAP"
+msgstr "NV 位图"
+
+#: NvBitmap80CmdDlg.cpp:28
+msgid "PO_IDC_BUTTON_80_BITMAP_ADD"
+msgstr "添加"
+
+#: NvBitmap80CmdDlg.cpp:29
+msgid "PO_IDC_BUTTON_80_BITMAP_DELETE"
+msgstr "删除"
+
+#: NvBitmap80CmdDlg.cpp:30
+msgid "PO_IDC_BUTTON_80_BITMAP_PRINT"
+msgstr "打印"
+
+#: NvBitmap80CmdDlg.cpp:53
+msgid "PO_GSTR_NVBITMAP_NAME"
+msgstr "NV位图表"
+
+#: OtherTabDialog.cpp:14
+msgid "PO_IDC_STATIC_QUEUE_NUMBER"
+msgstr "系列号:"
+
+#: OtherTabDialog.cpp:16
+msgid "PO_IDC_STATIC_DATE_AND_TIME"
+msgstr "日期和时间:"
+
+#: OtherTabDialog.cpp:18
+msgid "PO_IDC_STATIC_OTHER_76_MODE"
+msgstr "76打印模式:"
+
+#: OtherTabDialog.cpp:19
+msgid "PO_IDC_STATIC_OTHER_80_MODE"
+msgstr "80打印模式:"
+
+#: OtherTabDialog.cpp:22
+msgid "PO_IDC_STATIC_OTHER_RUN_OUT_OF_PAPER"
+msgstr "纸将尽提示:"
+
+#: OtherTabDialog.cpp:24
+msgid "PO_IDC_STATIC_OTHER_CHANGE_PORT"
+msgstr "切换接口:"
+
+#: OtherTabDialog.cpp:27
+msgid "PO_IDC_STATIC_OTHER_VOLUME_SET"
+msgstr "音量设置:"
+
+#: OtherTabDialog.cpp:29
+msgid "PO_IDC_STATIC_OTHER_USB_SET"
+msgstr "USB设置："
+
+#: OtherTabDialog.cpp:32
+msgid "PO_IDC_STATIC_OTHER_BLACK_MARK_SET"
+msgstr "黑标纸:"
+
+#: OtherTabDialog.cpp:61 OtherTabDialog.cpp:63
+msgid "PO_GSTR_76MM_MODE"
+msgstr "76mm 打印模式"
+
+#: OtherTabDialog.cpp:62
+msgid "PO_GSTR_58MM_MODE"
+msgstr "58mm 打印模式"
+
+#: OtherTabDialog.cpp:88
+msgid "PO_GSTR_USB"
+msgstr "打印机类"
+
+#: OtherTabDialog.cpp:89
+msgid "PO_GSTR_USB_PORT"
+msgstr "虚拟串口"
+
+#: OtherTabDialog.cpp:93
+msgid "PO_GSTR_STANDARD_BLACK_MARK"
+msgstr "标准式"
+
+#: OtherTabDialog.cpp:94
+msgid "PO_GSTR_OLD_BLACK_MARK"
+msgstr "旧式"
+
+#: OtherTabDialog.cpp:98
+msgid "PO_GSTR_VOLUME_VOICELESS"
+msgstr "静音"
+
+#: OtherTabDialog.cpp:99
+msgid "PO_GSTR_VOLUME_SOFTLY"
+msgstr "轻声"
+
+#: OtherTabDialog.cpp:100
+msgid "PO_GSTR_VOLUME_MODERATE"
+msgstr "适中"
+
+#: OtherTabDialog.cpp:101
+msgid "PO_GSTR_VOLUME_LOUD"
+msgstr "响亮"
+
+#: PageMode80CmdDlg.cpp:15
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_PRINT"
+msgstr "打印"
+
+#: PageMode80CmdDlg.cpp:16
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_SET"
+msgstr "页模式"
+
+#: PageMode80CmdDlg.cpp:17
+msgid "PO_IDC_BUTTON_80_STANDARD_MODE_SET"
+msgstr "标准模式"
+
+#: PageMode80CmdDlg.cpp:18
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_PRINT_AND_STANDARD"
+msgstr "打印并回到标准模式"
+
+#: PageMode80CmdDlg.cpp:20
+msgid "PO_IDC_STATIC_80_PAGE_MODE_PRINT_DIRECTION"
+msgstr "打印方向:"
+
+#: PageMode80CmdDlg.cpp:21
+msgid "PO_IDC_STATIC_80_PAGE_MODE_FOURFOLD_CHINESE"
+msgstr "四倍中文:"
+
+#: PageMode80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_PAGE_MODE_PRINT_POSITION"
+msgstr "打印位置:"
+
+#: PageMode80CmdDlg.cpp:23
+msgid "PO_IDC_STATIC_80_PAGE_MODE_PRINT_AREA"
+msgstr "打印区域:"
+
+#: PageMode80CmdDlg.cpp:25
+msgid "PO_IDC_STATIC_80_PAGE_MODE_VERTICAL_PRINT_POSITION"
+msgstr "绝对垂直位置:"
+
+#: PageMode80CmdDlg.cpp:26
+msgid "PO_IDC_STATIC_80_PAGE_MODE_RELATIVE_VERTICAL_POSITION"
+msgstr "相对垂直位置:"
+
+#: PageMode80CmdDlg.cpp:27
+msgid "PO_IDC_STATIC_80_PAGE_MODE_TEST_PRINT"
+msgstr "测试打印模式:"
+
+#: PageMode80CmdDlg.cpp:28
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_TEST_PRINT"
+msgstr "测试打印"
+
+#: PageMode80CmdDlg.cpp:36
+msgid "PO_IDC_STATIC_PAGE_MODE"
+msgstr "页模式"
+
+#: PageMode80CmdDlg.cpp:37
+msgid "PO_IDC_STATIC_STANDARD_MODE"
+msgstr "标准模式"
+
+#: PageMode80CmdDlg.cpp:46
+msgid "PO_GSTR_80_PAGE_MODE_LEFT_TO_RIGHT"
+msgstr "自左向右"
+
+#: PageMode80CmdDlg.cpp:47
+msgid "PO_GSTR_80_PAGE_MODE_BOTTOM_TO_TOP"
+msgstr "自下向上"
+
+#: PageMode80CmdDlg.cpp:48
+msgid "PO_GSTR_80_PAGE_MODE_RIGHT_TO_LEFT"
+msgstr "自右向左"
+
+#: PageMode80CmdDlg.cpp:49
+msgid "PO_GSTR_80_PAGE_MODE_TOP_TO_BOTTOM"
+msgstr "自上向下"
+
+#: PageMode80CmdDlg.cpp:53
+msgid "PO_GSTR_80_CHAR_CLOSE"
+msgstr "关闭"
+
+#: PageMode80CmdDlg.cpp:54
+msgid "PO_GSTR_80_PAGE_MODE_OPEN"
+msgstr "开启"
+
+#: PageMode80CmdDlg.cpp:58
+msgid "PO_GSTR_80_TEST_PRINT_MODE_DUMP"
+msgstr "Dump"
+
+#: PageMode80CmdDlg.cpp:59
+msgid "PO_GSTR_80_TEST_PRINT_MODE_PRINTER_STATE"
+msgstr "打印机状态"
+
+#: PageMode80CmdDlg.cpp:60
+msgid "PO_GSTR_80_TEST_PRINT_MODE_ROLL_OF_PAPER"
+msgstr "卷纸"
+
+#: PageMode80CmdDlg.cpp:64
+msgid "PO_GSTR_80_COUNTER_PRINT_POSITION_RIGHT_1"
+msgstr "右对齐1"
+
+#: PageMode80CmdDlg.cpp:65
+msgid "PO_GSTR_80_COUNTER_PRINT_POSITION_RIGHT_2"
+msgstr "右对齐2"
+
+#: PageMode80CmdDlg.cpp:66
+msgid "PO_GSTR_80_COUNTER_PRINT_POSITION_LEFT"
+msgstr "左对齐"
+
+#: PaperSaveDialog.cpp:419
+msgid "PO_IDC_STATIC_TOP_EMPTY_CUT_RATE"
+msgstr "多余上空白削减："
+
+#: PaperSaveDialog.cpp:420
+msgid "PO_IDC_STATIC_BELOW_EMPTY_CUT_RATE"
+msgstr "多余下空白削减："
+
+#: PaperSaveDialog.cpp:421
+msgid "PO_IDC_STATIC_INTERVAL_CUT_RATE"
+msgstr "行间隔削减率："
+
+#: PaperSaveDialog.cpp:422
+msgid "PO_IDC_STATIC_CHANGE_LINE_CUT_RATE"
+msgstr "换行削减率："
+
+#: PaperSaveDialog.cpp:423
+msgid "PO_IDC_STATIC_CUT_HEIGHT_RATE"
+msgstr "条码高度削减率："
+
+#: PaperSaveDialog.cpp:424
+msgid "PO_IDC_STATIC_PAPER_NORMAL"
+msgstr "正常纸张："
+
+#: PaperSaveDialog.cpp:425
+msgid "PO_IDC_STATIC_PAPER_CUSTOM"
+msgstr "纸张节约："
+
+#: PaperSaveDialog.cpp:426
+msgid "PO_IDC_BUTTON_PAPER_SAVE_SET"
+msgstr "设置"
+
+#: PaperSaveDialog.cpp:444 PaperSaveDialog.cpp:459 PaperSaveDialog.cpp:474
+msgid "PO_GSTR_NONE"
+msgstr "不削减"
+
+#: ParamSetDialog.cpp:30
+msgid "PO_GSTR_PARAM_SET_DLG_CAPTION"
+msgstr "打印机参数配置"
+
+#: ParamSetDialog.cpp:32
+msgid "PO_GSTR_PARAM_SET_OK"
+msgstr "确定"
+
+#: PrinterSetDialog.cpp:42
+msgid "PO_PRINTER_SET_DLG_CAPTION"
+msgstr "设置打印机"
+
+#: PrinterSetDialog.cpp:61
+msgid "PO_PRINTER_SET_DLG_BASE"
+msgstr "基本设置"
+
+#: PrinterSetDialog.cpp:66
+msgid "PO_PRINTER_SET_DLG_EHTERNET"
+msgstr "以太网"
+
+#: PrinterSetDialog.cpp:70
+msgid "PO_PRINTER_SET_DLG_WIFI"
+msgstr "Wifi"
+
+#: PrinterSetDialog.cpp:73
+msgid "PO_GSTR_RPP_BLUETOOTH_NOTICE"
+msgstr "蓝牙设置"
+
+#: PrinterSetDialog.cpp:77
+msgid "PO_PRINTER_SET_DLG_BM"
+msgstr "黑标"
+
+#: PrinterSetDialog.cpp:81
+msgid "PO_PRINTER_SET_DLG_RPP"
+msgstr "便携"
+
+#: PrinterSetDialog.cpp:85
+msgid "PO_PRINTER_SET_DLG_HEART_TIME"
+msgstr "加热时间"
+
+#: PrinterSetDialog.cpp:89
+msgid "PO_PRINTER_SET_DLG_2D_BAR"
+msgstr "二维码"
+
+#: PrinterSetDialog.cpp:93
+msgid "PO_PRINTER_SET_DLG_SERIAL"
+msgstr "串口设置"
+
+#: PrinterSetDialog.cpp:97
+msgid "PO_PRINTER_SET_DLG_SERIAL_PRINTER"
+msgstr "搜索打印机"
+
+#: PrinterSetDialog.cpp:101
+msgid "PO_PRINTER_SET_DLG_BIG5"
+msgstr "BIG5"
+
+#: PrinterSetDialog.cpp:104
+msgid "PO_PRINTER_SET_DLG_CMD_SETTING"
+msgstr "指令类型设置"
+
+#: PrinterSetDialog.cpp:107
+msgid "PO_PRINTER_SET_DLG_PAPER_SAVE"
+msgstr "纸张节约"
+
+#: PrinterSetDialog.cpp:110
+msgid "PO_PRINTER_SET_DLG_OTHER"
+msgstr "其它"
+
+#: ProgramTabDialog.cpp:175
+msgid "PO_GSTR_UPDATE_FIRMWARE_SUCCESS"
+msgstr "更新程序成功"
+
+#: ProgramTabDialog.cpp:189
+msgid "PO_IDC_BUTTON_PROGRAM_OPEN"
+msgstr "打开文件"
+
+#: ProgramTabDialog.cpp:190
+msgid "PO_IDC_BUTTON_PROGRAM_UPDATE"
+msgstr "更新"
+
+#: RppTabDialog.cpp:298
+msgid "PO_IDC_STATIC_RPP_FONT"
+msgstr "字体:"
+
+#: RppTabDialog.cpp:301
+msgid "PO_IDC_STATIC_RPP_IDLE_TIME"
+msgstr "空闲时间:"
+
+#: RppTabDialog.cpp:302
+msgid "PO_IDC_STATIC_RPP_MAX_FEED"
+msgstr "最大进纸:"
+
+#: RppTabDialog.cpp:303
+msgid "PO_IDC_STATIC_RPP_PAGE_LEN"
+msgstr "页长度:"
+
+#: RppTabDialog.cpp:305
+msgid "PO_IDC_STATIC_RPP_OFF_TIME"
+msgstr "下线时间:"
+
+#: SerialTabDialog.cpp:14
+msgid "PO_IDC_STATIC_SERIAL_NUMBER_BITS"
+msgstr "数据位:"
+
+#: SerialTabDialog.cpp:15
+msgid "PO_GSTR_STOP_BITS"
+msgstr "停止位:"
+
+#: SerialTabDialog.cpp:16
+msgid "PO_IDC_STATIC_SERIAL_HAND_SHAKE"
+msgstr "握手信号:"
+
+#: State80CmdDlg.cpp:16
+msgid "PO_IDC_BUTTON_80_STATE_PRINTER"
+msgstr "打印机状态"
+
+#: State80CmdDlg.cpp:17
+msgid "PO_IDC_BUTTON_80_STATE_OFFLINE"
+msgstr "脱机状态"
+
+#: State80CmdDlg.cpp:18
+msgid "PO_IDC_BUTTON_80_STATE_ERROR"
+msgstr "错误状态"
+
+#: State80CmdDlg.cpp:19
+msgid "PO_IDC_BUTTON_80_STATE_PAPER"
+msgstr "连续用纸状态"
+
+#: State80CmdDlg.cpp:21 State80CmdDlg.cpp:22 State80CmdDlg.cpp:23
+#: State80CmdDlg.cpp:24 State80CmdDlg.cpp:25 State80CmdDlg.cpp:26
+#: State80CmdDlg.cpp:27 State80CmdDlg.cpp:28 State80CmdDlg.cpp:29
+#: State80CmdDlg.cpp:30
+msgid "PO_IDC_STATIC_80_STATE_NOT_OBTAIN"
+msgstr "未获取状态"
+
+#: State80CmdDlg.cpp:32
+msgid "PO_IDC_BUTTON_80_STATE_ERROR_RECOVERY"
+msgstr "错误恢复"
+
+#: State80CmdDlg.cpp:33
+msgid "PO_IDC_BUTTON_80_STATE_CLEAR_BUFFER"
+msgstr "清除缓冲"
+
+#: State80CmdDlg.cpp:34
+msgid "PO_IDC_BUTTON_80_STATE_PRINT_PAPER_STATE"
+msgstr "打印纸状态"
+
+#: State80CmdDlg.cpp:36 State80CmdDlg.cpp:37
+msgid "PO_IDC_BUTTON_80_STATE_SEND_PULSE"
+msgstr "发生脉冲"
+
+#: State80CmdDlg.cpp:38
+msgid "PO_IDC_BUTTON_80_STATE_PRINTER_INFORMATION"
+msgstr "获取"
+
+#: State80CmdDlg.cpp:41
+msgid "PO_IDC_STATIC_80_STATE_CUTTER_BOX_PIN"
+msgstr "钱箱引脚:"
+
+#: State80CmdDlg.cpp:42
+msgid "PO_IDC_STATIC_80_STATE_PULSE_TIME"
+msgstr "脉冲电平时间:"
+
+#: State80CmdDlg.cpp:43
+msgid "PO_IDC_STATIC_80_STATE_CUTTER_BOX_OUTPUT_PIN"
+msgstr "钱箱引脚:"
+
+#: State80CmdDlg.cpp:44
+msgid "PO_IDC_STATIC_80_STATE_BOOT_TIME"
+msgstr "开机时间:"
+
+#: State80CmdDlg.cpp:45
+msgid "PO_IDC_STATIC_80_STATE_OFF_TIME"
+msgstr "关机时间:"
+
+#: State80CmdDlg.cpp:46
+msgid "PO_IDC_STATIC_80_STATE_PRINTER_INFORMATION"
+msgstr "打印机信息:"
+
+#: State80CmdDlg.cpp:47
+msgid "PO_IDC_BUTTON_80_PRINTER_INITIALIZATION"
+msgstr "打印机初始化"
+
+#: State80CmdDlg.cpp:49
+msgid "PO_IDC_BUTTON_80_STATE_SET_ALL"
+msgstr "一键设置"
+
+#: State80CmdDlg.cpp:58 State80CmdDlg.cpp:63
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_PIN_2"
+msgstr "Pin-2"
+
+#: State80CmdDlg.cpp:59 State80CmdDlg.cpp:64
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_PIN_5"
+msgstr "Pin-5"
+
+#: State80CmdDlg.cpp:68
+msgid "PO_GSTR_80_STATE_ID_MODEL"
+msgstr "ID 模型"
+
+#: State80CmdDlg.cpp:69
+msgid "PO_GSTR_80_STATE_ID_NUMBER"
+msgstr "ID 型号"
+
+#: State80CmdDlg.cpp:70
+msgid "PO_GSTR_80_STATE_HARDWARE_VERSION"
+msgstr "硬件版本"
+
+#: State80CmdDlg.cpp:71
+msgid "PO_GSTR_80_STATE_MANUFACTURER"
+msgstr "厂商"
+
+#: State80CmdDlg.cpp:72
+msgid "PO_GSTR_80_STATE_PRINTER_NAME"
+msgstr "打印机名称"
+
+#: State80CmdDlg.cpp:73
+msgid "PO_GSTR_80_STATE_COM_NAME"
+msgstr "串口名称"
+
+#: State80CmdDlg.cpp:74
+msgid "PO_GSTR_80_STATE_CHARACTER"
+msgstr "字符模式"
+
+#: State80CmdDlg.cpp:101
+msgid "PO_GSTR_CAN_NOT_GET_PRINTER_SETTING_INFO"
+msgstr "该接口类型无法获取打印设置信息"
+
+#: State80CmdDlg.cpp:127
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_OPEN"
+msgstr "钱箱:已打开."
+
+#: State80CmdDlg.cpp:131
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_CLOSE"
+msgstr "钱箱:已关闭."
+
+#: State80CmdDlg.cpp:157
+msgid "PO_GSTR_80_STATE_COVER_PLATE_OPEN"
+msgstr "盖板:已打开."
+
+#: State80CmdDlg.cpp:161
+msgid "PO_GSTR_80_STATE_COVER_PLATE_CLOSE"
+msgstr "盖板:已关闭."
+
+#: State80CmdDlg.cpp:167
+msgid "PO_GSTR_80_STATE_PAPER_FEED"
+msgstr "进纸:通过进纸键进纸."
+
+#: State80CmdDlg.cpp:171
+msgid "PO_GSTR_80_STATE_NOT_PAPER_FEED"
+msgstr "进纸:不通过进纸键进纸."
+
+#: State80CmdDlg.cpp:177
+msgid "PO_GSTR_80_STATE_ERROR_HAPPEN"
+msgstr "错误:发生错误."
+
+#: State80CmdDlg.cpp:181
+msgid "PO_GSTR_80_STATE_NO_ERROR"
+msgstr "错误:没有错误."
+
+#: State80CmdDlg.cpp:207
+msgid "PO_GSTR_80_STATE_PAPER_CUTTING_ERROR"
+msgstr "错误:发生自动切纸错误."
+
+#: State80CmdDlg.cpp:211
+msgid "PO_GSTR_80_STATE_NO_PAPER_CUTTING_ERROR"
+msgstr "错误:没有自动切纸错误."
+
+#: State80CmdDlg.cpp:217
+msgid "PO_GSTR_80_STATE_IRRECOVERABLE_ERROR"
+msgstr "错误:出现不可恢复的错误."
+
+#: State80CmdDlg.cpp:221
+msgid "PO_GSTR_80_STATE_NO_UNRECOVERABLE_ERROR"
+msgstr "错误:没有不可恢复的错误."
+
+#: State80CmdDlg.cpp:227
+msgid "PO_GSTR_80_STATE_AUTO_RECOVERRY_ERROR"
+msgstr "错误:出现可自动恢复的错误."
+
+#: State80CmdDlg.cpp:231
+msgid "PO_GSTR_80_STATE_NO_AUTO_RECOVERRY_ERROR"
+msgstr "错误:没有可自动恢复的错误."
+
+#: State80CmdDlg.cpp:257 State80CmdDlg.cpp:343
+msgid "PO_GSTR_80_STATE_RUN_OUT_OF_PAPER"
+msgstr "纸张:纸尽."
+
+#: State80CmdDlg.cpp:261 State80CmdDlg.cpp:347
+msgid "PO_GSTR_80_STATE_HAVE_PAPER"
+msgstr "纸张:有纸."
+
+#: State80CmdDlg.cpp:315
+msgid "PO_GSTR_80_STATE_PULSE_TIME_ERROR"
+msgstr "请指定一个介于 1 和 8 间的值。"
+
+#: State80CmdDlg.cpp:434
+msgid "PO_GSTR_80_STATE_HEXADECIMAL"
+msgstr "ID模型:十六进制."
+
+#: State80CmdDlg.cpp:438
+msgid "PO_GSTR_80_STATE_DECIMALISM"
+msgstr "ID模型:十进制."
+
+#: State80CmdDlg.cpp:445
+msgid "PO_GSTR_80_STATE_SUPPORT_CHARACTER"
+msgstr "ID型号:支持多字节字符."
+
+#: State80CmdDlg.cpp:449
+msgid "PO_GSTR_80_STATE_NOT_SUPPORT_CHARACTER"
+msgstr "ID型号:不支持多字节字符."
+
+#: State80CmdDlg.cpp:454
+msgid "PO_GSTR_80_STATE_HARDWARE_VERSION_SHOW"
+msgstr "硬件版本："
+
+#: State80CmdDlg.cpp:466
+msgid "PO_GSTR_80_STATE_MANUFACTURER_SHOW"
+msgstr "厂商："
+
+#: State80CmdDlg.cpp:478
+msgid "PO_GSTR_80_STATE_PRINTER_NAME_SHOW"
+msgstr "打印机名称："
+
+#: State80CmdDlg.cpp:490
+msgid "PO_GSTR_80_STATE_PORT_NAME_SHOW"
+msgstr "串口名称："
+
+#: State80CmdDlg.cpp:502
+msgid "PO_GSTR_80_STATE_CHARACTER_SHOW"
+msgstr "字符模式："
+
+#: UDPSearchTabDialog.cpp:55 UDPSearchTabDialog.cpp:73
+#: UDPSearchTabDialog.cpp:86 UDPSearchTabDialog.cpp:118
+msgid "PO_GSTR_PARAM_SET_SELECT_PRINTER"
+msgstr "请选择一台打印机"
+
+#: UDPSearchTabDialog.cpp:107 UDPSearchTabDialog.cpp:137
+msgid "PO_GSTR_SEND_TCP_DATA_ERROR"
+msgstr "向打印机发送数据失败。"
+
+#: UDPSearchTabDialog.cpp:248
+msgid "PO_IDC_BUTTON_UDP_STATUS"
+msgstr "状态"
+
+#: UDPSearchTabDialog.cpp:250
+msgid "PO_GSTR_REBOOT"
+msgstr "重启打印机"
+
+#: UDPSearchTabDialog.cpp:251
+msgid "PO_GSTR_SEARCH"
+msgstr "查找打印机"
+
+#: UDPSearchTabDialog.cpp:253
+msgid "PO_IDC_STATIC_UDP_NOTICE"
+msgstr "提醒: 先搜索打印机。接着请先选中某台打印机，执行相关配置或操作."
+
+#: UDPSearchTabDialog.cpp:281
+msgid "PO_IDC_STATIC_UDP_LOCAL_IP"
+msgstr "本地IP地址: "
+
+#: Util.cpp:23 util.cpp:23
+msgid "PO_GSTR_OPEN_COM_ERROR"
+msgstr "无法打开串口"
+
+#: Util.cpp:26 util.cpp:26
+msgid "PO_GSTR_SET_COM_FAIL"
+msgstr "设置串口失败"
+
+#: Util.cpp:32 util.cpp:32
+msgid "PO_GSTR_WRITE_COM_FAIL"
+msgstr "无法向串口设备写入数据"
+
+#: Util.cpp:35 util.cpp:35
+msgid "PO_GSTR_READ_COM_FAIL"
+msgstr "无法读取串口设备数据"
+
+#: Util.cpp:38 util.cpp:38
+msgid "PO_GSTR_COM_GET_COMM_STATE_FAIL"
+msgstr "无法获取串口状态"
+
+#: Util.cpp:41 util.cpp:41
+msgid "PO_GSTR_WRITE_ENET_FAIL"
+msgstr "无法向网口设备写入数据"
+
+#: Util.cpp:44 util.cpp:44
+msgid "PO_GSTR_READ_ENET_FAIL"
+msgstr "无法读取网口设备数据"
+
+#: Util.cpp:47 util.cpp:47
+msgid "PO_GSTR_OPEN_LPT_FAIL"
+msgstr "无法打开并口"
+
+#: Util.cpp:50 util.cpp:50
+msgid "PO_GSTR_WRITE_LPT_FAIL"
+msgstr "无法向并口设备写入数据"
+
+#: Util.cpp:53 util.cpp:53
+msgid "PO_GSTR_READ_LPT_FAIL"
+msgstr "无法读取并口设备数据"
+
+#: Util.cpp:56 util.cpp:56
+msgid "PO_GSTR_GET_LPT_CONFIG_ERROR"
+msgstr "无法读取并口配置"
+
+#: Util.cpp:59 util.cpp:59
+msgid "PO_GSTR_OPEN_PRINTER_FAIL"
+msgstr "无法打开打印机"
+
+#: Util.cpp:62 util.cpp:62
+msgid "PO_GSTR_WRITE_PRINTER_FAIL"
+msgstr "无法向打印机发送数据"
+
+#: Util.cpp:65 util.cpp:65
+msgid "PO_GSTR_READ_PRINTER_FAIL"
+msgstr "无法读取打印机数据"
+
+#: Util.cpp:68 util.cpp:68
+msgid "PO_GSTR_START_DOC_FAIL"
+msgstr "无法打印文档"
+
+#: Util.cpp:71 util.cpp:71
+msgid "PO_GSTR_START_PAGE_FAIL"
+msgstr "无法打印页面"
+
+#: Util.cpp:74 util.cpp:74
+msgid "PO_GSTR_END_PAGE_FAIL"
+msgstr "打印页结束失败"
+
+#: Util.cpp:77 util.cpp:77
+msgid "PO_GSTR_END_DOC_FAIL"
+msgstr "打印文档结束失败"
+
+#: Util.cpp:80 util.cpp:80
+msgid "PO_GSTR_WRITE_PRINTER_LESS"
+msgstr "请选择一台打印机。"
+
+#: Util.cpp:83 util.cpp:83
+msgid "PO_GSTR_OPEN_USB_FAIL"
+msgstr "无法打开USB设备"
+
+#: Util.cpp:86 util.cpp:86
+msgid "PO_GSTR_WRITE_USB_FAIL"
+msgstr "无法向USB设备写入数据"
+
+#: Util.cpp:89 util.cpp:89
+msgid "PO_GSTR_READ_USB_FAIL"
+msgstr "无法读取USB设备数据"
+
+#: Util.cpp:92 util.cpp:92
+msgid "PO_GSTR_WRITE_USB_LESS"
+msgstr "向USB设备写入的数据少于预期"
+
+#: Util.cpp:95 util.cpp:95
+msgid "PO_GSTR_ENET_CONNECT_FAIL"
+msgstr "网络连接失败"
+
+#: Util.cpp:98 util.cpp:98
+msgid "PO_GSTR_ENET_READ_LESS"
+msgstr "向设备写入的数据少于预期"
+
+#: WifiTabDialog.cpp:20
+msgid "PO_IDC_STATIC_WIFI_MODE"
+msgstr "模式:"
+
+#: WifiTabDialog.cpp:21 WifiTabDialog.cpp:24
+msgid "PO_GSTR_TYPE"
+msgstr "类型:"
+
+#: WifiTabDialog.cpp:22
+msgid "PO_IDC_STATIC_WIFI_WPA_ENCRY"
+msgstr "加密方式:"
+
+#: WifiTabDialog.cpp:23
+msgid "PO_IDC_STATIC_WIFI_WPA_KEY"
+msgstr "WPA密钥:"
+
+#: WifiTabDialog.cpp:25
+msgid "PO_IDC_STATIC_WIFI_WEP_KEY"
+msgstr "密钥:"
+
+#: WifiTabDialog.cpp:27
+msgid "PO_IDC_RADIO_WIFI_NONE"
+msgstr "开放(无密码)"
+
+#: WifiTabDialog.cpp:124
+msgid "PO_GSTR_WIFI_SSID_EMPTY_ERR"
+msgstr "请输入SSID"
+
+#: WifiTabDialog.cpp:151
+msgid "PO_GSTR_WIFI_PSKKEY_ERR"
+msgstr "请输入PSK密钥"
+
+#: WifiTabDialog.cpp:156
+msgid "PO_GSTR_WIFI_PSKKEY_ERR_LEN"
+msgstr "请输入8~64长度的PSK密钥"
+
+#: WifiTabDialog.cpp:183
+msgid "PO_GSTR_WIFI_WEP_KEY_ERR"
+msgstr "请输入密钥"
+
+#: WifiTabDialog.cpp:188
+msgid "PO_GSTR_WIFI_WEP_KEY_ERR_LEN"
+msgstr "请输入8~64长度的WEP密钥"
+
+#: 80CmdTestDlg.h:21
+msgid "PO_80_CMD_TEST_DLG_CAPTION"
+msgstr "80指令测试"
+
+#: 80CmdTestDlg.h:40
+msgid "PO_80_CMD_TEST_DLG_PRINT"
+msgstr "打印指令"
+
+#: 80CmdTestDlg.h:45
+msgid "PO_80_CMD_TEST_DLG_FORMAT"
+msgstr "格式设置"
+
+#: 80CmdTestDlg.h:49
+msgid "PO_80_CMD_TEST_DLG_CHAR"
+msgstr "字符设置"
+
+#: 80CmdTestDlg.h:53
+msgid "PO_80_CMD_TEST_DLG_GRAPHICAL"
+msgstr "图形设置"
+
+#: 80CmdTestDlg.h:57
+msgid "PO_80_CMD_TEST_DLG_BARCODE"
+msgstr "条码设置"
+
+#: 80CmdTestDlg.h:61
+msgid "PO_80_CMD_TEST_DLG_STATE"
+msgstr "打印机状态"
+
+#: 80CmdTestDlg.h:65
+msgid "PO_80_CMD_TEST_DLG_CONTROL"
+msgstr "控制指令"
+
+#: 80CmdTestDlg.h:69
+msgid "PO_80_CMD_TEST_DLG_PAGE_MODE"
+msgstr "页模式"
+
+#: Print80CmdDlg.h:34
+msgid "PO_IDC_STATIC_80_PRINT_FEED_LINE"
+msgstr "进纸行数："
+
+#: Print80CmdDlg.h:35
+msgid "PO_IDC_STATIC_80_PRINT_FEED_POINTS"
+msgstr "进纸点行数："
+
+#: Print80CmdDlg.h:36
+msgid "PO_IDC_STATIC_80_PRINT_LEVEL_LOCATION"
+msgstr "水平定位点数："
+
+#: Print80CmdDlg.h:37
+msgid "PO_IDC_STATIC_80_PRINT_ESC_N"
+msgstr "打印机状态："
+
+#: Print80CmdDlg.h:39
+msgid "PO_IDC_BUTTON_80_PRINT_LF"
+msgstr "打印并换行"
+
+#: Print80CmdDlg.h:40
+msgid "PO_IDC_BUTTON_80_PRINT_CR"
+msgstr "打印并回车"
+
+#: Print80CmdDlg.h:41
+msgid "PO_IDC_BUTTON_80_PRINT_HT"
+msgstr "水平定位"
+
+#: Print80CmdDlg.h:46
+msgid "PO_IDC_BUTTON_80_SELF_TEST"
+msgstr "打印自检"
+
+#: Print80CmdDlg.h:59
+msgid "PO_GSTR_80_PRINTER_INHIBIT"
+msgstr "禁止"
+
+#: Print80CmdDlg.h:60
+msgid "PO_GSTR_80_PRINTER_ACTIVATION"
+msgstr "激活"
+
+#~ msgid "PO_GSTR_NOTICE_DOWNLOAD_LOGO"
+#~ msgstr ""
+#~ "该操作会将打印机中所有Logo刷新掉。如需保存原有Logo，请先执行获取操作；是"
+#~ "否继续下载?"
+
+#~ msgid "PO_GSTR_PRINTER_CAPACITY"
+#~ msgstr "当前打印机Logo下载所支持的最大数据量为:"
+
+#~ msgid "PO_PRINTER_SET_DLG_SERVER"
+#~ msgstr "云服务器设置"
+
+#~ msgid "PO_IDC_BUTTON_80_CMD_TEST"
+#~ msgstr "80指令测试"
+
+#~ msgid "PO_GSTR_FACTORY_SETTING"
+#~ msgstr "--厂内使用"
+
+#~ msgid "PO_GSTR_PRINT"
+#~ msgstr "Print"
+
+#~ msgid "PO_GSTR_COM"
+#~ msgstr "Com"
+
+#~ msgid "PO_GSTR_OPEN_COM_FAIL"
+#~ msgstr "无法打开串口"
+
+#~ msgid "PO_IDC_BUTTON_80_STATE_ASB_STATE"
+#~ msgstr "ASB状态"
+
+#~ msgid "IDC_STATIC_80_GRAPHICAL_PRINT_RASTER_BITMAP"
+#~ msgstr "打印光栅位图："
+
+#~ msgid "PO_GSTR_80_BITMAP_NL_ERROR"
+#~ msgstr "nH:请指定一个介于0和3间的值。"
+
+#~ msgid "PO_GSTR_80_DEFINE_BITMAP_Y_ERROR"
+#~ msgstr "y:请指定一个介于1和48间的值。"
+
+#~ msgid "PO_GSTR_80_DEFINE_BITMAP_XY_ERROR"
+#~ msgstr "x * y不能大于1536。"
+
+#~ msgid "PO_IDC_STATIC_GRAPHICAL_DEFINE_BITMAP"
+#~ msgstr "定义下传位图："
+
+#~ msgid "PO_IDC_STATIC_80_FORMAT_LINE_SPECING"
+#~ msgstr "行间距："
+
+#~ msgid "PO_IDC_BUTTON_80_SET_DEFAIT_LINE_SPECING"
+#~ msgstr "缺省行间距"
+
+#~ msgid "PO_GSTR_FEED_NUMBER_ERR"
+#~ msgstr "请指定一个介于0和255间的值."
+
+#~ msgid "PO_GSTR_LEVEL_LOCATION_NUMBER_ERR"
+#~ msgstr "请指定一个介于1和255间的值"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_FEED_LINE"
+#~ msgstr "设置"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_FEED_POINTS"
+#~ msgstr "设置"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_LEVEL_LOCATION"
+#~ msgstr "设置"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_ESC_N"
+#~ msgstr "设置"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_SET"
+#~ msgstr "一键设置"
+
+#~ msgid "PO_CMD_TEST_DLG_CAPTION"
+#~ msgstr "80指令测试"
+
+#~ msgid "PO_CMD_TEST_DLG_PRINT"
+#~ msgstr "打印指令测试"
+
+#~ msgid "PO_IDC_BUTTON_CMD_TEST"
+#~ msgstr "80指令测试"
+
+#~ msgid "PO_IDC_BUTTON_PRINT_80_LF"
+#~ msgstr "打印并换行"
+
+#~ msgid "PO_IDC_BUTTON_PRINT_80_CR"
+#~ msgstr "打印并回车"
+
+#~ msgid "PO_IDC_IDC_RICHEDIT2_PRINT_TEST"
+#~ msgstr "请输入测试内容！"
+
+#~ msgid "PO_PRINTER_SET_DLG_CHECK_INFO"
+#~ msgstr "信息查询"
+
+#~ msgid "PO_IDC_STATIC_OTHER_MODE"
+#~ msgstr "模式:"
+
+#~ msgid "PO_GSTR_INVALID_IP"
+#~ msgstr "请输入有效的IP地址"
+
+#~ msgid "PO_IDC_STATIC_SERIAL_DHCP"
+#~ msgstr "DHCP:"
+
+#~ msgid "PO_IDC_STATIC_SERIAL_512_DOTS"
+#~ msgstr "512点:"
+
+#~ msgid "PO_GSTR_PRINTER_NOT_SELECT"
+#~ msgstr "请选择一台打印机。"
+
+#~ msgid "PO_GSTR_DLG_CAPTION"
+#~ msgstr "打印机网络配置工具"
+
+#~ msgid "PO_GSTR_STATIC_NOTICE"
+#~ msgstr "提醒: 先搜索打印机。接着请先选中某台打印机，执行相关配置或操作."
+
+#~ msgid "PO_GSTR_STATIC_IP"
+#~ msgstr "本地IP地址: "
+
+#~ msgid "PO_GSTR_PRAAM_SET"
+#~ msgstr "网络参数设置"
+
+#~ msgid "PO_GSTR_PRINTER_STATUS"
+#~ msgstr "打印机状态"
+
+#~ msgid "PO_GSTR_SELFTEST"
+#~ msgstr "打印测试页"
+
+#~ msgid "PO_GSTR_DUPLEX_AUTO"
+#~ msgstr "自适应网络"
+
+#~ msgid "PO_GSTR_10M_HALF"
+#~ msgstr "10M半双工"
+
+#~ msgid "PO_GSTR_100M_HALF"
+#~ msgstr "100M半双工"
+
+#~ msgid "PO_GSTR_10M_FULL"
+#~ msgstr "10M全双工"
+
+#~ msgid "PO_GSTR_100M_FULL"
+#~ msgstr "100M全双工"
+
+#~ msgid "PO_GSTR_INSTALL_DRIVER_ERROR"
+#~ msgstr "无法安装打印驱动"
+
+#~ msgid "PO_GSTR_ADD_PRINTER_ERROR"
+#~ msgstr "无法添加打印机"
+
+#~ msgid "PO_GSTR_INSTALL_SUCCESS"
+#~ msgstr "打印机已安装成功"
+
+#~ msgid "PO_GSTR_OPEN_LPT_ERROR"
+#~ msgstr "无法打开并口"
+
+#~ msgid "PO_GSTR_DRIVER_PORT_ERROR"
+#~ msgstr "请选择打印机使用的端口"
+
+#~ msgid "PO_GSTR_DRIVER_NAME_ERROR"
+#~ msgstr "请输入打印机名称"
+
+#~ msgid "PO_GSTR_OS_TYPE"
+#~ msgstr "系统类型:"
+
+#~ msgid "PO_GSTR_PRINTER_TYPE"
+#~ msgstr "打印机类型"
+
+#~ msgid "PO_GSTR_POS"
+#~ msgstr "POS打印机"
+
+#~ msgid "PO_GSTR_LAPTOP"
+#~ msgstr "便携式打印机"
+
+#~ msgid "PO_GSTR_MICRO_PRINTER"
+#~ msgstr "热敏票据打印机"
+
+#~ msgid "PO_GSTR_PIN_PRINTER"
+#~ msgstr "针式票据打印机"
+
+#~ msgid "PO_GSTR_PRINTER_DETAIL"
+#~ msgstr "打印机型"
+
+#~ msgid "PO_GSTR_PRINTER_PORT"
+#~ msgstr "打印端口"
+
+#~ msgid "PO_GSTR_PT_CONFIG_NAME"
+#~ msgstr "打印机名称:"
+
+#~ msgid "PO_GSTR_PT_CONFIG_PORT"
+#~ msgstr "配置端口"
+
+#~ msgid "PO_GSTR_PORT_STATIC"
+#~ msgstr "端口:"

@@ -1,0 +1,1160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DriverInstall_en_US\n"
+"POT-Creation-Date: 2018-04-04 14:11+0800\n"
+"PO-Revision-Date: 2018-04-04 14:11+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: C:\\Documents and Settings\\Administrator\\桌面\\export"
+"\\RongtaPrinterTool\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: showErrMsg;getPoTextW;showSuccessMsg;checkPortType\n"
+"X-Poedit-SearchPath-0: MainDlg.h\n"
+"X-Poedit-SearchPath-1: MainDlg.cpp\n"
+"X-Poedit-SearchPath-2: ParamSetDialog.h\n"
+"X-Poedit-SearchPath-3: ParamSetDialog.cpp\n"
+"X-Poedit-SearchPath-4: 2DBARTabDialog.h\n"
+"X-Poedit-SearchPath-5: 2DBARTabDialog.cpp\n"
+"X-Poedit-SearchPath-6: BaseTabDialog.h\n"
+"X-Poedit-SearchPath-7: BaseTabDialog.cpp\n"
+"X-Poedit-SearchPath-8: Big5TabDialog.h\n"
+"X-Poedit-SearchPath-9: Big5TabDialog.cpp\n"
+"X-Poedit-SearchPath-10: BlackMarkTabDialog.h\n"
+"X-Poedit-SearchPath-11: BlackMarkTabDialog.cpp\n"
+"X-Poedit-SearchPath-12: cmd.h\n"
+"X-Poedit-SearchPath-13: cmd.cpp\n"
+"X-Poedit-SearchPath-14: DownloadDialog.h\n"
+"X-Poedit-SearchPath-15: DownloadDialog.cpp\n"
+"X-Poedit-SearchPath-16: EthernetDialog.h\n"
+"X-Poedit-SearchPath-17: EthernetDialog.cpp\n"
+"X-Poedit-SearchPath-18: HotTabDialog.h\n"
+"X-Poedit-SearchPath-19: HotTabDialog.cpp\n"
+"X-Poedit-SearchPath-20: LogoTabDialog.h\n"
+"X-Poedit-SearchPath-21: LogoTabDialog.cpp\n"
+"X-Poedit-SearchPath-22: NetTabDialog.h\n"
+"X-Poedit-SearchPath-23: NetTabDialog.cpp\n"
+"X-Poedit-SearchPath-24: PrinterSetDialog.h\n"
+"X-Poedit-SearchPath-25: PrinterSetDialog.cpp\n"
+"X-Poedit-SearchPath-26: ProgramTabDialog.h\n"
+"X-Poedit-SearchPath-27: ProgramTabDialog.cpp\n"
+"X-Poedit-SearchPath-28: RppTabDialog.h\n"
+"X-Poedit-SearchPath-29: RppTabDialog.cpp\n"
+"X-Poedit-SearchPath-30: SerialTabDialog.h\n"
+"X-Poedit-SearchPath-31: SerialTabDialog.cpp\n"
+"X-Poedit-SearchPath-32: UDPSearchTabDialog.h\n"
+"X-Poedit-SearchPath-33: UDPSearchTabDialog.cpp\n"
+"X-Poedit-SearchPath-34: util.h\n"
+"X-Poedit-SearchPath-35: WifiTabDialog.h\n"
+"X-Poedit-SearchPath-36: WifiTabDialog.cpp\n"
+"X-Poedit-SearchPath-37: GlobalString.h\n"
+"X-Poedit-SearchPath-38: LptDialog.cpp\n"
+"X-Poedit-SearchPath-39: ParamSetDialog.h\n"
+"X-Poedit-SearchPath-40: OtherTabDialog.h\n"
+"X-Poedit-SearchPath-41: OtherTabDialog.cpp\n"
+"X-Poedit-SearchPath-42: PaperSaveDialog.cpp\n"
+"X-Poedit-SearchPath-43: PaperSaveDialog.h\n"
+"X-Poedit-SearchPath-44: BlueToothDialog.cpp\n"
+"X-Poedit-SearchPath-45: BlueToothDialog.h\n"
+"X-Poedit-SearchPath-46: GrayscalePrintDialog.cpp\n"
+"X-Poedit-SearchPath-47: GrayscalePrintDialog.h\n"
+"X-Poedit-SearchPath-48: DownloadDialog.cpp\n"
+"X-Poedit-SearchPath-49: DownloadDialog.h\n"
+"X-Poedit-SearchPath-50: EthernetDialog.cpp\n"
+"X-Poedit-SearchPath-51: EthernetDialog.h\n"
+"X-Poedit-SearchPath-52: LptDialog.h\n"
+"X-Poedit-SearchPath-53: maindlg.CPP\n"
+"X-Poedit-SearchPath-54: CheckInfoDialog.cpp\n"
+"X-Poedit-SearchPath-55: CheckInfoDialog.h\n"
+"X-Poedit-SearchPath-56: CmdSettingTabDialog.h\n"
+"X-Poedit-SearchPath-57: CmdSettingTabDialog.cpp\n"
+"X-Poedit-SearchPath-58: PO.h\n"
+"X-Poedit-SearchPath-59: PO.cpp\n"
+"X-Poedit-SearchPath-60: Util.cpp\n"
+"X-Poedit-SearchPath-61: CharacterLibAddrDialog.cpp\n"
+"X-Poedit-SearchPath-62: CharacterLibAddrDialog.h\n"
+"X-Poedit-SearchPath-63: CharacterLibTabDialog.cpp\n"
+"X-Poedit-SearchPath-64: CharacterLibTabDialog.h\n"
+
+#: 2DBARTabDialog.cpp:13
+msgid "PO_IDC_STATIC_2DBAR_TYPE"
+msgstr "Установить тип"
+
+#: 2DBARTabDialog.cpp:15 BaseTabDialog.cpp:25 Big5TabDialog.cpp:22
+#: Big5TabDialog.cpp:23 Big5TabDialog.cpp:24 Big5TabDialog.cpp:25
+#: Big5TabDialog.cpp:26 Big5TabDialog.cpp:27 BlackMarkTabDialog.cpp:23
+#: BlackMarkTabDialog.cpp:24 BlackMarkTabDialog.cpp:25
+#: BlackMarkTabDialog.cpp:26 BlueToothDialog.cpp:20 BlueToothDialog.cpp:21
+#: BlueToothDialog.cpp:22 CheckInfoDialog.cpp:148 CmdSettingTabDialog.cpp:17
+#: CmdSettingTabDialog.cpp:18 HotTabDialog.cpp:17 NetTabDialog.cpp:25
+#: NetTabDialog.cpp:26 NetTabDialog.cpp:27 NetTabDialog.cpp:29
+#: OtherTabDialog.cpp:15 OtherTabDialog.cpp:17 OtherTabDialog.cpp:20
+#: OtherTabDialog.cpp:21 OtherTabDialog.cpp:23 OtherTabDialog.cpp:25
+#: OtherTabDialog.cpp:28 OtherTabDialog.cpp:30 OtherTabDialog.cpp:31
+#: RppTabDialog.cpp:306 SerialTabDialog.cpp:19 SerialTabDialog.cpp:20
+#: UDPSearchTabDialog.cpp:227 WifiTabDialog.cpp:29 WifiTabDialog.cpp:30
+#: WifiTabDialog.cpp:31
+msgid "PO_GSTR_SET"
+msgstr "Установить"
+
+#: BaseTabDialog.cpp:14 RppTabDialog.cpp:294
+msgid "PO_GSTR_CODE_PAGE"
+msgstr "Кодовая страница"
+
+#: BaseTabDialog.cpp:15 RppTabDialog.cpp:295
+msgid "PO_GSTR_BAUD_RATE"
+msgstr "Скорость обмена"
+
+#: BaseTabDialog.cpp:16 RppTabDialog.cpp:296
+msgid "PO_GSTR_CHARACTER"
+msgstr "Символ"
+
+#: BaseTabDialog.cpp:17 RppTabDialog.cpp:297
+msgid "PO_GSTR_CHS"
+msgstr "CHS/Line:"
+
+#: BaseTabDialog.cpp:18 RppTabDialog.cpp:299
+msgid "PO_GSTR_DENSITY"
+msgstr "Плотность"
+
+#: BaseTabDialog.cpp:19 SerialTabDialog.cpp:17
+msgid "PO_GSTR_PARITY"
+msgstr "Четность"
+
+#: BaseTabDialog.cpp:20
+msgid "PO_IDC_CHECK_BASE_BUZZER"
+msgstr "Зуммер"
+
+#: BaseTabDialog.cpp:21
+msgid "PO_IDC_CHECK_BASE_CUTTER"
+msgstr "Отрезчик"
+
+#: BaseTabDialog.cpp:22
+msgid "PO_IDC_CHECK_BASE_DRAWER"
+msgstr "Ящик"
+
+#: BaseTabDialog.cpp:23
+msgid "PO_IDC_CHECK_BASE_BUZZER_AFTER_PRINT"
+msgstr "Зуммер после печати"
+
+#: BaseTabDialog.cpp:24
+msgid "PO_IDC_CHECK_BASE_AUTO_REPRINT"
+msgstr "Автоматически перепечатать последний чек"
+
+#: BaseTabDialog.cpp:26 RppTabDialog.cpp:307 UDPSearchTabDialog.cpp:229
+msgid "PO_GSTR_SELF_TEST"
+msgstr "Самотестирование"
+
+#: Big5TabDialog.cpp:15
+msgid "PO_IDC_STATIC_BIG5_E"
+msgstr "Режим эмуляции"
+
+#: Big5TabDialog.cpp:16
+msgid "PO_IDC_STATIC_BIG5_LANGUAGE"
+msgstr "Язык"
+
+#: Big5TabDialog.cpp:17
+msgid "PO_IDC_STATIC_BIG5_SPEED"
+msgstr "Скорость"
+
+#: Big5TabDialog.cpp:18
+msgid "PO_IDC_STATIC_BIG5_BARDCODE_WIDE"
+msgstr "Широкий штрихкод"
+
+#: Big5TabDialog.cpp:19
+msgid "PO_IDC_STATIC_BIG5_PAPER_WIDTH"
+msgstr "Ширина бумаги"
+
+#: Big5TabDialog.cpp:20
+msgid "PO_IDC_STATIC_BIG5_AUTO_REPRINT"
+msgstr "Режим автоматической перепечатки"
+
+#: BlackMarkTabDialog.cpp:14
+msgid "PO_IDC_STATIC_BM_LENGHT"
+msgstr "Длина черной метки"
+
+#: BlackMarkTabDialog.cpp:15
+msgid "PO_IDC_STATIC_BM_WIDTH"
+msgstr "Ширина черной метки"
+
+#: BlackMarkTabDialog.cpp:16
+msgid "PO_IDC_STATIC_BM_PRINT"
+msgstr "Печать после черной метки"
+
+#: BlackMarkTabDialog.cpp:17
+msgid "PO_IDC_STATIC_BM_CUT"
+msgstr "Отрез после черной метки"
+
+#: BlackMarkTabDialog.cpp:18 OtherTabDialog.cpp:84 PaperSaveDialog.cpp:435
+#: PaperSaveDialog.cpp:440
+msgid "PO_GSTR_ENABLE"
+msgstr "Включить"
+
+#: BlackMarkTabDialog.cpp:19 OtherTabDialog.cpp:83 OtherTabDialog.cpp:85
+#: PaperSaveDialog.cpp:434 PaperSaveDialog.cpp:439
+msgid "PO_GSTR_DISABLE"
+msgstr "Отключить"
+
+#: BlackMarkTabDialog.cpp:20
+msgid "PO_IDC_BUTTON_BLACK_NEXT_MARK"
+msgstr "Следующая черная метка"
+
+#: BlackMarkTabDialog.cpp:21
+msgid "PO_IDC_BUTTON_BLACK_NEXT_CUT"
+msgstr "Следующий отрез"
+
+#: BlackMarkTabDialog.cpp:97 BlackMarkTabDialog.cpp:105
+#: BlackMarkTabDialog.cpp:142 BlackMarkTabDialog.cpp:150
+#: BlackMarkTabDialog.cpp:187 BlackMarkTabDialog.cpp:195
+#: BlackMarkTabDialog.cpp:243 BlackMarkTabDialog.cpp:251 HotTabDialog.cpp:42
+#: HotTabDialog.cpp:50 OtherTabDialog.cpp:125 OtherTabDialog.cpp:133
+#: RppTabDialog.cpp:52 RppTabDialog.cpp:60 RppTabDialog.cpp:73
+#: RppTabDialog.cpp:81 RppTabDialog.cpp:94 RppTabDialog.cpp:102
+#: RppTabDialog.cpp:115 RppTabDialog.cpp:123
+msgid "PO_GSTR_BM_NUMBER_ERR"
+msgstr "Пожалуйста, введите номер"
+
+#: BlueToothDialog.cpp:15
+msgid "PO_IDC_STATIC_RPP_DEV_NAME"
+msgstr "Please input device name"
+
+#: BlueToothDialog.cpp:16 RppTabDialog.cpp:304
+msgid "PO_IDC_STATIC_RPP_PIN"
+msgstr "Пин"
+
+#: BlueToothDialog.cpp:17
+msgid "PO_IDC_STATIC_RPP_MODEL_NAME"
+msgstr "Имя модели"
+
+#: BlueToothDialog.cpp:18
+msgid "PO_IDC_STATIC_RPP_SERIAL"
+msgstr "Номер устройства"
+
+#: BlueToothDialog.cpp:93 RppTabDialog.cpp:199
+msgid "PO_GSTR_RPP_DEV_NAME_EMPTY_ERR"
+msgstr "Пожалуйста, введите имя устройства"
+
+#: BlueToothDialog.cpp:110 RppTabDialog.cpp:214
+msgid "PO_GSTR_RPP_PIN_EMPTY_ERR"
+msgstr "Пожадуйста, введите пин"
+
+#: BlueToothDialog.cpp:118
+msgid "PO_GSTR_RPP_PIN_FORMAT_ERR"
+msgstr "Пожалуйста, введите число! "
+
+#: BlueToothDialog.cpp:149 RppTabDialog.cpp:247
+msgid "PO_GSTR_RPP_MODEL_NAME_EMPTY_ERR"
+msgstr "Пожалуйста, введите имя модели"
+
+#: BlueToothDialog.cpp:164 RppTabDialog.cpp:261
+msgid "PO_GSTR_RPP_SERIAL_EMPTY_ERR"
+msgstr "Пожалуйста, введите серийный номер"
+
+#: CharacterLibAddrDialog.cpp:12
+msgid "PO_DLG_CHARACTER_ADDRESS"
+msgstr ""
+
+#: CharacterLibAddrDialog.cpp:15
+msgid "PO_IDC_STATIC_ADDR"
+msgstr ""
+
+#: CharacterLibAddrDialog.cpp:16
+msgid "PO_IDC_BUTTON_ADDR_OK"
+msgstr ""
+
+#: CharacterLibAddrDialog.cpp:17
+msgid "PO_IDC_BUTTON_ADDR_CANCEL"
+msgstr ""
+
+#: CharacterLibAddrDialog.cpp:42
+msgid "PO_GSTR_CHAR_LIB_ADDR_ERROR"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:82
+msgid "PO_IDC_STATIC_CHARACTER_LIBRARY_SELECT"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:84
+msgid "PO_IDC_BUTTON_CHARACTER_LIBRARY_OPEN"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:85
+msgid "PO_IDC_BUTTON_CHARACTER_LIBRARY_UPDATE"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:121 CharacterLibTabDialog.cpp:217
+#: CharacterLibTabDialog.cpp:516 ProgramTabDialog.cpp:29
+#: ProgramTabDialog.cpp:37 ProgramTabDialog.cpp:126
+msgid "PO_GSTR_INVALID_FIRMWARE"
+msgstr "Ошибка прошивки"
+
+#: CharacterLibTabDialog.cpp:165 CharacterLibTabDialog.cpp:465
+msgid "PO_GSTR_FONT_DATALEN_MAX_ERROR"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:171 CharacterLibTabDialog.cpp:471
+msgid "PO_GSTR_FONT_DATALEN_MIN_ERROR"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:337
+msgid "PO_GSTR_SETTING_SUCCESS"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:341
+msgid "PO_GSTR_SETTING_FAIL"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:367
+msgid "PO_GSTR_DOWNLOAD_CHARACTER_LIB"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:422 CharacterLibTabDialog.cpp:480
+msgid "PO_GSTR_UPDATE_FAIL"
+msgstr ""
+
+#: CharacterLibTabDialog.cpp:426
+msgid "PO_GSTR_UPDATE_SUCCESS"
+msgstr ""
+
+#: CheckInfoDialog.cpp:27 CheckInfoDialog.cpp:35
+msgid "PO_GSTR_CHECK_INFO_SN_ERR"
+msgstr "Пожалуйста, введите правильный серийный номер"
+
+#: CheckInfoDialog.cpp:43
+msgid "PO_GSTR_CHECK_INFO_SN_LEN_ERR"
+msgstr "Длина SN должна быть 6~37 символов"
+
+#: CheckInfoDialog.cpp:150
+msgid "PO_IDC_STATIC_FIRMWARE"
+msgstr "ПРОШИВКА"
+
+#: CheckInfoDialog.cpp:151
+msgid "PO_IDC_STATIC_FACTORY"
+msgstr "ПРОИЗВОДИТЕЛЬ"
+
+#: CheckInfoDialog.cpp:152
+msgid "PO_IDC_STATIC_DEVICE"
+msgstr "УСТРОЙСТВО"
+
+#: CheckInfoDialog.cpp:153
+msgid "PO_IDC_STATIC_SN"
+msgstr "SN"
+
+#: CheckInfoDialog.cpp:158
+msgid "PO_GSTR_LOAD_INFO_ERR"
+msgstr "Не удалось получить данные от модуля проверки информации"
+
+#: CmdSettingTabDialog.cpp:14
+msgid "PO_IDC_STATIC_CMD_SETTING_CMD_TYPE"
+msgstr "Тип команды"
+
+#: CmdSettingTabDialog.cpp:15
+msgid "PO_IDC_STATIC_CMD_SETTING_PAPER_WIDTH"
+msgstr "Ширина бумаги"
+
+#: CmdSettingTabDialog.cpp:26
+msgid "PO_GSTR_LABEL_COMMAND"
+msgstr "Ярлык команды"
+
+#: CmdSettingTabDialog.cpp:27
+msgid "PO_GSTR_ESC_POS"
+msgstr "ESC/POS"
+
+#: DownloadDialog.cpp:54
+msgid "PO_DOWNLOAD_DLG_CAPTION"
+msgstr "Загрузить"
+
+#: DownloadDialog.cpp:72
+msgid "PO_DOWNLOAD_DLG_PROGRAM"
+msgstr "Программа"
+
+#: DownloadDialog.cpp:77
+msgid "PO_DOWNLOAD_DLG_LOGO"
+msgstr "Логотип"
+
+#: DownloadDialog.cpp:80
+msgid "PO_DOWNLOAD_DLG_CHARACTER_LIB"
+msgstr ""
+
+#: EthernetDialog.cpp:26
+msgid "PO_IDD_DIALOG_ETHERNET"
+msgstr "Ethernet"
+
+#: EthernetDialog.cpp:27
+msgid "PO_GSTR_OK"
+msgstr "Да"
+
+#: EthernetDialog.cpp:28 ParamSetDialog.cpp:33
+msgid "PO_GSTR_CANCEL"
+msgstr "Выход"
+
+#: EthernetDialog.cpp:42 EthernetDialog.cpp:49 EthernetDialog.cpp:59
+msgid "PO_GSTR_NET_INPUT_VALID_PORT"
+msgstr "Пожалуйста, выберите правильный порт"
+
+#: GrayscalePrintDialog.cpp:129
+msgid "PO_IDD_DIALOG_GRAYSCALE_PRINT"
+msgstr "Печать в оттенках серого"
+
+#: GrayscalePrintDialog.cpp:132
+msgid "PO_IDC_STATIC_BASE_OLD_IMAGE"
+msgstr "Оригинальное изображение"
+
+#: GrayscalePrintDialog.cpp:133
+msgid "PO_IDC_STATIC_BASE_NEW_IMAGE"
+msgstr "Изменненное изображение"
+
+#: GrayscalePrintDialog.cpp:134
+msgid "PO_IDC_BUTTON_TEST_PRINT"
+msgstr "Тестовая печать"
+
+#: GrayscalePrintDialog.cpp:135
+msgid "PO_IDC_BUTTON_OK"
+msgstr "Да"
+
+#: GrayscalePrintDialog.cpp:136
+msgid "PO_IDC_BUTTON_CANCLE"
+msgstr "Отменить"
+
+#: HotTabDialog.cpp:15
+msgid "PO_IDC_STATIC_HEART_TIME"
+msgstr "Время нагрева"
+
+#: HotTabDialog.cpp:59
+msgid "PO_GSTR_HOTTIME_NUMBER_ERR"
+msgstr "Введенное значение должно быть больше 300"
+
+#: HotTabDialog.cpp:65
+msgid "PO_GSTR_HOTTIME_NUMBER_OVER_ERR"
+msgstr "Введенное значение должно быть меньше 800"
+
+#: LogoTabDialog.cpp:79 LogoTabDialog.cpp:877
+msgid "PO_GSTR_LOGO_LIST_MAX"
+msgstr "Больше не удается добавить в журнал"
+
+#: LogoTabDialog.cpp:109
+msgid "PO_GSTR_INFO_DELETE_LOGO"
+msgstr ""
+
+#: LogoTabDialog.cpp:125
+msgid "PO_GSTR_DELETE_LOGO_ERR"
+msgstr ""
+
+#: LogoTabDialog.cpp:135 LogoTabDialog.cpp:174
+msgid "PO_GSTR_DELETE_LOGO_SUCCESS"
+msgstr ""
+
+#: LogoTabDialog.cpp:282
+msgid "PO_GSTR_SHOW_ONLY_ONE_ERR"
+msgstr "Показано первое изображение из нескольких изображений"
+
+#: LogoTabDialog.cpp:321 LogoTabDialog.cpp:796 LogoTabDialog.cpp:825
+#: LogoTabDialog.cpp:848
+msgid "PO_GSTR_SELECT_LOGO_ERR"
+msgstr "Пожалуйста, выберите логотип!"
+
+#: LogoTabDialog.cpp:644
+msgid "PO_GSTR_INFO_DOWNLOAD_LOGO"
+msgstr ""
+
+#: LogoTabDialog.cpp:644
+msgid "PO_GSTR_INFO_DOWNLOAD_LOGO_BMP"
+msgstr ""
+
+#: LogoTabDialog.cpp:662 LogoTabDialog.cpp:672
+msgid "PO_GSTR_DOWNLOAD_LOGO_ERR"
+msgstr "Ошибка при загрузке логотипа"
+
+#: LogoTabDialog.cpp:681
+msgid "PO_GSTR_DOWNLOAD_LOGO_SUCCESS"
+msgstr ""
+
+#: LogoTabDialog.cpp:742
+msgid "PO_GSTR_DOWNLOADING_LOGO"
+msgstr ""
+
+#: LogoTabDialog.cpp:781
+msgid "PO_GSTR_PRINTER_CAPACITY_OVERSTEP"
+msgstr ""
+
+#: LogoTabDialog.cpp:891
+msgid "PO_GSTR_ONLY_ONE_FILE_SELECT"
+msgstr "Может быть выбран только один bmp файл"
+
+#: LogoTabDialog.cpp:1095
+msgid "PO_GSTR_INFO_GET_LOGO"
+msgstr ""
+
+#: LogoTabDialog.cpp:1095
+msgid "PO_GSTR_INFO_GET_LOGO_BMP"
+msgstr ""
+
+#: LogoTabDialog.cpp:1128 LogoTabDialog.cpp:1190
+msgid "PO_IDC_STATIC_GET_LOGO_FAIL_NOTICE"
+msgstr "Примечание: Ошибка получения сообщения от принтера"
+
+#: LogoTabDialog.cpp:1196
+msgid "PO_GSTR_ERROR_LOGO_MAX"
+msgstr ""
+
+#: LogoTabDialog.cpp:1202
+msgid "PO_GSTR_GETING_LOGO"
+msgstr ""
+
+#: LogoTabDialog.cpp:1227
+msgid "PO_IDC_STATIC_LOGO_NOTICE"
+msgstr "Полученный от принтера номер логотипа "
+
+#: LogoTabDialog.cpp:1260 Util.cpp:20
+msgid "PO_GSTR_SET_SUCCESS"
+msgstr "Установка успешна"
+
+#: LogoTabDialog.cpp:1264
+msgid "PO_GSTR_SET_FAIL"
+msgstr "Ошибка установки"
+
+#: LogoTabDialog.cpp:1273 ProgramTabDialog.cpp:187
+msgid "PO_IDC_STATIC_PROGRAM_SELECT"
+msgstr "Выберите прошивку принтера"
+
+#: LogoTabDialog.cpp:1275
+msgid "PO_GSTR_ADD"
+msgstr "Добавить"
+
+#: LogoTabDialog.cpp:1276
+msgid "PO_GSTR_DELETE"
+msgstr "Удалить"
+
+#: LogoTabDialog.cpp:1277
+msgid "PO_GSTR_DOWNLOAD"
+msgstr "Загрузить"
+
+#: LogoTabDialog.cpp:1278
+msgid "PO_GSTR_PRINT_LOGO_EXIST"
+msgstr "Логотип для печати"
+
+#: LogoTabDialog.cpp:1280
+msgid "PO_GSTR_GET_LOGO"
+msgstr "Получить логотип"
+
+#: LogoTabDialog.cpp:1281
+msgid "PO_GSTR_MODIFY_LOGO"
+msgstr "Изменить логотип"
+
+#: LogoTabDialog.cpp:1282
+msgid "PO_IDC_BUTTON_LOGO_LOOK_UP"
+msgstr "Посмотреть логотип"
+
+#: LptDialog.cpp:104
+msgid "PO_GSTR_CONFIG_LPT"
+msgstr "Настроить LPT порт"
+
+#: LptDialog.cpp:106
+msgid "PO_GSTR_TIMEOUT"
+msgstr "Задержка (секунды)"
+
+#: LptDialog.cpp:108
+msgid "PO_GSTR_RETRY"
+msgstr "Повторная передача"
+
+#: LptDialog.cpp:110
+msgid "PO_GSTR_LPT_OK"
+msgstr "Да"
+
+#: LptDialog.cpp:111
+msgid "PO_GSTR_LPT_CANCEL"
+msgstr "Прервать"
+
+#: LptDialog.cpp:158
+msgid "PO_GSTR_CONFIG_PORT_ERROR"
+msgstr "Невозможно настроить порт"
+
+#: MainDlg.cpp:87 maindlg.CPP:87
+msgid "PO_GSTR_RONGTA_MAIN_DLG_CAPTION"
+msgstr "PionerPrinterTool"
+
+#: MainDlg.cpp:89 maindlg.CPP:89
+msgid "PO_GSTR_MAIN_DLG_CAPTION"
+msgstr "PionerPrinterTool"
+
+#: MainDlg.cpp:97 maindlg.CPP:97
+msgid "PO_IDC_STATIC_MAIN_GROUP"
+msgstr "Связь с принтером"
+
+#: MainDlg.cpp:98 maindlg.CPP:98
+msgid "PO_IDC_RADIO_SELECT_PORT"
+msgstr "Порт"
+
+#: MainDlg.cpp:99 maindlg.CPP:99
+msgid "PO_IDC_RADIO_SELECT_DRIVER"
+msgstr "Драйвер принтера"
+
+#: MainDlg.cpp:100 maindlg.CPP:100
+msgid "PO_IDC_BUTTON_CONFIG_PORT"
+msgstr "Настроить порт"
+
+#: MainDlg.cpp:101 maindlg.CPP:101
+msgid "PO_IDC_BUTTON_SET"
+msgstr "Настроить принтер"
+
+#: MainDlg.cpp:102 maindlg.CPP:102
+msgid "PO_IDC_BUTTON_DOWNLOAD"
+msgstr "Загрузить"
+
+#: MainDlg.cpp:328 Util.cpp:29 maindlg.CPP:328
+msgid "PO_GSTR_SET_COM_NEED_CONFIG"
+msgstr "Сначала необходимо настроить порт"
+
+#: MainDlg.cpp:334 maindlg.CPP:334
+msgid "PO_GSTR_SET_ENET_NEED_CONFIG"
+msgstr "Сначала необходимо настроить IP"
+
+#: MainDlg.cpp:397 maindlg.CPP:397
+msgid "PO_GSTR_CANNOT_CONFIG_PORT"
+msgstr "Порт не настроен"
+
+#: NetTabDialog.cpp:22
+msgid "PO_IDC_STATIC_NET_PORT"
+msgstr "Порт"
+
+#: NetTabDialog.cpp:23
+msgid "PO_IDC_STATIC_NET_DUPLEX_MODE"
+msgstr "Дуплексный режим"
+
+#: NetTabDialog.cpp:178 ParamSetDialog.cpp:269 WifiTabDialog.cpp:296
+msgid "PO_GSTR_CHECK_MAC_FAIL"
+msgstr "Значение MAC неверно. Пожалуйста, укажите значение между 00 и ff"
+
+#: NetTabDialog.cpp:194 ParamSetDialog.cpp:284 WifiTabDialog.cpp:312
+msgid "PO_GSTR_CHECK_MAC_ALL_ZERO"
+msgstr ""
+"Значение MAC не может быть полностью нулевым.  Пожалуйста, укажите значение "
+"между 00 и ff"
+
+#: NetTabDialog.cpp:236 ParamSetDialog.cpp:136
+msgid "PO_GSTR_INVALID_IP_FIRST_PART"
+msgstr "Значение не верно.  Пожалуйста, укажите значение между 1 и 127"
+
+#: NetTabDialog.cpp:243 ParamSetDialog.cpp:143
+msgid "PO_GSTR_INVALID_IP_FIRST_PART_127"
+msgstr ""
+"IP адрес начинающийся с 127 зарезервирован за локальным устройством.  "
+"Пожалуйста, укажите другое значение между 1 и 223."
+
+#: OtherTabDialog.cpp:14
+msgid "PO_IDC_STATIC_QUEUE_NUMBER"
+msgstr "Серийный номер"
+
+#: OtherTabDialog.cpp:16
+msgid "PO_IDC_STATIC_DATE_AND_TIME"
+msgstr "Дата и время"
+
+#: OtherTabDialog.cpp:18
+msgid "PO_IDC_STATIC_OTHER_76_MODE"
+msgstr "Режим печати 76"
+
+#: OtherTabDialog.cpp:19
+msgid "PO_IDC_STATIC_OTHER_80_MODE"
+msgstr "Режим печати 80"
+
+#: OtherTabDialog.cpp:22
+msgid "PO_IDC_STATIC_OTHER_RUN_OUT_OF_PAPER"
+msgstr "Бумага заканчивается"
+
+#: OtherTabDialog.cpp:24
+msgid "PO_IDC_STATIC_OTHER_CHANGE_PORT"
+msgstr "Изменить порт"
+
+#: OtherTabDialog.cpp:27
+msgid "PO_IDC_STATIC_OTHER_VOLUME_SET"
+msgstr "Настройка звука"
+
+#: OtherTabDialog.cpp:29
+msgid "PO_IDC_STATIC_OTHER_USB_SET"
+msgstr ""
+
+#: OtherTabDialog.cpp:32
+msgid "PO_IDC_STATIC_OTHER_BLACK_MARK_SET"
+msgstr ""
+
+#: OtherTabDialog.cpp:61 OtherTabDialog.cpp:63
+msgid "PO_GSTR_76MM_MODE"
+msgstr "Бумага 76 мм"
+
+#: OtherTabDialog.cpp:62
+msgid "PO_GSTR_58MM_MODE"
+msgstr "Бумага 58 мм"
+
+#: OtherTabDialog.cpp:88
+msgid "PO_GSTR_USB"
+msgstr ""
+
+#: OtherTabDialog.cpp:89
+msgid "PO_GSTR_USB_PORT"
+msgstr ""
+
+#: OtherTabDialog.cpp:93
+msgid "PO_GSTR_STANDARD_BLACK_MARK"
+msgstr ""
+
+#: OtherTabDialog.cpp:94
+msgid "PO_GSTR_OLD_BLACK_MARK"
+msgstr ""
+
+#: OtherTabDialog.cpp:98
+msgid "PO_GSTR_VOLUME_VOICELESS"
+msgstr "Беззвучно"
+
+#: OtherTabDialog.cpp:99
+msgid "PO_GSTR_VOLUME_SOFTLY"
+msgstr "Тихо"
+
+#: OtherTabDialog.cpp:100
+msgid "PO_GSTR_VOLUME_MODERATE"
+msgstr "Настраиваемая громкость"
+
+#: OtherTabDialog.cpp:101
+msgid "PO_GSTR_VOLUME_LOUD"
+msgstr "Громко"
+
+#: PaperSaveDialog.cpp:419
+msgid "PO_IDC_STATIC_TOP_EMPTY_CUT_RATE"
+msgstr "Удалять пробелы сверху"
+
+#: PaperSaveDialog.cpp:420
+msgid "PO_IDC_STATIC_BELOW_EMPTY_CUT_RATE"
+msgstr "Удалять пробелы снизу"
+
+#: PaperSaveDialog.cpp:421
+msgid "PO_IDC_STATIC_INTERVAL_CUT_RATE"
+msgstr "Уменьшить межстрочный интервал"
+
+#: PaperSaveDialog.cpp:422
+msgid "PO_IDC_STATIC_CHANGE_LINE_CUT_RATE"
+msgstr "Уменьшить текстовое поле"
+
+#: PaperSaveDialog.cpp:423
+msgid "PO_IDC_STATIC_CUT_HEIGHT_RATE"
+msgstr "Уменьшить поле штрихкода"
+
+#: PaperSaveDialog.cpp:424
+msgid "PO_IDC_STATIC_PAPER_NORMAL"
+msgstr "Стандартный"
+
+#: PaperSaveDialog.cpp:425
+msgid "PO_IDC_STATIC_PAPER_CUSTOM"
+msgstr "Пользовательский"
+
+#: PaperSaveDialog.cpp:426
+msgid "PO_IDC_BUTTON_PAPER_SAVE_SET"
+msgstr "Установить"
+
+#: PaperSaveDialog.cpp:444 PaperSaveDialog.cpp:459 PaperSaveDialog.cpp:474
+msgid "PO_GSTR_NONE"
+msgstr "Нет"
+
+#: ParamSetDialog.cpp:30
+msgid "PO_GSTR_PARAM_SET_DLG_CAPTION"
+msgstr "Информация о принтере"
+
+#: ParamSetDialog.cpp:32
+msgid "PO_GSTR_PARAM_SET_OK"
+msgstr "Да"
+
+#: ParamSetDialog.cpp:358 UDPSearchTabDialog.cpp:103
+#: UDPSearchTabDialog.cpp:132
+msgid "PO_GSTR_SEND_TCP_DATA_ERROR"
+msgstr "Ошибка отправки данных принтеру"
+
+#: PrinterSetDialog.cpp:42
+msgid "PO_PRINTER_SET_DLG_CAPTION"
+msgstr "Настроить принтер"
+
+#: PrinterSetDialog.cpp:61
+msgid "PO_PRINTER_SET_DLG_BASE"
+msgstr "Основные"
+
+#: PrinterSetDialog.cpp:66
+msgid "PO_PRINTER_SET_DLG_EHTERNET"
+msgstr "Ethernet"
+
+#: PrinterSetDialog.cpp:70
+msgid "PO_PRINTER_SET_DLG_WIFI"
+msgstr "WiFi"
+
+#: PrinterSetDialog.cpp:73
+msgid "PO_GSTR_RPP_BLUETOOTH_NOTICE"
+msgstr "Настройка bluetooth"
+
+#: PrinterSetDialog.cpp:77
+msgid "PO_PRINTER_SET_DLG_BM"
+msgstr "Черная метка"
+
+#: PrinterSetDialog.cpp:81
+msgid "PO_PRINTER_SET_DLG_RPP"
+msgstr "RPP"
+
+#: PrinterSetDialog.cpp:85
+msgid "PO_PRINTER_SET_DLG_HEART_TIME"
+msgstr "Время нагрева"
+
+#: PrinterSetDialog.cpp:89
+msgid "PO_PRINTER_SET_DLG_2D_BAR"
+msgstr "Штрихкод 2D"
+
+#: PrinterSetDialog.cpp:93
+msgid "PO_PRINTER_SET_DLG_SERIAL"
+msgstr "Последовательный порт"
+
+#: PrinterSetDialog.cpp:97
+msgid "PO_PRINTER_SET_DLG_SERIAL_PRINTER"
+msgstr "Поиск принтера"
+
+#: PrinterSetDialog.cpp:101
+msgid "PO_PRINTER_SET_DLG_BIG5"
+msgstr "BIG5"
+
+#: PrinterSetDialog.cpp:104
+msgid "PO_PRINTER_SET_DLG_CMD_SETTING"
+msgstr "Выбор набора команд"
+
+#: PrinterSetDialog.cpp:107
+msgid "PO_PRINTER_SET_DLG_PAPER_SAVE"
+msgstr "Настройка бумаги"
+
+#: PrinterSetDialog.cpp:110
+msgid "PO_PRINTER_SET_DLG_OTHER"
+msgstr "Дополнительно"
+
+#: ProgramTabDialog.cpp:175
+msgid "PO_GSTR_UPDATE_FIRMWARE_SUCCESS"
+msgstr "Обновление прошивки успешно!"
+
+#: ProgramTabDialog.cpp:189
+msgid "PO_IDC_BUTTON_PROGRAM_OPEN"
+msgstr "Выберите файл прошивки"
+
+#: ProgramTabDialog.cpp:190
+msgid "PO_IDC_BUTTON_PROGRAM_UPDATE"
+msgstr "Обновить"
+
+#: RppTabDialog.cpp:298
+msgid "PO_IDC_STATIC_RPP_FONT"
+msgstr "Шрифт"
+
+#: RppTabDialog.cpp:301
+msgid "PO_IDC_STATIC_RPP_IDLE_TIME"
+msgstr "Время задержки"
+
+#: RppTabDialog.cpp:302
+msgid "PO_IDC_STATIC_RPP_MAX_FEED"
+msgstr "Максимальный сдвиг"
+
+#: RppTabDialog.cpp:303
+msgid "PO_IDC_STATIC_RPP_PAGE_LEN"
+msgstr "Длина страницы"
+
+#: RppTabDialog.cpp:305
+msgid "PO_IDC_STATIC_RPP_OFF_TIME"
+msgstr "Время до отключения"
+
+#: SerialTabDialog.cpp:14
+msgid "PO_IDC_STATIC_SERIAL_NUMBER_BITS"
+msgstr "Число бит данных"
+
+#: SerialTabDialog.cpp:15
+msgid "PO_GSTR_STOP_BITS"
+msgstr "Стоп бит"
+
+#: SerialTabDialog.cpp:16
+msgid "PO_IDC_STATIC_SERIAL_HAND_SHAKE"
+msgstr "Квитирование"
+
+#: UDPSearchTabDialog.cpp:54 UDPSearchTabDialog.cpp:72
+#: UDPSearchTabDialog.cpp:85 UDPSearchTabDialog.cpp:114
+msgid "PO_GSTR_PARAM_SET_SELECT_PRINTER"
+msgstr "Пожалуйста, выберите подключенный принтер"
+
+#: UDPSearchTabDialog.cpp:228
+msgid "PO_IDC_BUTTON_UDP_STATUS"
+msgstr "Статус"
+
+#: UDPSearchTabDialog.cpp:230
+msgid "PO_GSTR_REBOOT"
+msgstr "Перезагрузить"
+
+#: UDPSearchTabDialog.cpp:231
+msgid "PO_GSTR_SEARCH"
+msgstr "Найти принтеры"
+
+#: UDPSearchTabDialog.cpp:233
+msgid "PO_IDC_STATIC_UDP_NOTICE"
+msgstr ""
+"Внимание, после поиска принтера, пожалуйста выберите принтер в списке перед "
+"началом других операций"
+
+#: UDPSearchTabDialog.cpp:261
+msgid "PO_IDC_STATIC_UDP_LOCAL_IP"
+msgstr "Локальный IP адрес"
+
+#: Util.cpp:23
+msgid "PO_GSTR_OPEN_COM_ERROR"
+msgstr "Невозможно открыть COM-порт"
+
+#: Util.cpp:26
+msgid "PO_GSTR_SET_COM_FAIL"
+msgstr "Ошибка настройки COM-порта"
+
+#: Util.cpp:32
+msgid "PO_GSTR_WRITE_COM_FAIL"
+msgstr "Ошибка записи в COM-порт принтера"
+
+#: Util.cpp:35
+msgid "PO_GSTR_READ_COM_FAIL"
+msgstr "Ошибка чтения из COM-порта принтера"
+
+#: Util.cpp:38
+msgid "PO_GSTR_COM_GET_COMM_STATE_FAIL"
+msgstr "Ошибка получения статуса COM-порта"
+
+#: Util.cpp:41
+msgid "PO_GSTR_WRITE_ENET_FAIL"
+msgstr "Ошибка записи сетевого принтера"
+
+#: Util.cpp:44
+msgid "PO_GSTR_READ_ENET_FAIL"
+msgstr "Ошибка чтения сетевого принтера"
+
+#: Util.cpp:47
+msgid "PO_GSTR_OPEN_LPT_FAIL"
+msgstr "Ошибка открытия LPT-порта"
+
+#: Util.cpp:50
+msgid "PO_GSTR_WRITE_LPT_FAIL"
+msgstr "Ошибка записи LPT-порта"
+
+#: Util.cpp:53
+msgid "PO_GSTR_READ_LPT_FAIL"
+msgstr "Ошибка чтения LPT-порта"
+
+#: Util.cpp:56
+msgid "PO_GSTR_GET_LPT_CONFIG_ERROR"
+msgstr "Ошибка получения конфигурации LPT-порта"
+
+#: Util.cpp:59
+msgid "PO_GSTR_OPEN_PRINTER_FAIL"
+msgstr "Ошибка открытия принтера"
+
+#: Util.cpp:62
+msgid "PO_GSTR_WRITE_PRINTER_FAIL"
+msgstr "Ошибка записи принтера"
+
+#: Util.cpp:65
+msgid "PO_GSTR_READ_PRINTER_FAIL"
+msgstr "Ошибка чтения принтера"
+
+#: Util.cpp:68
+msgid "PO_GSTR_START_DOC_FAIL"
+msgstr "Ошибка старта документа"
+
+#: Util.cpp:71
+msgid "PO_GSTR_START_PAGE_FAIL"
+msgstr "Ошибка старта страницы"
+
+#: Util.cpp:74
+msgid "PO_GSTR_END_PAGE_FAIL"
+msgstr "Ошибка окончания страницы"
+
+#: Util.cpp:77
+msgid "PO_GSTR_END_DOC_FAIL"
+msgstr "Ошибка окончания документа"
+
+#: Util.cpp:80
+msgid "PO_GSTR_WRITE_PRINTER_LESS"
+msgstr "Пакет данных отправленный на принтер меньше необходимого"
+
+#: Util.cpp:83
+msgid "PO_GSTR_OPEN_USB_FAIL"
+msgstr "Ошибка открытия USB принтера"
+
+#: Util.cpp:86
+msgid "PO_GSTR_WRITE_USB_FAIL"
+msgstr "Ошибка записи USB принтера"
+
+#: Util.cpp:89
+msgid "PO_GSTR_READ_USB_FAIL"
+msgstr "Ошибка чтения USB принтера"
+
+#: Util.cpp:92
+msgid "PO_GSTR_WRITE_USB_LESS"
+msgstr "Пакет данных отправленный на USB принтер меньше необходимого"
+
+#: Util.cpp:95
+msgid "PO_GSTR_ENET_CONNECT_FAIL"
+msgstr ""
+
+#: Util.cpp:98
+msgid "PO_GSTR_ENET_READ_LESS"
+msgstr ""
+
+#: WifiTabDialog.cpp:20
+msgid "PO_IDC_STATIC_WIFI_MODE"
+msgstr "Режим"
+
+#: WifiTabDialog.cpp:21 WifiTabDialog.cpp:24
+msgid "PO_GSTR_TYPE"
+msgstr "Тип"
+
+#: WifiTabDialog.cpp:22
+msgid "PO_IDC_STATIC_WIFI_WPA_ENCRY"
+msgstr "Шифрование"
+
+#: WifiTabDialog.cpp:23
+msgid "PO_IDC_STATIC_WIFI_WPA_KEY"
+msgstr "Ключ PSK"
+
+#: WifiTabDialog.cpp:25
+msgid "PO_IDC_STATIC_WIFI_WEP_KEY"
+msgstr "Ключ"
+
+#: WifiTabDialog.cpp:27
+msgid "PO_IDC_RADIO_WIFI_NONE"
+msgstr "Открытая сеть (нет ключа)"
+
+#: WifiTabDialog.cpp:124
+msgid "PO_GSTR_WIFI_SSID_EMPTY_ERR"
+msgstr "SSID пустой, пожалуйста введите SSID"
+
+#: WifiTabDialog.cpp:151
+msgid "PO_GSTR_WIFI_PSKKEY_ERR"
+msgstr "Ключ PSK пуст, пожалуйста введите PSK ключ"
+
+#: WifiTabDialog.cpp:178
+msgid "PO_GSTR_WIFI_WEP_KEY_ERR"
+msgstr "Ключ WEP пуст, пожалуйста введите WEP ключ"
+
+#~ msgid "PO_GSTR_PRINT"
+#~ msgstr "Печать"
+
+#~ msgid "PO_GSTR_COM"
+#~ msgstr "Com"
+
+#~ msgid "PO_IDC_STATIC_RPP_IOS_DEV_NAME"
+#~ msgstr "IOS Device Name:"
+
+#~ msgid "PO_IDC_STATIC_RPP_IOS_PIN"
+#~ msgstr "IOS Pin:"
+
+#~ msgid "PO_GSTR_RPP_IOS_PIN_FORMAT_ERR"
+#~ msgstr "Please enter  digit!"
+
+#~ msgid "PO_GSTR_OPEN_COM_FAIL"
+#~ msgstr "Open com fail"
+
+#~ msgid "PO_PRINTER_SET_DLG_CHECK_INFO"
+#~ msgstr "Check Infomation"
+
+#~ msgid "PO_IDC_STATIC_OTHER_MODE"
+#~ msgstr "Mode:"
+
+#~ msgid "PO_GSTR_INVALID_IP"
+#~ msgstr "Please enter a valid ip address"
+
+#~ msgid "PO_IDC_STATIC_SERIAL_DHCP"
+#~ msgstr "DHCP:"
+
+#~ msgid "PO_IDC_STATIC_SERIAL_512_DOTS"
+#~ msgstr "512 Dots:"
+
+#~ msgid "PO_GSTR_PRINTER_NOT_SELECT"
+#~ msgstr "Please select a existent printer!"
+
+#~ msgid "PO_GSTR_DLG_CAPTION"
+#~ msgstr "Ethernet Printer Config Tool"
+
+#~ msgid "PO_GSTR_STATIC_NOTICE"
+#~ msgstr ""
+#~ "Notice: After searched printers, please select the printer before other "
+#~ "operation."
+
+#~ msgid "PO_GSTR_STATIC_IP"
+#~ msgstr "Local IP Address: "
+
+#~ msgid "PO_GSTR_PRAAM_SET"
+#~ msgstr "Printer Parameter Settings"
+
+#~ msgid "PO_GSTR_PRINTER_STATUS"
+#~ msgstr "Printer Status"
+
+#~ msgid "PO_GSTR_SELFTEST"
+#~ msgstr "Printer Self Test Page"
+
+#~ msgid "PO_GSTR_DUPLEX_AUTO"
+#~ msgstr "Auto Detect"
+
+#~ msgid "PO_GSTR_10M_HALF"
+#~ msgstr "10Mbps Half Duplex"
+
+#~ msgid "PO_GSTR_100M_HALF"
+#~ msgstr "100Mbps Half Duplex"
+
+#~ msgid "PO_GSTR_10M_FULL"
+#~ msgstr "10Mbps Full Duplex"
+
+#~ msgid "PO_GSTR_100M_FULL"
+#~ msgstr "100Mbps Full Duplex"
+
+#~ msgid "PO_GSTR_INSTALL_DRIVER_ERROR"
+#~ msgstr "Driver install fail"
+
+#~ msgid "PO_GSTR_ADD_PRINTER_ERROR"
+#~ msgstr "Printer add fail"
+
+#~ msgid "PO_GSTR_INSTALL_SUCCESS"
+#~ msgstr "Install Success"
+
+#~ msgid "PO_GSTR_OPEN_LPT_ERROR"
+#~ msgstr "Open LPT port fail"
+
+#~ msgid "PO_GSTR_DRIVER_PORT_ERROR"
+#~ msgstr "Please select port for printer"
+
+#~ msgid "PO_GSTR_DRIVER_NAME_ERROR"
+#~ msgstr "Please input printer name"
+
+#~ msgid "PO_GSTR_OS_TYPE"
+#~ msgstr "OS Type:"
+
+#~ msgid "PO_GSTR_PRINTER_TYPE"
+#~ msgstr "Printer Type"
+
+#~ msgid "PO_GSTR_POS"
+#~ msgstr "POS Printer"
+
+#~ msgid "PO_GSTR_LAPTOP"
+#~ msgstr "Laptop Printer"
+
+#~ msgid "PO_GSTR_MICRO_PRINTER"
+#~ msgstr "Micro Printer"
+
+#~ msgid "PO_GSTR_PIN_PRINTER"
+#~ msgstr "Pin Printer"
+
+#~ msgid "PO_GSTR_PRINTER_DETAIL"
+#~ msgstr "Printer Type"
+
+#~ msgid "PO_GSTR_PRINTER_PORT"
+#~ msgstr "Printer Port"
+
+#~ msgid "PO_GSTR_PT_CONFIG_NAME"
+#~ msgstr "Printer Name:"
+
+#~ msgid "PO_GSTR_PT_CONFIG_PORT"
+#~ msgstr "Config Port"
+
+#~ msgid "PO_GSTR_PORT_STATIC"
+#~ msgstr "Port:"

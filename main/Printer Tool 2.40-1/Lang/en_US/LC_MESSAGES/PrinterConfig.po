@@ -1,0 +1,2155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DriverInstall_en_US\n"
+"POT-Creation-Date: 2018-06-27 20:34+0800\n"
+"PO-Revision-Date: 2018-06-27 20:35+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: O:\\code\\RongtaPrinter\\RongtaPrinterTool\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: showErrMsg;getPoTextW;showSuccessMsg;checkPortType\n"
+"X-Poedit-SearchPath-0: MainDlg.h\n"
+"X-Poedit-SearchPath-1: MainDlg.cpp\n"
+"X-Poedit-SearchPath-2: ParamSetDialog.h\n"
+"X-Poedit-SearchPath-3: ParamSetDialog.cpp\n"
+"X-Poedit-SearchPath-4: SendUDP.cpp\n"
+"X-Poedit-SearchPath-5: SendTcp.cpp\n"
+"X-Poedit-SearchPath-6: 2DBARTabDialog.h\n"
+"X-Poedit-SearchPath-7: 2DBARTabDialog.cpp\n"
+"X-Poedit-SearchPath-8: BaseTabDialog.h\n"
+"X-Poedit-SearchPath-9: BaseTabDialog.cpp\n"
+"X-Poedit-SearchPath-10: Big5TabDialog.h\n"
+"X-Poedit-SearchPath-11: Big5TabDialog.cpp\n"
+"X-Poedit-SearchPath-12: BlackMarkTabDialog.h\n"
+"X-Poedit-SearchPath-13: BlackMarkTabDialog.cpp\n"
+"X-Poedit-SearchPath-14: cmd.h\n"
+"X-Poedit-SearchPath-15: cmd.cpp\n"
+"X-Poedit-SearchPath-16: Config.h\n"
+"X-Poedit-SearchPath-17: Config.cpp\n"
+"X-Poedit-SearchPath-18: DownloadDialog.h\n"
+"X-Poedit-SearchPath-19: DownloadDialog.cpp\n"
+"X-Poedit-SearchPath-20: EthernetDialog.h\n"
+"X-Poedit-SearchPath-21: EthernetDialog.cpp\n"
+"X-Poedit-SearchPath-22: HotTabDialog.h\n"
+"X-Poedit-SearchPath-23: HotTabDialog.cpp\n"
+"X-Poedit-SearchPath-24: LogoTabDialog.h\n"
+"X-Poedit-SearchPath-25: LogoTabDialog.cpp\n"
+"X-Poedit-SearchPath-26: Monitor.h\n"
+"X-Poedit-SearchPath-27: Monitor.cpp\n"
+"X-Poedit-SearchPath-28: NetTabDialog.h\n"
+"X-Poedit-SearchPath-29: NetTabDialog.cpp\n"
+"X-Poedit-SearchPath-30: PrinterSetDialog.h\n"
+"X-Poedit-SearchPath-31: PrinterSetDialog.cpp\n"
+"X-Poedit-SearchPath-32: ProgramTabDialog.h\n"
+"X-Poedit-SearchPath-33: ProgramTabDialog.cpp\n"
+"X-Poedit-SearchPath-34: RppTabDialog.h\n"
+"X-Poedit-SearchPath-35: RppTabDialog.cpp\n"
+"X-Poedit-SearchPath-36: SerialTabDialog.h\n"
+"X-Poedit-SearchPath-37: SerialTabDialog.cpp\n"
+"X-Poedit-SearchPath-38: UDPSearchTabDialog.h\n"
+"X-Poedit-SearchPath-39: UDPSearchTabDialog.cpp\n"
+"X-Poedit-SearchPath-40: util.h\n"
+"X-Poedit-SearchPath-41: util.cpp\n"
+"X-Poedit-SearchPath-42: WifiTabDialog.h\n"
+"X-Poedit-SearchPath-43: WifiTabDialog.cpp\n"
+"X-Poedit-SearchPath-44: GlobalString.h\n"
+"X-Poedit-SearchPath-45: LptDialog.cpp\n"
+"X-Poedit-SearchPath-46: ParamSetDialog.h\n"
+"X-Poedit-SearchPath-47: OtherTabDialog.h\n"
+"X-Poedit-SearchPath-48: OtherTabDialog.cpp\n"
+"X-Poedit-SearchPath-49: PaperSaveDialog.cpp\n"
+"X-Poedit-SearchPath-50: PaperSaveDialog.h\n"
+"X-Poedit-SearchPath-51: BitmapHelper.cpp\n"
+"X-Poedit-SearchPath-52: BitmapHelper.h\n"
+"X-Poedit-SearchPath-53: BitmapUtil.cpp\n"
+"X-Poedit-SearchPath-54: BitmapUtil.h\n"
+"X-Poedit-SearchPath-55: BlueToothDialog.cpp\n"
+"X-Poedit-SearchPath-56: BlueToothDialog.h\n"
+"X-Poedit-SearchPath-57: ComDevice.cpp\n"
+"X-Poedit-SearchPath-58: ComDevice.h\n"
+"X-Poedit-SearchPath-59: Device.h\n"
+"X-Poedit-SearchPath-60: DeviceFactory.h\n"
+"X-Poedit-SearchPath-61: ENetDevice.cpp\n"
+"X-Poedit-SearchPath-62: ENetDevice.h\n"
+"X-Poedit-SearchPath-63: GrayscalePrintDialog.cpp\n"
+"X-Poedit-SearchPath-64: GrayscalePrintDialog.h\n"
+"X-Poedit-SearchPath-65: LPTDevice.cpp\n"
+"X-Poedit-SearchPath-66: LPTDevice.h\n"
+"X-Poedit-SearchPath-67: maindlg.CPP\n"
+"X-Poedit-SearchPath-68: PrinterDevice.cpp\n"
+"X-Poedit-SearchPath-69: PrinterDevice.h\n"
+"X-Poedit-SearchPath-70: USBDevice.cpp\n"
+"X-Poedit-SearchPath-71: USBDevice.h\n"
+"X-Poedit-SearchPath-72: CheckInfoDialog.h\n"
+"X-Poedit-SearchPath-73: CheckInfoDialog.cpp\n"
+"X-Poedit-SearchPath-74: CmdSettingTabDialog.h\n"
+"X-Poedit-SearchPath-75: CmdSettingTabDialog.cpp\n"
+"X-Poedit-SearchPath-76: 80CmdTestDlg.cpp\n"
+"X-Poedit-SearchPath-77: 80CmdTestDlg.h\n"
+"X-Poedit-SearchPath-78: Print80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-79: Print80CmdDlg.h\n"
+"X-Poedit-SearchPath-80: 80cmd.cpp\n"
+"X-Poedit-SearchPath-81: 80cmd.h\n"
+"X-Poedit-SearchPath-82: Format80CmdDlg.h\n"
+"X-Poedit-SearchPath-83: Format80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-84: CharSet80CmdDlg.h\n"
+"X-Poedit-SearchPath-85: CharSet80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-86: GraphicalSet80CmdDlg.h\n"
+"X-Poedit-SearchPath-87: GraphicalSet80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-88: NvBitmap80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-89: NvBitmap80CmdDlg.h\n"
+"X-Poedit-SearchPath-90: BarCode80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-91: BarCode80CmdDlg.h\n"
+"X-Poedit-SearchPath-92: State80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-93: State80CmdDlg.h\n"
+"X-Poedit-SearchPath-94: Control80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-95: Control80CmdDlg.h\n"
+"X-Poedit-SearchPath-96: PageMode80CmdDlg.cpp\n"
+"X-Poedit-SearchPath-97: PageMode80CmdDlg.h\n"
+"X-Poedit-SearchPath-98: CloudServer.cpp\n"
+"X-Poedit-SearchPath-99: CloudServer.h\n"
+"X-Poedit-SearchPath-100: CharacterLibAddrDialog.cpp\n"
+"X-Poedit-SearchPath-101: CharacterLibAddrDialog.h\n"
+"X-Poedit-SearchPath-102: CharacterLibTabDialog.cpp\n"
+"X-Poedit-SearchPath-103: CharacterLibTabDialog.h\n"
+
+#: 2DBARTabDialog.cpp:13
+msgid "PO_IDC_STATIC_2DBAR_TYPE"
+msgstr "Set Type:"
+
+#: 2DBARTabDialog.cpp:15 BarCode80CmdDlg.cpp:25 BarCode80CmdDlg.cpp:26
+#: BarCode80CmdDlg.cpp:27 BarCode80CmdDlg.cpp:28 BarCode80CmdDlg.cpp:29
+#: BarCode80CmdDlg.cpp:30 BarCode80CmdDlg.cpp:31 BaseTabDialog.cpp:25
+#: Big5TabDialog.cpp:22 Big5TabDialog.cpp:23 Big5TabDialog.cpp:24
+#: Big5TabDialog.cpp:25 Big5TabDialog.cpp:26 Big5TabDialog.cpp:27
+#: BlackMarkTabDialog.cpp:23 BlackMarkTabDialog.cpp:24
+#: BlackMarkTabDialog.cpp:25 BlackMarkTabDialog.cpp:26 BlueToothDialog.cpp:20
+#: BlueToothDialog.cpp:21 BlueToothDialog.cpp:22 CharSet80CmdDlg.cpp:49
+#: CharSet80CmdDlg.cpp:50 CharSet80CmdDlg.cpp:51 CharSet80CmdDlg.cpp:52
+#: CharSet80CmdDlg.cpp:53 CharSet80CmdDlg.cpp:54 CharSet80CmdDlg.cpp:55
+#: CharSet80CmdDlg.cpp:56 CharSet80CmdDlg.cpp:57 CharSet80CmdDlg.cpp:58
+#: CharSet80CmdDlg.cpp:59 CharSet80CmdDlg.cpp:60 CharSet80CmdDlg.cpp:61
+#: CharSet80CmdDlg.cpp:62 CharSet80CmdDlg.cpp:63 CharSet80CmdDlg.cpp:64
+#: CharSet80CmdDlg.cpp:65 CheckInfoDialog.cpp:148 CloudServer.cpp:16
+#: CmdSettingTabDialog.cpp:17 CmdSettingTabDialog.cpp:18
+#: GraphicalSet80CmdDlg.cpp:26 GraphicalSet80CmdDlg.cpp:27
+#: GraphicalSet80CmdDlg.cpp:28 HotTabDialog.cpp:17 NetTabDialog.cpp:25
+#: NetTabDialog.cpp:26 NetTabDialog.cpp:27 NetTabDialog.cpp:29
+#: OtherTabDialog.cpp:15 OtherTabDialog.cpp:17 OtherTabDialog.cpp:20
+#: OtherTabDialog.cpp:21 OtherTabDialog.cpp:23 OtherTabDialog.cpp:25
+#: OtherTabDialog.cpp:28 OtherTabDialog.cpp:30 OtherTabDialog.cpp:31
+#: RppTabDialog.cpp:306 SerialTabDialog.cpp:19 SerialTabDialog.cpp:20
+#: UDPSearchTabDialog.cpp:227 WifiTabDialog.cpp:29 WifiTabDialog.cpp:30
+#: WifiTabDialog.cpp:31
+msgid "PO_GSTR_SET"
+msgstr "Set"
+
+#: BarCode80CmdDlg.cpp:17
+msgid "PO_IDC_STATIC_80_BAR_CODE_HRI_POSITION"
+msgstr "HRI Print Position:"
+
+#: BarCode80CmdDlg.cpp:18
+msgid "PO_IDC_STATIC_80_BAR_CODE_BAR_WIDTH"
+msgstr "Bar Width:"
+
+#: BarCode80CmdDlg.cpp:19
+msgid "PO_IDC_STATIC_80_BAR_CODE_HRI_FONT"
+msgstr "HRI Font:"
+
+#: BarCode80CmdDlg.cpp:20
+msgid "PO_IDC_STATIC_80_BAR_CODE_BAR_HEIGHT"
+msgstr "Bar Height:"
+
+#: BarCode80CmdDlg.cpp:21
+msgid "PO_IDC_STATIC_80_BAR_LEFT_SPACING"
+msgstr "Left Spacing:"
+
+#: BarCode80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_BAR_CODE_BARCODE_TYPE"
+msgstr "Bar Code:"
+
+#: BarCode80CmdDlg.cpp:23
+msgid "PO_IDC_BUTTON_80_BAR_CODE_SET_ALL"
+msgstr "Set All"
+
+#: BarCode80CmdDlg.cpp:32
+msgid "PO_IDC_BUTTON_80_PRINT_2DBAR"
+msgstr "Print 2DBAR"
+
+#: BarCode80CmdDlg.cpp:33
+msgid "PO_IDC_STATIC_80_2DBAR_PRINT"
+msgstr "2DBAR Size:"
+
+#: BarCode80CmdDlg.cpp:34
+msgid "PO_IDC_STATIC_80_2DBAR_COMPONENT_TYPE"
+msgstr "Component type:"
+
+#: BarCode80CmdDlg.cpp:35
+msgid "PO_IDC_STATIC_80_2DBAR_CHECK_LEVEL"
+msgstr "Check Level:"
+
+#: BarCode80CmdDlg.cpp:36
+msgid "PO_IDC_STATIC_80_2DBAR_DATA"
+msgstr "2DBAR Data:"
+
+#: BarCode80CmdDlg.cpp:38
+msgid "PO_IDC_BUTTON_80_PRINT_PDF417"
+msgstr "Print PDF417"
+
+#: BarCode80CmdDlg.cpp:39
+msgid "PO_IDC_STATIC_80_PDF417_COLUMN"
+msgstr "PDF417 Column:"
+
+#: BarCode80CmdDlg.cpp:40
+msgid "PO_IDC_STATIC_80_PDF417_RECOVERY_LEVEL"
+msgstr "Recovery Level:"
+
+#: BarCode80CmdDlg.cpp:41
+msgid "PO_IDC_STATIC_80_PDF417_RATIO"
+msgstr "Horizontal Vertical Ratio:"
+
+#: BarCode80CmdDlg.cpp:42
+msgid "PO_IDC_STATIC_80_PDF417_DATA"
+msgstr "PDF417 Data:"
+
+#: BarCode80CmdDlg.cpp:51
+msgid "PO_GSTR_80_BAR_CODE_NOT_PRINT"
+msgstr "Not Print"
+
+#: BarCode80CmdDlg.cpp:52
+msgid "PO_GSTR_80_BAR_CODE_UPPER_PRINT"
+msgstr "Upper"
+
+#: BarCode80CmdDlg.cpp:53
+msgid "PO_GSTR_80_BAR_CODE_BELOW_PRINT"
+msgstr "Below"
+
+#: BarCode80CmdDlg.cpp:54
+msgid "PO_GSTR_80_BAR_CODE_UPPER_AND_BELOW_PRINT"
+msgstr "Upper and Below"
+
+#: BarCode80CmdDlg.cpp:58 CharSet80CmdDlg.cpp:77
+msgid "PO_GSTR_80_CHAR_FONT_A"
+msgstr "Font-A"
+
+#: BarCode80CmdDlg.cpp:59 CharSet80CmdDlg.cpp:78
+msgid "PO_GSTR_80_CHAR_FONT_B"
+msgstr "Font-B"
+
+#: BarCode80CmdDlg.cpp:202 CharSet80CmdDlg.cpp:374 CharSet80CmdDlg.cpp:504
+#: CharSet80CmdDlg.cpp:547 Control80CmdDlg.cpp:118 Format80CmdDlg.cpp:137
+#: Print80CmdDlg.cpp:106 Print80CmdDlg.cpp:139 Print80CmdDlg.cpp:172
+#: State80CmdDlg.cpp:375 State80CmdDlg.cpp:387
+msgid "PO_GSTR_80_NUMBER_ERR"
+msgstr "Please input a number between 1 and 255."
+
+#: BarCode80CmdDlg.cpp:313
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR"
+msgstr "Please enter 11 digital characters!(1~9)"
+
+#: BarCode80CmdDlg.cpp:322
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_JAN13"
+msgstr "Please enter 12 characters!"
+
+#: BarCode80CmdDlg.cpp:331
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_JAN8"
+msgstr "Please enter 7 characters!"
+
+#: BarCode80CmdDlg.cpp:345
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_ITF"
+msgstr "Please enter an even digit character of less than 30 characters!"
+
+#: BarCode80CmdDlg.cpp:353
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_CODE39"
+msgstr ""
+"Please enter characters from 1 to 30 bits,Rang:(1~9) (A~Z)($ % + - . /)"
+
+#: BarCode80CmdDlg.cpp:362
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_CODEBAR"
+msgstr ""
+"Please enter characters from 1 to 30 bits,Rang:(1~9) (A~D)($ + - . / :)"
+
+#: BarCode80CmdDlg.cpp:376
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_CODE"
+msgstr "Please enter 1-30 characters!"
+
+#: BarCode80CmdDlg.cpp:464
+msgid "PO_GSTR_80_BAR_NUMBER_ERROR_SPACING"
+msgstr "Please input a number between 0 and 255."
+
+#: BarCode80CmdDlg.cpp:499 BarCode80CmdDlg.cpp:539
+msgid "PO_GSTR_80_2DBAR_DATA_ERROR"
+msgstr "Please enter an digit character of less than 20 characters!"
+
+#: BaseTabDialog.cpp:14 RppTabDialog.cpp:294
+msgid "PO_GSTR_CODE_PAGE"
+msgstr "Code Page:"
+
+#: BaseTabDialog.cpp:15 RppTabDialog.cpp:295
+msgid "PO_GSTR_BAUD_RATE"
+msgstr "Baud Rate:"
+
+#: BaseTabDialog.cpp:16 RppTabDialog.cpp:296
+msgid "PO_GSTR_CHARACTER"
+msgstr "Character:"
+
+#: BaseTabDialog.cpp:17 RppTabDialog.cpp:297
+msgid "PO_GSTR_CHS"
+msgstr "Char Per Line:"
+
+#: BaseTabDialog.cpp:18 RppTabDialog.cpp:299
+msgid "PO_GSTR_DENSITY"
+msgstr "Density:"
+
+#: BaseTabDialog.cpp:19 SerialTabDialog.cpp:17
+msgid "PO_GSTR_PARITY"
+msgstr "Parity:"
+
+#: BaseTabDialog.cpp:20
+msgid "PO_IDC_CHECK_BASE_BUZZER"
+msgstr "Buzzer"
+
+#: BaseTabDialog.cpp:21
+msgid "PO_IDC_CHECK_BASE_CUTTER"
+msgstr "Cutter"
+
+#: BaseTabDialog.cpp:22
+msgid "PO_IDC_CHECK_BASE_DRAWER"
+msgstr "Drawer"
+
+#: BaseTabDialog.cpp:23
+msgid "PO_IDC_CHECK_BASE_BUZZER_AFTER_PRINT"
+msgstr "Buzzer After Print"
+
+#: BaseTabDialog.cpp:24
+msgid "PO_IDC_CHECK_BASE_AUTO_REPRINT"
+msgstr "Auto Reprint The Last Receipt"
+
+#: BaseTabDialog.cpp:26 RppTabDialog.cpp:307 UDPSearchTabDialog.cpp:229
+msgid "PO_GSTR_SELF_TEST"
+msgstr "Self Test"
+
+#: Big5TabDialog.cpp:15
+msgid "PO_IDC_STATIC_BIG5_E"
+msgstr "Emualtion Mode:"
+
+#: Big5TabDialog.cpp:16
+msgid "PO_IDC_STATIC_BIG5_LANGUAGE"
+msgstr "Language:"
+
+#: Big5TabDialog.cpp:17
+msgid "PO_IDC_STATIC_BIG5_SPEED"
+msgstr "Speed:"
+
+#: Big5TabDialog.cpp:18
+msgid "PO_IDC_STATIC_BIG5_BARDCODE_WIDE"
+msgstr "Barcode Wide:"
+
+#: Big5TabDialog.cpp:19
+msgid "PO_IDC_STATIC_BIG5_PAPER_WIDTH"
+msgstr "Paper Width:"
+
+#: Big5TabDialog.cpp:20
+msgid "PO_IDC_STATIC_BIG5_AUTO_REPRINT"
+msgstr "Auto Reprint Mode:"
+
+#: BlackMarkTabDialog.cpp:14
+msgid "PO_IDC_STATIC_BM_LENGHT"
+msgstr "Black Mark Length:"
+
+#: BlackMarkTabDialog.cpp:15
+msgid "PO_IDC_STATIC_BM_WIDTH"
+msgstr "Black Mark Width:"
+
+#: BlackMarkTabDialog.cpp:16
+msgid "PO_IDC_STATIC_BM_PRINT"
+msgstr "Print After Black Mark:"
+
+#: BlackMarkTabDialog.cpp:17
+msgid "PO_IDC_STATIC_BM_CUT"
+msgstr "Cut After Black Mark:"
+
+#: BlackMarkTabDialog.cpp:18 OtherTabDialog.cpp:84 PaperSaveDialog.cpp:435
+#: PaperSaveDialog.cpp:440
+msgid "PO_GSTR_ENABLE"
+msgstr "Enable"
+
+#: BlackMarkTabDialog.cpp:19 OtherTabDialog.cpp:83 OtherTabDialog.cpp:85
+#: PaperSaveDialog.cpp:434 PaperSaveDialog.cpp:439
+msgid "PO_GSTR_DISABLE"
+msgstr "Disable"
+
+#: BlackMarkTabDialog.cpp:20
+msgid "PO_IDC_BUTTON_BLACK_NEXT_MARK"
+msgstr "Next Black Mark"
+
+#: BlackMarkTabDialog.cpp:21
+msgid "PO_IDC_BUTTON_BLACK_NEXT_CUT"
+msgstr "Next Cut"
+
+#: BlackMarkTabDialog.cpp:97 BlackMarkTabDialog.cpp:105
+#: BlackMarkTabDialog.cpp:142 BlackMarkTabDialog.cpp:150
+#: BlackMarkTabDialog.cpp:187 BlackMarkTabDialog.cpp:195
+#: BlackMarkTabDialog.cpp:243 BlackMarkTabDialog.cpp:251 HotTabDialog.cpp:42
+#: HotTabDialog.cpp:50 OtherTabDialog.cpp:125 OtherTabDialog.cpp:133
+#: RppTabDialog.cpp:52 RppTabDialog.cpp:60 RppTabDialog.cpp:73
+#: RppTabDialog.cpp:81 RppTabDialog.cpp:94 RppTabDialog.cpp:102
+#: RppTabDialog.cpp:115 RppTabDialog.cpp:123
+msgid "PO_GSTR_BM_NUMBER_ERR"
+msgstr "Please input a number"
+
+#: BlueToothDialog.cpp:15
+msgid "PO_IDC_STATIC_RPP_DEV_NAME"
+msgstr "Device Name:"
+
+#: BlueToothDialog.cpp:16 RppTabDialog.cpp:304
+msgid "PO_IDC_STATIC_RPP_PIN"
+msgstr "Pin:"
+
+#: BlueToothDialog.cpp:17
+msgid "PO_IDC_STATIC_RPP_MODEL_NAME"
+msgstr "Model Name:"
+
+#: BlueToothDialog.cpp:18
+msgid "PO_IDC_STATIC_RPP_SERIAL"
+msgstr "Device Number:"
+
+#: BlueToothDialog.cpp:93 RppTabDialog.cpp:199
+msgid "PO_GSTR_RPP_DEV_NAME_EMPTY_ERR"
+msgstr "Please input device name"
+
+#: BlueToothDialog.cpp:110 RppTabDialog.cpp:214
+msgid "PO_GSTR_RPP_PIN_EMPTY_ERR"
+msgstr "Please input pin"
+
+#: BlueToothDialog.cpp:118
+msgid "PO_GSTR_RPP_PIN_FORMAT_ERR"
+msgstr "pin only for the digital"
+
+#: BlueToothDialog.cpp:149 RppTabDialog.cpp:247
+msgid "PO_GSTR_RPP_MODEL_NAME_EMPTY_ERR"
+msgstr "Please input model name"
+
+#: BlueToothDialog.cpp:164 RppTabDialog.cpp:261
+msgid "PO_GSTR_RPP_SERIAL_EMPTY_ERR"
+msgstr "Please input serial"
+
+#: CharSet80CmdDlg.cpp:20
+msgid "PO_IDC_CHECK_80_CHAR_FONTB"
+msgstr "Font B"
+
+#: CharSet80CmdDlg.cpp:21
+msgid "PO_IDC_CHECK_80_CHAR_BOLD"
+msgstr "Bold"
+
+#: CharSet80CmdDlg.cpp:22
+msgid "PO_IDC_CHECK_80_CHAR_TIMES_HIGH"
+msgstr "Times High"
+
+#: CharSet80CmdDlg.cpp:23
+msgid "PO_IDC_CHECK_80_CHAR_DOUBLE_WIDTH"
+msgstr "Double Width"
+
+#: CharSet80CmdDlg.cpp:24
+msgid "PO_IDC_CHECK_80_CHAR_UNDERLINE"
+msgstr "Underline"
+
+#: CharSet80CmdDlg.cpp:26
+msgid "PO_IDC_CHECK_80_CHAR_INVERSE"
+msgstr "Inverse"
+
+#: CharSet80CmdDlg.cpp:27
+msgid "PO_IDC_CHECK_80_CHAR_ROTATE"
+msgstr "Rotate 90°cw"
+
+#: CharSet80CmdDlg.cpp:28
+msgid "PO_IDC_CHECK_80_CHAR_CHINESE"
+msgstr "Chinese"
+
+#: CharSet80CmdDlg.cpp:29
+msgid "PO_IDC_CHECK_80_CHAR_OVERLAP"
+msgstr "Overlap"
+
+#: CharSet80CmdDlg.cpp:30
+msgid "PO_IDC_CHECK_80_CHAR_BOLD_PRINT"
+msgstr "Bold"
+
+#: CharSet80CmdDlg.cpp:31
+msgid "PO_IDC_CHECK_80_CHAR_USER_CHARACTER"
+msgstr "User Character"
+
+#: CharSet80CmdDlg.cpp:32
+msgid "PO_IDC_CHECK_80_CHAR_RESUPINATE"
+msgstr "Resupinate"
+
+#: CharSet80CmdDlg.cpp:34
+msgid "PO_IDC_STATIC_80_CHAR_CHARACTER_SET"
+msgstr "Character:"
+
+#: CharSet80CmdDlg.cpp:35
+msgid "PO_IDC_STATIC_80_CHAR_UNDERLINE_SET"
+msgstr "Underline:"
+
+#: CharSet80CmdDlg.cpp:36
+msgid "PO_IDC_STATIC_80_CHAR_CODE_PAGE"
+msgstr "Code Page:"
+
+#: CharSet80CmdDlg.cpp:37
+msgid "PO_IDC_STATIC_80_CHAR_FONT"
+msgstr "Font:"
+
+#: CharSet80CmdDlg.cpp:38
+msgid "PO_IDC_STATIC_80_CHAR_CHARACTER_SIZE"
+msgstr "Character Size:"
+
+#: CharSet80CmdDlg.cpp:39
+msgid "PO_IDC_STATIC_H"
+msgstr "H"
+
+#: CharSet80CmdDlg.cpp:40
+msgid "PO_IDC_STATIC_W"
+msgstr "W"
+
+#: CharSet80CmdDlg.cpp:42
+msgid "PO_IDC_STATIC_80_CHAR_RIGHT_SPACING"
+msgstr "Right Char Spacing:"
+
+#: CharSet80CmdDlg.cpp:43
+msgid "PO_IDC_STATIC_80_CHAR_CANCEL"
+msgstr "Cancel User Char:"
+
+#: CharSet80CmdDlg.cpp:44
+msgid "PO_IDC_STATIC_80_CHAR_CHINESE_SPACING"
+msgstr "Chinese Spacing:"
+
+#: CharSet80CmdDlg.cpp:45
+msgid "PO_IDC_STATIC_L"
+msgstr "L"
+
+#: CharSet80CmdDlg.cpp:46
+msgid "PO_IDC_STATIC_R"
+msgstr "R"
+
+#: CharSet80CmdDlg.cpp:47
+msgid "PO_IDC_STATIC_80_CHAR_USER_CHINESE"
+msgstr "User Chinese:"
+
+#: CharSet80CmdDlg.cpp:66 Format80CmdDlg.cpp:31 PageMode80CmdDlg.cpp:29
+#: Print80CmdDlg.h:47
+msgid "PO_IDC_BUTTON_80_KEY_SET"
+msgstr "Key Set"
+
+#: CharSet80CmdDlg.cpp:68 Format80CmdDlg.cpp:33 PageMode80CmdDlg.cpp:13
+#: Print80CmdDlg.h:49
+msgid "PO_80_IDC_RICHEDIT2_PRINT_TEST"
+msgstr "Please enter the test content!（123456789）"
+
+#: CharSet80CmdDlg.cpp:82
+msgid "PO_GSTR_80_CHAR_UNERLINE_CLOSE"
+msgstr "Close"
+
+#: CharSet80CmdDlg.cpp:83
+msgid "PO_GSTR_80_CHAR_UNERLINE_1"
+msgstr "Unerline-1"
+
+#: CharSet80CmdDlg.cpp:84
+msgid "PO_GSTR_80_CHAR_UNERLINE_2"
+msgstr "Unerline-2"
+
+#: CharSet80CmdDlg.cpp:491
+msgid "PO_GSTR_80_USER_CHINESE_NUMBER_ERR"
+msgstr "Please specify a value between 161 and 254."
+
+#: CharSet80CmdDlg.cpp:604
+msgid "PO_GSTR_80_CANCEL_CHAR_NUMBER_ERR"
+msgstr "Please specify a value between 32 and 126."
+
+#: CharacterLibAddrDialog.cpp:12
+msgid "PO_DLG_CHARACTER_ADDRESS"
+msgstr "Address"
+
+#: CharacterLibAddrDialog.cpp:15
+msgid "PO_IDC_STATIC_ADDR"
+msgstr "Address"
+
+#: CharacterLibAddrDialog.cpp:16
+msgid "PO_IDC_BUTTON_ADDR_OK"
+msgstr "OK"
+
+#: CharacterLibAddrDialog.cpp:17
+msgid "PO_IDC_BUTTON_ADDR_CANCEL"
+msgstr "Cancel"
+
+#: CharacterLibAddrDialog.cpp:42
+msgid "PO_GSTR_CHAR_LIB_ADDR_ERROR"
+msgstr "Address range: 0~4294967295;"
+
+#: CharacterLibTabDialog.cpp:82
+msgid "PO_IDC_STATIC_CHARACTER_LIBRARY_SELECT"
+msgstr "Select A Printer Character Library:"
+
+#: CharacterLibTabDialog.cpp:84
+msgid "PO_IDC_BUTTON_CHARACTER_LIBRARY_OPEN"
+msgstr "Select Font"
+
+#: CharacterLibTabDialog.cpp:85
+msgid "PO_IDC_BUTTON_CHARACTER_LIBRARY_UPDATE"
+msgstr "Update"
+
+#: CharacterLibTabDialog.cpp:121 CharacterLibTabDialog.cpp:217
+#: CharacterLibTabDialog.cpp:516 ProgramTabDialog.cpp:29
+#: ProgramTabDialog.cpp:37 ProgramTabDialog.cpp:126
+msgid "PO_GSTR_INVALID_FIRMWARE"
+msgstr "Invalid Firmware"
+
+#: CharacterLibTabDialog.cpp:165 CharacterLibTabDialog.cpp:465
+msgid "PO_GSTR_FONT_DATALEN_MAX_ERROR"
+msgstr ""
+"Exceeds the maximum amount of data supported by the printer.(Maximum data "
+"volume: 4M Bytes)"
+
+#: CharacterLibTabDialog.cpp:171 CharacterLibTabDialog.cpp:471
+msgid "PO_GSTR_FONT_DATALEN_MIN_ERROR"
+msgstr ""
+"Exceeds the minimum amount of data supported by the printer.(Minimum data "
+"volume: 256 Bytes)"
+
+#: CharacterLibTabDialog.cpp:337
+msgid "PO_GSTR_SETTING_SUCCESS"
+msgstr "Setting Success!"
+
+#: CharacterLibTabDialog.cpp:341
+msgid "PO_GSTR_SETTING_FAIL"
+msgstr "Setting Fail!"
+
+#: CharacterLibTabDialog.cpp:367
+msgid "PO_GSTR_DOWNLOAD_CHARACTER_LIB"
+msgstr "Downloading character library..........."
+
+#: CharacterLibTabDialog.cpp:422 CharacterLibTabDialog.cpp:480
+msgid "PO_GSTR_UPDATE_FAIL"
+msgstr "Update fail!"
+
+#: CharacterLibTabDialog.cpp:426
+msgid "PO_GSTR_UPDATE_SUCCESS"
+msgstr "Update success!"
+
+#: CheckInfoDialog.cpp:27 CheckInfoDialog.cpp:35
+msgid "PO_GSTR_CHECK_INFO_SN_ERR"
+msgstr "Please enter a valid serial number"
+
+#: CheckInfoDialog.cpp:43
+msgid "PO_GSTR_CHECK_INFO_SN_LEN_ERR"
+msgstr "The length of SN must between 6~37"
+
+#: CheckInfoDialog.cpp:150
+msgid "PO_IDC_STATIC_FIRMWARE"
+msgstr "FIRMWARE:"
+
+#: CheckInfoDialog.cpp:151
+msgid "PO_IDC_STATIC_FACTORY"
+msgstr "FACTORY:"
+
+#: CheckInfoDialog.cpp:152
+msgid "PO_IDC_STATIC_DEVICE"
+msgstr "DEVICE:"
+
+#: CheckInfoDialog.cpp:153
+msgid "PO_IDC_STATIC_SN"
+msgstr "SN:"
+
+#: CheckInfoDialog.cpp:158
+msgid "PO_GSTR_LOAD_INFO_ERR"
+msgstr "Failed to get the data of Check Information module"
+
+#: CloudServer.cpp:57 NetTabDialog.cpp:236 ParamSetDialog.cpp:136
+msgid "PO_GSTR_INVALID_IP_FIRST_PART"
+msgstr " is not a valid entry. Please specify a value between 1 and 223."
+
+#: CloudServer.cpp:64 NetTabDialog.cpp:243 ParamSetDialog.cpp:143
+msgid "PO_GSTR_INVALID_IP_FIRST_PART_127"
+msgstr ""
+"IP addresses starting with 127 are not valid because they are reserved for "
+"loopback addresses. Please specify some other valid value between 1 and 223."
+
+#: CloudServer.cpp:77 CloudServer.cpp:84 CloudServer.cpp:94
+#: EthernetDialog.cpp:42 EthernetDialog.cpp:49 EthernetDialog.cpp:59
+msgid "PO_GSTR_NET_INPUT_VALID_PORT"
+msgstr "Please enter a valid port"
+
+#: CmdSettingTabDialog.cpp:14
+msgid "PO_IDC_STATIC_CMD_SETTING_CMD_TYPE"
+msgstr "Command type:"
+
+#: CmdSettingTabDialog.cpp:15
+msgid "PO_IDC_STATIC_CMD_SETTING_PAPER_WIDTH"
+msgstr "Paper width:"
+
+#: CmdSettingTabDialog.cpp:26
+msgid "PO_GSTR_LABEL_COMMAND"
+msgstr "Label Command"
+
+#: CmdSettingTabDialog.cpp:27
+msgid "PO_GSTR_ESC_POS"
+msgstr "ESC/POS"
+
+#: Control80CmdDlg.cpp:13
+msgid "PO_IDC_STATIC_80_CONTROL_CUTTING_MODE"
+msgstr "Cutting Mode:"
+
+#: Control80CmdDlg.cpp:14
+msgid "PO_IDC_STATIC_80_CONTROL_FEED_POINTS"
+msgstr "Feed Points:"
+
+#: Control80CmdDlg.cpp:15
+msgid "PO_IDC_STATIC_80_CONTROL_BUZZER_TIMES"
+msgstr "Buzzer times:"
+
+#: Control80CmdDlg.cpp:16
+msgid "PO_IDC_STATIC_80_CONTROL_BUZZER_TIME"
+msgstr "Buzzer time:"
+
+#: Control80CmdDlg.cpp:17
+msgid "PO_IDC_STATIC_80_CONTROL_CHINESE_FORMAT"
+msgstr "Chinese Format:"
+
+#: Control80CmdDlg.cpp:18
+msgid "PO_IDC_STATIC_80_CONTROL_PANEL_BUTTON"
+msgstr "Panel buttons:"
+
+#: Control80CmdDlg.cpp:20 Control80CmdDlg.cpp:21 Control80CmdDlg.cpp:22
+#: Control80CmdDlg.cpp:23 Format80CmdDlg.cpp:25 Format80CmdDlg.cpp:26
+#: Format80CmdDlg.cpp:27 Format80CmdDlg.cpp:28 Format80CmdDlg.cpp:29
+#: Format80CmdDlg.cpp:30 PageMode80CmdDlg.cpp:31 PageMode80CmdDlg.cpp:32
+#: PageMode80CmdDlg.cpp:33 PageMode80CmdDlg.cpp:34 PageMode80CmdDlg.cpp:35
+#: Print80CmdDlg.h:42 Print80CmdDlg.h:43 Print80CmdDlg.h:44 Print80CmdDlg.h:45
+msgid "PO_IDC_BUTTON_80_SET"
+msgstr "Set"
+
+#: Control80CmdDlg.cpp:24
+msgid "PO_IDC_BUTTON_80_CONTROL_FULL_CUT"
+msgstr "Full Cut"
+
+#: Control80CmdDlg.cpp:25
+msgid "PO_IDC_BUTTON_80_CONTROL_HALF_CUT"
+msgstr "Half Cut"
+
+#: Control80CmdDlg.cpp:27
+msgid "PO_IDC_BUTTON_80_CONTROL_SET_ALL"
+msgstr "Set All"
+
+#: Control80CmdDlg.cpp:36
+msgid "PO_GSTR_80_CONTROL_PANEL_BUTTON_ACTIVATION"
+msgstr "Activation"
+
+#: Control80CmdDlg.cpp:37
+msgid "PO_GSTR_80_CONTROL_PANEL_BUTTON_PROHIBIT"
+msgstr "Prohibit"
+
+#: Control80CmdDlg.cpp:41
+msgid "PO_GSTR_80_CONTROL_CUTTING_MODE_CUTTING"
+msgstr "Cutting"
+
+#: Control80CmdDlg.cpp:42
+msgid "PO_GSTR_80_CONTROL_CUTTING_MODE_FEED_CUTTING"
+msgstr "Feed and Cutting"
+
+#: Control80CmdDlg.cpp:147 Control80CmdDlg.cpp:159
+msgid "PO_GSTR_80_CONTROL_BUZZER_SET"
+msgstr "Please input a number between 1 and 9."
+
+#: DownloadDialog.cpp:55
+msgid "PO_DOWNLOAD_DLG_CAPTION"
+msgstr "Download"
+
+#: DownloadDialog.cpp:73
+msgid "PO_DOWNLOAD_DLG_PROGRAM"
+msgstr "Program"
+
+#: DownloadDialog.cpp:78
+msgid "PO_DOWNLOAD_DLG_LOGO"
+msgstr "Logo"
+
+#: EthernetDialog.cpp:26
+msgid "PO_IDD_DIALOG_ETHERNET"
+msgstr "Ethernet"
+
+#: EthernetDialog.cpp:27
+msgid "PO_GSTR_OK"
+msgstr "OK"
+
+#: EthernetDialog.cpp:28 ParamSetDialog.cpp:33
+msgid "PO_GSTR_CANCEL"
+msgstr "Exit"
+
+#: Format80CmdDlg.cpp:17
+msgid "PO_IDC_STATIC_80_FORMAT_LINE_SPACING"
+msgstr "Line Spacing:"
+
+#: Format80CmdDlg.cpp:18
+msgid "PO_IDC_STATIC_80_FORMAT_BLANK_AMOUNT"
+msgstr "Left Blank Amount:"
+
+#: Format80CmdDlg.cpp:19
+msgid "PO_IDC_STATIC_80_FORMAT_PRINT_POSITION"
+msgstr "Relative Print Position:"
+
+#: Format80CmdDlg.cpp:20
+msgid "PO_IDC_STATIC_80_FORMAT_PRINT_AREA"
+msgstr "Print Area Width:"
+
+#: Format80CmdDlg.cpp:21
+msgid "PO_IDC_STATIC_80_FORMAT_A_PRINT_POSITION"
+msgstr "Absolute Print Position:"
+
+#: Format80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_FORMAT_ALIGN_MODE"
+msgstr "Alignment Mode:"
+
+#: Format80CmdDlg.cpp:24
+msgid "PO_IDC_BUTTON_80_SET_DEFAIT_LINE_SPACING"
+msgstr "Defait Line Spacing"
+
+#: Format80CmdDlg.cpp:42
+msgid "PO_GSTR_80_FORMAT_ALIGN_LEFT"
+msgstr "Align Left"
+
+#: Format80CmdDlg.cpp:43
+msgid "PO_GSTR_80_FORMAT_ALIGN_CENTER"
+msgstr "Align Center"
+
+#: Format80CmdDlg.cpp:44
+msgid "PO_GSTR_80_FORMAT_ALIGN_RIGHT"
+msgstr "Align Right"
+
+#: Format80CmdDlg.cpp:189 Format80CmdDlg.cpp:223 Format80CmdDlg.cpp:256
+#: Format80CmdDlg.cpp:290 PageMode80CmdDlg.cpp:319 PageMode80CmdDlg.cpp:354
+#: PageMode80CmdDlg.cpp:387 PageMode80CmdDlg.cpp:455
+msgid "PO_GSTR_80_PAGE_PRINT_AREA_NUMBER_ERR"
+msgstr "Please input a number between 1 and 65535."
+
+#: GraphicalSet80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_GRAPHICAL_PRINT_BITMAP"
+msgstr "Print Bitmap:"
+
+#: GraphicalSet80CmdDlg.cpp:23
+msgid "PO_IDC_STATIC_80_GRAPHICAL_PRINT_RASTER_BITMAP"
+msgstr "Print Raster Bitmap:"
+
+#: GraphicalSet80CmdDlg.cpp:24
+msgid "PO_IDC_STATIC_80_GRAPHICAL_BITMAP"
+msgstr "Bitmap:"
+
+#: GraphicalSet80CmdDlg.cpp:30
+msgid "PO_IDC_BUTTON_80_GRAPHICAL_SELECT_BITMAP"
+msgstr "Select Bitmap"
+
+#: GraphicalSet80CmdDlg.cpp:31
+msgid "PO_IDC_BUTTON_80_PRINT_NV_BITMAP"
+msgstr "Print NV Bitmap"
+
+#: GraphicalSet80CmdDlg.cpp:32
+msgid "PO_IDC_BUTTON_80_GRAPHICAL_SET_ALL"
+msgstr "Set All"
+
+#: GraphicalSet80CmdDlg.cpp:41
+msgid "PO_GSTR_80_GRAPHICAL_8_SINGLE_DENSITY"
+msgstr "8-Single Density"
+
+#: GraphicalSet80CmdDlg.cpp:42
+msgid "PO_GSTR_80_GRAPHICAL_8_DOUBLE_DENSITY"
+msgstr "8-Double Density"
+
+#: GraphicalSet80CmdDlg.cpp:43
+msgid "PO_GSTR_80_GRAPHICAL_24_SINGLE_DENSITY"
+msgstr "24-Single Density"
+
+#: GraphicalSet80CmdDlg.cpp:44
+msgid "PO_GSTR_80_GRAPHICAL_24_DOUBLE_DENSITY"
+msgstr "24-Double Density"
+
+#: GraphicalSet80CmdDlg.cpp:48 GraphicalSet80CmdDlg.cpp:55
+msgid "PO_GSTR_80_GRAPHICAL_COMMON_MODE"
+msgstr "Common"
+
+#: GraphicalSet80CmdDlg.cpp:49 GraphicalSet80CmdDlg.cpp:56
+msgid "PO_GSTR_80_GRAPHICAL_DOUBLE_WIDTH"
+msgstr "Double Width"
+
+#: GraphicalSet80CmdDlg.cpp:50 GraphicalSet80CmdDlg.cpp:57
+msgid "PO_GSTR_80_GRAPHICAL_TIMES_HIGHER"
+msgstr "Times Higher"
+
+#: GraphicalSet80CmdDlg.cpp:51 GraphicalSet80CmdDlg.cpp:58
+msgid "PO_GSTR_80_GRAPHICAL_FOURFOLD"
+msgstr "Fourfold"
+
+#: GraphicalSet80CmdDlg.cpp:450 GraphicalSet80CmdDlg.cpp:462
+#: GraphicalSet80CmdDlg.cpp:475 GraphicalSet80CmdDlg.cpp:504
+msgid "PO_GSTR_80_PRINT_BITMAP_ERROR"
+msgstr "Please select a bitmap."
+
+#: GrayscalePrintDialog.cpp:129
+msgid "PO_IDD_DIALOG_GRAYSCALE_PRINT"
+msgstr "Grayscale Print"
+
+#: GrayscalePrintDialog.cpp:132
+msgid "PO_IDC_STATIC_BASE_OLD_IMAGE"
+msgstr "Original image:"
+
+#: GrayscalePrintDialog.cpp:133
+msgid "PO_IDC_STATIC_BASE_NEW_IMAGE"
+msgstr "Transformed:"
+
+#: GrayscalePrintDialog.cpp:134
+msgid "PO_IDC_BUTTON_TEST_PRINT"
+msgstr "Test Print"
+
+#: GrayscalePrintDialog.cpp:135
+msgid "PO_IDC_BUTTON_OK"
+msgstr "OK"
+
+#: GrayscalePrintDialog.cpp:136
+msgid "PO_IDC_BUTTON_CANCLE"
+msgstr "Cancel"
+
+#: HotTabDialog.cpp:15
+msgid "PO_IDC_STATIC_HEART_TIME"
+msgstr "Heat Time:"
+
+#: HotTabDialog.cpp:59
+msgid "PO_GSTR_HOTTIME_NUMBER_ERR"
+msgstr "You input must be bigger than 300"
+
+#: HotTabDialog.cpp:65
+msgid "PO_GSTR_HOTTIME_NUMBER_OVER_ERR"
+msgstr "You input must be less than 800"
+
+#: LogoTabDialog.cpp:79 LogoTabDialog.cpp:877 NvBitmap80CmdDlg.cpp:118
+msgid "PO_GSTR_LOGO_LIST_MAX"
+msgstr "Can't add log list any more"
+
+#: LogoTabDialog.cpp:109
+msgid "PO_GSTR_INFO_DELETE_LOGO"
+msgstr "Deleteing logo............"
+
+#: LogoTabDialog.cpp:125
+msgid "PO_GSTR_DELETE_LOGO_ERR"
+msgstr "Delete logo fail"
+
+#: LogoTabDialog.cpp:135 LogoTabDialog.cpp:174
+msgid "PO_GSTR_DELETE_LOGO_SUCCESS"
+msgstr "Delete success."
+
+#: LogoTabDialog.cpp:282
+msgid "PO_GSTR_SHOW_ONLY_ONE_ERR"
+msgstr ""
+"There was displaying the first picture when selected multiple pictures."
+
+#: LogoTabDialog.cpp:321 LogoTabDialog.cpp:796 LogoTabDialog.cpp:825
+#: LogoTabDialog.cpp:848
+msgid "PO_GSTR_SELECT_LOGO_ERR"
+msgstr "Please select a logo!"
+
+#: LogoTabDialog.cpp:644
+msgid "PO_GSTR_INFO_DOWNLOAD_LOGO"
+msgstr "Downloading "
+
+#: LogoTabDialog.cpp:644
+msgid "PO_GSTR_INFO_DOWNLOAD_LOGO_BMP"
+msgstr " logo............"
+
+#: LogoTabDialog.cpp:662 LogoTabDialog.cpp:672
+msgid "PO_GSTR_DOWNLOAD_LOGO_ERR"
+msgstr "Download logo fail"
+
+#: LogoTabDialog.cpp:681
+msgid "PO_GSTR_DOWNLOAD_LOGO_SUCCESS"
+msgstr "Download success."
+
+#: LogoTabDialog.cpp:742
+msgid "PO_GSTR_DOWNLOADING_LOGO"
+msgstr "Downloading Logo......"
+
+#: LogoTabDialog.cpp:781
+msgid "PO_GSTR_PRINTER_CAPACITY_OVERSTEP"
+msgstr ""
+"Exceeds the maximum amount of data supported by the printer.Please select "
+"the right size Logo to download again."
+
+#: LogoTabDialog.cpp:891
+msgid "PO_GSTR_ONLY_ONE_FILE_SELECT"
+msgstr "Only one bmp file can be selected"
+
+#: LogoTabDialog.cpp:1095
+msgid "PO_GSTR_INFO_GET_LOGO"
+msgstr "Geting "
+
+#: LogoTabDialog.cpp:1095
+msgid "PO_GSTR_INFO_GET_LOGO_BMP"
+msgstr " logo............"
+
+#: LogoTabDialog.cpp:1128 LogoTabDialog.cpp:1190
+msgid "PO_IDC_STATIC_GET_LOGO_FAIL_NOTICE"
+msgstr "Notice: Get message from printer fail"
+
+#: LogoTabDialog.cpp:1196
+msgid "PO_GSTR_ERROR_LOGO_MAX"
+msgstr ""
+"Exceeds the maximum number of Logo supported by the printer.The default gets "
+"the first 64 logo."
+
+#: LogoTabDialog.cpp:1202
+msgid "PO_GSTR_GETING_LOGO"
+msgstr "Getting Logo......"
+
+#: LogoTabDialog.cpp:1227
+msgid "PO_IDC_STATIC_LOGO_NOTICE"
+msgstr "The number of Logo get from printer is "
+
+#: LogoTabDialog.cpp:1260 util.cpp:20
+msgid "PO_GSTR_SET_SUCCESS"
+msgstr "Set success"
+
+#: LogoTabDialog.cpp:1264
+msgid "PO_GSTR_SET_FAIL"
+msgstr "Set fail"
+
+#: LogoTabDialog.cpp:1273 ProgramTabDialog.cpp:187
+msgid "PO_IDC_STATIC_PROGRAM_SELECT"
+msgstr "Select A Printer Firmware:"
+
+#: LogoTabDialog.cpp:1275
+msgid "PO_GSTR_ADD"
+msgstr "Add"
+
+#: LogoTabDialog.cpp:1276
+msgid "PO_GSTR_DELETE"
+msgstr "Delete"
+
+#: LogoTabDialog.cpp:1277 NvBitmap80CmdDlg.cpp:31
+msgid "PO_GSTR_DOWNLOAD"
+msgstr "Download"
+
+#: LogoTabDialog.cpp:1278
+msgid "PO_GSTR_PRINT_LOGO_EXIST"
+msgstr "Print Logo"
+
+#: LogoTabDialog.cpp:1280
+msgid "PO_GSTR_GET_LOGO"
+msgstr "Get Logo"
+
+#: LogoTabDialog.cpp:1281
+msgid "PO_GSTR_MODIFY_LOGO"
+msgstr "Modify Logo"
+
+#: LogoTabDialog.cpp:1282
+msgid "PO_IDC_BUTTON_LOGO_LOOK_UP"
+msgstr "Look Up"
+
+#: LptDialog.cpp:104
+msgid "PO_GSTR_CONFIG_LPT"
+msgstr "Configure LPT Port"
+
+#: LptDialog.cpp:106
+msgid "PO_GSTR_TIMEOUT"
+msgstr "Timeout(seconds)"
+
+#: LptDialog.cpp:108
+msgid "PO_GSTR_RETRY"
+msgstr "Transmission Retry"
+
+#: LptDialog.cpp:110
+msgid "PO_GSTR_LPT_OK"
+msgstr "OK"
+
+#: LptDialog.cpp:111
+msgid "PO_GSTR_LPT_CANCEL"
+msgstr "CANCEL"
+
+#: LptDialog.cpp:158
+msgid "PO_GSTR_CONFIG_PORT_ERROR"
+msgstr "Can't config port"
+
+#: MainDlg.cpp:87 maindlg.CPP:87
+msgid "PO_GSTR_RONGTA_MAIN_DLG_CAPTION"
+msgstr "RongtaPrinterTool"
+
+#: MainDlg.cpp:89 maindlg.CPP:89
+msgid "PO_GSTR_MAIN_DLG_CAPTION"
+msgstr "PrinterTool"
+
+#: MainDlg.cpp:97 maindlg.CPP:97
+msgid "PO_IDC_STATIC_MAIN_GROUP"
+msgstr "Communication with printer"
+
+#: MainDlg.cpp:98 maindlg.CPP:98
+msgid "PO_IDC_RADIO_SELECT_PORT"
+msgstr "Port:"
+
+#: MainDlg.cpp:99 maindlg.CPP:99
+msgid "PO_IDC_RADIO_SELECT_DRIVER"
+msgstr "Printer Driver:"
+
+#: MainDlg.cpp:100 maindlg.CPP:100
+msgid "PO_IDC_BUTTON_CONFIG_PORT"
+msgstr "Config Port"
+
+#: MainDlg.cpp:101 maindlg.CPP:101
+msgid "PO_IDC_BUTTON_SET"
+msgstr "Set Printer"
+
+#: MainDlg.cpp:102 maindlg.CPP:102
+msgid "PO_IDC_BUTTON_DOWNLOAD"
+msgstr "Download"
+
+#: MainDlg.cpp:318 maindlg.CPP:318 util.cpp:29
+msgid "PO_GSTR_SET_COM_NEED_CONFIG"
+msgstr "You need Configure com port first"
+
+#: MainDlg.cpp:324 maindlg.CPP:324
+msgid "PO_GSTR_SET_ENET_NEED_CONFIG"
+msgstr "You need Configure ip first"
+
+#: MainDlg.cpp:387 maindlg.CPP:387
+msgid "PO_GSTR_CANNOT_CONFIG_PORT"
+msgstr "The port no configuration"
+
+#: NetTabDialog.cpp:22
+msgid "PO_IDC_STATIC_NET_PORT"
+msgstr "Port:"
+
+#: NetTabDialog.cpp:23
+msgid "PO_IDC_STATIC_NET_DUPLEX_MODE"
+msgstr "Duplex Mode:"
+
+#: NetTabDialog.cpp:178 ParamSetDialog.cpp:269 WifiTabDialog.cpp:307
+msgid "PO_GSTR_CHECK_MAC_FAIL"
+msgstr "MAC is not a valid entry. Please specify a value between 00 and ff."
+
+#: NetTabDialog.cpp:194 ParamSetDialog.cpp:284 WifiTabDialog.cpp:323
+msgid "PO_GSTR_CHECK_MAC_ALL_ZERO"
+msgstr "MAC can not all zero. Please specify a value between 00 and ff."
+
+#: NvBitmap80CmdDlg.cpp:25
+msgid "PO_80_CMD_TEST_DLG_NVBITMAP"
+msgstr "NV Bitmap"
+
+#: NvBitmap80CmdDlg.cpp:28
+msgid "PO_IDC_BUTTON_80_BITMAP_ADD"
+msgstr "Add"
+
+#: NvBitmap80CmdDlg.cpp:29
+msgid "PO_IDC_BUTTON_80_BITMAP_DELETE"
+msgstr "Delete"
+
+#: NvBitmap80CmdDlg.cpp:30
+msgid "PO_IDC_BUTTON_80_BITMAP_PRINT"
+msgstr "Print"
+
+#: NvBitmap80CmdDlg.cpp:53
+msgid "PO_GSTR_NVBITMAP_NAME"
+msgstr "NVBitmap List"
+
+#: OtherTabDialog.cpp:14
+msgid "PO_IDC_STATIC_QUEUE_NUMBER"
+msgstr "Sequence Number:"
+
+#: OtherTabDialog.cpp:16
+msgid "PO_IDC_STATIC_DATE_AND_TIME"
+msgstr "Date and Time:"
+
+#: OtherTabDialog.cpp:18
+msgid "PO_IDC_STATIC_OTHER_76_MODE"
+msgstr "76 Print Mode:"
+
+#: OtherTabDialog.cpp:19
+msgid "PO_IDC_STATIC_OTHER_80_MODE"
+msgstr "80 Print Mode:"
+
+#: OtherTabDialog.cpp:22
+msgid "PO_IDC_STATIC_OTHER_RUN_OUT_OF_PAPER"
+msgstr "Run Out of Paper:"
+
+#: OtherTabDialog.cpp:24
+msgid "PO_IDC_STATIC_OTHER_CHANGE_PORT"
+msgstr "Change Port:"
+
+#: OtherTabDialog.cpp:27
+msgid "PO_IDC_STATIC_OTHER_VOLUME_SET"
+msgstr "Volume Set:"
+
+#: OtherTabDialog.cpp:29
+msgid "PO_IDC_STATIC_OTHER_USB_SET"
+msgstr "USB Set:"
+
+#: OtherTabDialog.cpp:32
+msgid "PO_IDC_STATIC_OTHER_BLACK_MARK_SET"
+msgstr "Black Mark:"
+
+#: OtherTabDialog.cpp:61 OtherTabDialog.cpp:63
+msgid "PO_GSTR_76MM_MODE"
+msgstr "76mm paper mode"
+
+#: OtherTabDialog.cpp:62
+msgid "PO_GSTR_58MM_MODE"
+msgstr "58mm paper mode"
+
+#: OtherTabDialog.cpp:88
+msgid "PO_GSTR_USB"
+msgstr "Printer USB"
+
+#: OtherTabDialog.cpp:89
+msgid "PO_GSTR_USB_PORT"
+msgstr "Virtual Serial Port"
+
+#: OtherTabDialog.cpp:93
+msgid "PO_GSTR_STANDARD_BLACK_MARK"
+msgstr "Standard"
+
+#: OtherTabDialog.cpp:94
+msgid "PO_GSTR_OLD_BLACK_MARK"
+msgstr "Old Type"
+
+#: OtherTabDialog.cpp:98
+msgid "PO_GSTR_VOLUME_VOICELESS"
+msgstr "Voiceless"
+
+#: OtherTabDialog.cpp:99
+msgid "PO_GSTR_VOLUME_SOFTLY"
+msgstr "Softly"
+
+#: OtherTabDialog.cpp:100
+msgid "PO_GSTR_VOLUME_MODERATE"
+msgstr "Moderate"
+
+#: OtherTabDialog.cpp:101
+msgid "PO_GSTR_VOLUME_LOUD"
+msgstr "Loud"
+
+#: PageMode80CmdDlg.cpp:15
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_PRINT"
+msgstr "Print"
+
+#: PageMode80CmdDlg.cpp:16
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_SET"
+msgstr "Page Mode"
+
+#: PageMode80CmdDlg.cpp:17
+msgid "PO_IDC_BUTTON_80_STANDARD_MODE_SET"
+msgstr "Standard Mode"
+
+#: PageMode80CmdDlg.cpp:18
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_PRINT_AND_STANDARD"
+msgstr "Print and Standard Mode"
+
+#: PageMode80CmdDlg.cpp:20
+msgid "PO_IDC_STATIC_80_PAGE_MODE_PRINT_DIRECTION"
+msgstr "Print Direction:"
+
+#: PageMode80CmdDlg.cpp:21
+msgid "PO_IDC_STATIC_80_PAGE_MODE_FOURFOLD_CHINESE"
+msgstr "Fourfold Chinese:"
+
+#: PageMode80CmdDlg.cpp:22
+msgid "PO_IDC_STATIC_80_PAGE_MODE_PRINT_POSITION"
+msgstr "Print Position:"
+
+#: PageMode80CmdDlg.cpp:23
+msgid "PO_IDC_STATIC_80_PAGE_MODE_PRINT_AREA"
+msgstr "Print Area:"
+
+#: PageMode80CmdDlg.cpp:25
+msgid "PO_IDC_STATIC_80_PAGE_MODE_VERTICAL_PRINT_POSITION"
+msgstr "Absolute Vertical Position:"
+
+#: PageMode80CmdDlg.cpp:26
+msgid "PO_IDC_STATIC_80_PAGE_MODE_RELATIVE_VERTICAL_POSITION"
+msgstr "Relative Vertical Position:"
+
+#: PageMode80CmdDlg.cpp:27
+msgid "PO_IDC_STATIC_80_PAGE_MODE_TEST_PRINT"
+msgstr "Test Print Mode:"
+
+#: PageMode80CmdDlg.cpp:28
+msgid "PO_IDC_BUTTON_80_PAGE_MODE_TEST_PRINT"
+msgstr "Test Print"
+
+#: PageMode80CmdDlg.cpp:36
+msgid "PO_IDC_STATIC_PAGE_MODE"
+msgstr "Page Mode"
+
+#: PageMode80CmdDlg.cpp:37
+msgid "PO_IDC_STATIC_STANDARD_MODE"
+msgstr "Standard Mode"
+
+#: PageMode80CmdDlg.cpp:46
+msgid "PO_GSTR_80_PAGE_MODE_LEFT_TO_RIGHT"
+msgstr "Left To Right"
+
+#: PageMode80CmdDlg.cpp:47
+msgid "PO_GSTR_80_PAGE_MODE_BOTTOM_TO_TOP"
+msgstr "Bottom To Top"
+
+#: PageMode80CmdDlg.cpp:48
+msgid "PO_GSTR_80_PAGE_MODE_RIGHT_TO_LEFT"
+msgstr "Right To Left"
+
+#: PageMode80CmdDlg.cpp:49
+msgid "PO_GSTR_80_PAGE_MODE_TOP_TO_BOTTOM"
+msgstr "Top To Bottom"
+
+#: PageMode80CmdDlg.cpp:53
+msgid "PO_GSTR_80_CHAR_CLOSE"
+msgstr "Close"
+
+#: PageMode80CmdDlg.cpp:54
+msgid "PO_GSTR_80_PAGE_MODE_OPEN"
+msgstr "Open"
+
+#: PageMode80CmdDlg.cpp:58
+msgid "PO_GSTR_80_TEST_PRINT_MODE_DUMP"
+msgstr "Dump"
+
+#: PageMode80CmdDlg.cpp:59
+msgid "PO_GSTR_80_TEST_PRINT_MODE_PRINTER_STATE"
+msgstr "Printer State"
+
+#: PageMode80CmdDlg.cpp:60
+msgid "PO_GSTR_80_TEST_PRINT_MODE_ROLL_OF_PAPER"
+msgstr "Roll of Paper"
+
+#: PageMode80CmdDlg.cpp:64
+msgid "PO_GSTR_80_COUNTER_PRINT_POSITION_RIGHT_1"
+msgstr "Align Right 1"
+
+#: PageMode80CmdDlg.cpp:65
+msgid "PO_GSTR_80_COUNTER_PRINT_POSITION_RIGHT_2"
+msgstr "Align Right 2"
+
+#: PageMode80CmdDlg.cpp:66
+msgid "PO_GSTR_80_COUNTER_PRINT_POSITION_LEFT"
+msgstr "Align left"
+
+#: PaperSaveDialog.cpp:419
+msgid "PO_IDC_STATIC_TOP_EMPTY_CUT_RATE"
+msgstr "Delete Empty Space At The Top:"
+
+#: PaperSaveDialog.cpp:420
+msgid "PO_IDC_STATIC_BELOW_EMPTY_CUT_RATE"
+msgstr "Delete Empty Space In The Below:"
+
+#: PaperSaveDialog.cpp:421
+msgid "PO_IDC_STATIC_INTERVAL_CUT_RATE"
+msgstr "Cut Rate of Line Interval:"
+
+#: PaperSaveDialog.cpp:422
+msgid "PO_IDC_STATIC_CHANGE_LINE_CUT_RATE"
+msgstr "Cut Rate of Change Line:"
+
+#: PaperSaveDialog.cpp:423
+msgid "PO_IDC_STATIC_CUT_HEIGHT_RATE"
+msgstr "Cut Rate of bar-code's Height:"
+
+#: PaperSaveDialog.cpp:424
+msgid "PO_IDC_STATIC_PAPER_NORMAL"
+msgstr "Normal:"
+
+#: PaperSaveDialog.cpp:425
+msgid "PO_IDC_STATIC_PAPER_CUSTOM"
+msgstr "Custom:"
+
+#: PaperSaveDialog.cpp:426
+msgid "PO_IDC_BUTTON_PAPER_SAVE_SET"
+msgstr "Set"
+
+#: PaperSaveDialog.cpp:444 PaperSaveDialog.cpp:459 PaperSaveDialog.cpp:474
+msgid "PO_GSTR_NONE"
+msgstr "None"
+
+#: ParamSetDialog.cpp:30
+msgid "PO_GSTR_PARAM_SET_DLG_CAPTION"
+msgstr "Printer Info"
+
+#: ParamSetDialog.cpp:32
+msgid "PO_GSTR_PARAM_SET_OK"
+msgstr "OK"
+
+#: ParamSetDialog.cpp:358 UDPSearchTabDialog.cpp:103
+#: UDPSearchTabDialog.cpp:132
+msgid "PO_GSTR_SEND_TCP_DATA_ERROR"
+msgstr "Send data to printer fail."
+
+#: PrinterSetDialog.cpp:42
+msgid "PO_PRINTER_SET_DLG_CAPTION"
+msgstr "Set Printer"
+
+#: PrinterSetDialog.cpp:61
+msgid "PO_PRINTER_SET_DLG_BASE"
+msgstr "Base"
+
+#: PrinterSetDialog.cpp:66
+msgid "PO_PRINTER_SET_DLG_EHTERNET"
+msgstr "Ethernet"
+
+#: PrinterSetDialog.cpp:70
+msgid "PO_PRINTER_SET_DLG_WIFI"
+msgstr "Wifi"
+
+#: PrinterSetDialog.cpp:73
+msgid "PO_GSTR_RPP_BLUETOOTH_NOTICE"
+msgstr "Bluetooth setting"
+
+#: PrinterSetDialog.cpp:77
+msgid "PO_PRINTER_SET_DLG_BM"
+msgstr "BlackMark"
+
+#: PrinterSetDialog.cpp:81
+msgid "PO_PRINTER_SET_DLG_RPP"
+msgstr "RPP"
+
+#: PrinterSetDialog.cpp:85
+msgid "PO_PRINTER_SET_DLG_HEART_TIME"
+msgstr "Heat Time"
+
+#: PrinterSetDialog.cpp:89
+msgid "PO_PRINTER_SET_DLG_2D_BAR"
+msgstr "2D Barcode"
+
+#: PrinterSetDialog.cpp:93
+msgid "PO_PRINTER_SET_DLG_SERIAL"
+msgstr "Serial"
+
+#: PrinterSetDialog.cpp:97
+msgid "PO_PRINTER_SET_DLG_SERIAL_PRINTER"
+msgstr "Search Printer"
+
+#: PrinterSetDialog.cpp:101
+msgid "PO_PRINTER_SET_DLG_BIG5"
+msgstr "BIG5"
+
+#: PrinterSetDialog.cpp:104
+msgid "PO_PRINTER_SET_DLG_CMD_SETTING"
+msgstr "CmdType Setting"
+
+#: PrinterSetDialog.cpp:107
+msgid "PO_PRINTER_SET_DLG_PAPER_SAVE"
+msgstr "PaperSave"
+
+#: PrinterSetDialog.cpp:110
+msgid "PO_PRINTER_SET_DLG_OTHER"
+msgstr "Other"
+
+#: ProgramTabDialog.cpp:175
+msgid "PO_GSTR_UPDATE_FIRMWARE_SUCCESS"
+msgstr "Update Firmware success"
+
+#: ProgramTabDialog.cpp:189
+msgid "PO_IDC_BUTTON_PROGRAM_OPEN"
+msgstr "Select a program file"
+
+#: ProgramTabDialog.cpp:190
+msgid "PO_IDC_BUTTON_PROGRAM_UPDATE"
+msgstr "Update"
+
+#: RppTabDialog.cpp:298
+msgid "PO_IDC_STATIC_RPP_FONT"
+msgstr "Font:"
+
+#: RppTabDialog.cpp:301
+msgid "PO_IDC_STATIC_RPP_IDLE_TIME"
+msgstr "Idle Time:"
+
+#: RppTabDialog.cpp:302
+msgid "PO_IDC_STATIC_RPP_MAX_FEED"
+msgstr "Max Feed:"
+
+#: RppTabDialog.cpp:303
+msgid "PO_IDC_STATIC_RPP_PAGE_LEN"
+msgstr "Page Len:"
+
+#: RppTabDialog.cpp:305
+msgid "PO_IDC_STATIC_RPP_OFF_TIME"
+msgstr "Off Time:"
+
+#: SerialTabDialog.cpp:14
+msgid "PO_IDC_STATIC_SERIAL_NUMBER_BITS"
+msgstr "Number of data bits:"
+
+#: SerialTabDialog.cpp:15
+msgid "PO_GSTR_STOP_BITS"
+msgstr "Stop bits:"
+
+#: SerialTabDialog.cpp:16
+msgid "PO_IDC_STATIC_SERIAL_HAND_SHAKE"
+msgstr "Hand shake:"
+
+#: State80CmdDlg.cpp:16
+msgid "PO_IDC_BUTTON_80_STATE_PRINTER"
+msgstr "Printer State"
+
+#: State80CmdDlg.cpp:17
+msgid "PO_IDC_BUTTON_80_STATE_OFFLINE"
+msgstr "Offline State"
+
+#: State80CmdDlg.cpp:18
+msgid "PO_IDC_BUTTON_80_STATE_ERROR"
+msgstr "Error State"
+
+#: State80CmdDlg.cpp:19
+msgid "PO_IDC_BUTTON_80_STATE_PAPER"
+msgstr "Continuous Paper State"
+
+#: State80CmdDlg.cpp:21 State80CmdDlg.cpp:22 State80CmdDlg.cpp:23
+#: State80CmdDlg.cpp:24 State80CmdDlg.cpp:25 State80CmdDlg.cpp:26
+#: State80CmdDlg.cpp:27 State80CmdDlg.cpp:28 State80CmdDlg.cpp:29
+#: State80CmdDlg.cpp:30
+msgid "PO_IDC_STATIC_80_STATE_NOT_OBTAIN"
+msgstr "Not obtain state"
+
+#: State80CmdDlg.cpp:32
+msgid "PO_IDC_BUTTON_80_STATE_ERROR_RECOVERY"
+msgstr "Error recovery"
+
+#: State80CmdDlg.cpp:33
+msgid "PO_IDC_BUTTON_80_STATE_CLEAR_BUFFER"
+msgstr "Clear buffer"
+
+#: State80CmdDlg.cpp:34
+msgid "PO_IDC_BUTTON_80_STATE_PRINT_PAPER_STATE"
+msgstr "Print Paper State"
+
+#: State80CmdDlg.cpp:36 State80CmdDlg.cpp:37
+msgid "PO_IDC_BUTTON_80_STATE_SEND_PULSE"
+msgstr "Send Pulse"
+
+#: State80CmdDlg.cpp:38
+msgid "PO_IDC_BUTTON_80_STATE_PRINTER_INFORMATION"
+msgstr "Get"
+
+#: State80CmdDlg.cpp:41
+msgid "PO_IDC_STATIC_80_STATE_CUTTER_BOX_PIN"
+msgstr "Cutter-Box Pin:"
+
+#: State80CmdDlg.cpp:42
+msgid "PO_IDC_STATIC_80_STATE_PULSE_TIME"
+msgstr "Pulse Level time:"
+
+#: State80CmdDlg.cpp:43
+msgid "PO_IDC_STATIC_80_STATE_CUTTER_BOX_OUTPUT_PIN"
+msgstr "Cutter-Box Pin:"
+
+#: State80CmdDlg.cpp:44
+msgid "PO_IDC_STATIC_80_STATE_BOOT_TIME"
+msgstr "Boot time:"
+
+#: State80CmdDlg.cpp:45
+msgid "PO_IDC_STATIC_80_STATE_OFF_TIME"
+msgstr "Off time:"
+
+#: State80CmdDlg.cpp:46
+msgid "PO_IDC_STATIC_80_STATE_PRINTER_INFORMATION"
+msgstr "Printer Information:"
+
+#: State80CmdDlg.cpp:47
+msgid "PO_IDC_BUTTON_80_PRINTER_INITIALIZATION"
+msgstr "Printer Initialization"
+
+#: State80CmdDlg.cpp:49
+msgid "PO_IDC_BUTTON_80_STATE_SET_ALL"
+msgstr "Set All"
+
+#: State80CmdDlg.cpp:58 State80CmdDlg.cpp:63
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_PIN_2"
+msgstr "Pin-2"
+
+#: State80CmdDlg.cpp:59 State80CmdDlg.cpp:64
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_PIN_5"
+msgstr "Pin-5"
+
+#: State80CmdDlg.cpp:68
+msgid "PO_GSTR_80_STATE_ID_MODEL"
+msgstr "ID Model"
+
+#: State80CmdDlg.cpp:69
+msgid "PO_GSTR_80_STATE_ID_NUMBER"
+msgstr "ID Model Number"
+
+#: State80CmdDlg.cpp:70
+msgid "PO_GSTR_80_STATE_HARDWARE_VERSION"
+msgstr "Hardware Version"
+
+#: State80CmdDlg.cpp:71
+msgid "PO_GSTR_80_STATE_MANUFACTURER"
+msgstr "Manufacturer"
+
+#: State80CmdDlg.cpp:72
+msgid "PO_GSTR_80_STATE_PRINTER_NAME"
+msgstr "Printer Name"
+
+#: State80CmdDlg.cpp:73
+msgid "PO_GSTR_80_STATE_COM_NAME"
+msgstr "Port Name"
+
+#: State80CmdDlg.cpp:74
+msgid "PO_GSTR_80_STATE_CHARACTER"
+msgstr "Character"
+
+#: State80CmdDlg.cpp:101
+msgid "PO_GSTR_CAN_NOT_GET_PRINTER_SETTING_INFO"
+msgstr "Can not get the printed information from this port."
+
+#: State80CmdDlg.cpp:127
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_OPEN"
+msgstr "Cutter-box:open."
+
+#: State80CmdDlg.cpp:131
+msgid "PO_GSTR_80_STATE_CUTTER_BOX_CLOSE"
+msgstr "Cutter-box:closed."
+
+#: State80CmdDlg.cpp:157
+msgid "PO_GSTR_80_STATE_COVER_PLATE_OPEN"
+msgstr "Cover:open."
+
+#: State80CmdDlg.cpp:161
+msgid "PO_GSTR_80_STATE_COVER_PLATE_CLOSE"
+msgstr "Cover:closed."
+
+#: State80CmdDlg.cpp:167
+msgid "PO_GSTR_80_STATE_PAPER_FEED"
+msgstr "Feed:Paper feed key."
+
+#: State80CmdDlg.cpp:171
+msgid "PO_GSTR_80_STATE_NOT_PAPER_FEED"
+msgstr "Feed:Not pass paper feed key."
+
+#: State80CmdDlg.cpp:177
+msgid "PO_GSTR_80_STATE_ERROR_HAPPEN"
+msgstr "Error:Error occurred."
+
+#: State80CmdDlg.cpp:181
+msgid "PO_GSTR_80_STATE_NO_ERROR"
+msgstr "Error:No error."
+
+#: State80CmdDlg.cpp:207
+msgid "PO_GSTR_80_STATE_PAPER_CUTTING_ERROR"
+msgstr "Error:Automatic cutting error."
+
+#: State80CmdDlg.cpp:211
+msgid "PO_GSTR_80_STATE_NO_PAPER_CUTTING_ERROR"
+msgstr "Error:No automatic cutting error."
+
+#: State80CmdDlg.cpp:217
+msgid "PO_GSTR_80_STATE_IRRECOVERABLE_ERROR"
+msgstr "Error:Unrecoverable error occured."
+
+#: State80CmdDlg.cpp:221
+msgid "PO_GSTR_80_STATE_NO_UNRECOVERABLE_ERROR"
+msgstr "Error:No unrecoverable error."
+
+#: State80CmdDlg.cpp:227
+msgid "PO_GSTR_80_STATE_AUTO_RECOVERRY_ERROR"
+msgstr "Error:auto-recoverry error occured."
+
+#: State80CmdDlg.cpp:231
+msgid "PO_GSTR_80_STATE_NO_AUTO_RECOVERRY_ERROR"
+msgstr "Error:No auto-recoverry error."
+
+#: State80CmdDlg.cpp:257 State80CmdDlg.cpp:343
+msgid "PO_GSTR_80_STATE_RUN_OUT_OF_PAPER"
+msgstr "Paper:Run out of paper."
+
+#: State80CmdDlg.cpp:261 State80CmdDlg.cpp:347
+msgid "PO_GSTR_80_STATE_HAVE_PAPER"
+msgstr "Paper:Have paper."
+
+#: State80CmdDlg.cpp:315
+msgid "PO_GSTR_80_STATE_PULSE_TIME_ERROR"
+msgstr "Please input a number between 1 and 8."
+
+#: State80CmdDlg.cpp:434
+msgid "PO_GSTR_80_STATE_HEXADECIMAL"
+msgstr "ID Model:hexadecimal."
+
+#: State80CmdDlg.cpp:438
+msgid "PO_GSTR_80_STATE_DECIMALISM"
+msgstr "ID Model:decimalism."
+
+#: State80CmdDlg.cpp:445
+msgid "PO_GSTR_80_STATE_SUPPORT_CHARACTER"
+msgstr "ID Model Number:support multi byte character."
+
+#: State80CmdDlg.cpp:449
+msgid "PO_GSTR_80_STATE_NOT_SUPPORT_CHARACTER"
+msgstr "ID Model Number:not support multi byte character."
+
+#: State80CmdDlg.cpp:454
+msgid "PO_GSTR_80_STATE_HARDWARE_VERSION_SHOW"
+msgstr "Hardware Version: "
+
+#: State80CmdDlg.cpp:466
+msgid "PO_GSTR_80_STATE_MANUFACTURER_SHOW"
+msgstr "Manufacturer: "
+
+#: State80CmdDlg.cpp:478
+msgid "PO_GSTR_80_STATE_PRINTER_NAME_SHOW"
+msgstr "Printer Name: "
+
+#: State80CmdDlg.cpp:490
+msgid "PO_GSTR_80_STATE_PORT_NAME_SHOW"
+msgstr "Port Name: "
+
+#: State80CmdDlg.cpp:502
+msgid "PO_GSTR_80_STATE_CHARACTER_SHOW"
+msgstr "Character Mode: "
+
+#: UDPSearchTabDialog.cpp:54 UDPSearchTabDialog.cpp:72
+#: UDPSearchTabDialog.cpp:85 UDPSearchTabDialog.cpp:114
+msgid "PO_GSTR_PARAM_SET_SELECT_PRINTER"
+msgstr "Please select a existent printer!"
+
+#: UDPSearchTabDialog.cpp:228
+msgid "PO_IDC_BUTTON_UDP_STATUS"
+msgstr "Status"
+
+#: UDPSearchTabDialog.cpp:230
+msgid "PO_GSTR_REBOOT"
+msgstr "Reboot Printer"
+
+#: UDPSearchTabDialog.cpp:231
+msgid "PO_GSTR_SEARCH"
+msgstr "Search Printers"
+
+#: UDPSearchTabDialog.cpp:233
+msgid "PO_IDC_STATIC_UDP_NOTICE"
+msgstr ""
+"Notice: After searched printers, please select the printer before other "
+"operation."
+
+#: UDPSearchTabDialog.cpp:261
+msgid "PO_IDC_STATIC_UDP_LOCAL_IP"
+msgstr "Local IP Address: "
+
+#: WifiTabDialog.cpp:20
+msgid "PO_IDC_STATIC_WIFI_MODE"
+msgstr "Mode:"
+
+#: WifiTabDialog.cpp:21 WifiTabDialog.cpp:24
+msgid "PO_GSTR_TYPE"
+msgstr "Type:"
+
+#: WifiTabDialog.cpp:22
+msgid "PO_IDC_STATIC_WIFI_WPA_ENCRY"
+msgstr "Encryption:"
+
+#: WifiTabDialog.cpp:23
+msgid "PO_IDC_STATIC_WIFI_WPA_KEY"
+msgstr "PSK Key:"
+
+#: WifiTabDialog.cpp:25
+msgid "PO_IDC_STATIC_WIFI_WEP_KEY"
+msgstr "Key:"
+
+#: WifiTabDialog.cpp:27
+msgid "PO_IDC_RADIO_WIFI_NONE"
+msgstr "OPEN(No Keys)"
+
+#: WifiTabDialog.cpp:124
+msgid "PO_GSTR_WIFI_SSID_EMPTY_ERR"
+msgstr "SSID is empty,please input SSID"
+
+#: WifiTabDialog.cpp:151
+msgid "PO_GSTR_WIFI_PSKKEY_ERR"
+msgstr "PSK key is empty,please input PSK key"
+
+#: WifiTabDialog.cpp:156
+msgid "PO_GSTR_WIFI_PSKKEY_ERR_LEN"
+msgstr "PSK key is error,please input the 8~64 length data"
+
+#: WifiTabDialog.cpp:183
+msgid "PO_GSTR_WIFI_WEP_KEY_ERR"
+msgstr "WEP key is empty,please input WEP key"
+
+#: WifiTabDialog.cpp:188
+msgid "PO_GSTR_WIFI_WEP_KEY_ERR_LEN"
+msgstr "WEP key is error,please input the 8~64 length data"
+
+#: util.cpp:23
+msgid "PO_GSTR_OPEN_COM_ERROR"
+msgstr "Cann't open com"
+
+#: util.cpp:26
+msgid "PO_GSTR_SET_COM_FAIL"
+msgstr "Configure com port fail"
+
+#: util.cpp:32
+msgid "PO_GSTR_WRITE_COM_FAIL"
+msgstr "Write com printer fail"
+
+#: util.cpp:35
+msgid "PO_GSTR_READ_COM_FAIL"
+msgstr "Read com printer fail"
+
+#: util.cpp:38
+msgid "PO_GSTR_COM_GET_COMM_STATE_FAIL"
+msgstr "Get com state fail"
+
+#: util.cpp:41
+msgid "PO_GSTR_WRITE_ENET_FAIL"
+msgstr "Write enet printer fail"
+
+#: util.cpp:44
+msgid "PO_GSTR_READ_ENET_FAIL"
+msgstr "Read enet printer fail"
+
+#: util.cpp:47
+msgid "PO_GSTR_OPEN_LPT_FAIL"
+msgstr "Open lpt fail"
+
+#: util.cpp:50
+msgid "PO_GSTR_WRITE_LPT_FAIL"
+msgstr "Write lpt printer fail"
+
+#: util.cpp:53
+msgid "PO_GSTR_READ_LPT_FAIL"
+msgstr "Read lpt printer fail"
+
+#: util.cpp:56
+msgid "PO_GSTR_GET_LPT_CONFIG_ERROR"
+msgstr "Get LPT configure fail"
+
+#: util.cpp:59
+msgid "PO_GSTR_OPEN_PRINTER_FAIL"
+msgstr "Open printer fail"
+
+#: util.cpp:62
+msgid "PO_GSTR_WRITE_PRINTER_FAIL"
+msgstr "Write printer fail"
+
+#: util.cpp:65
+msgid "PO_GSTR_READ_PRINTER_FAIL"
+msgstr "Read printer fail"
+
+#: util.cpp:68
+msgid "PO_GSTR_START_DOC_FAIL"
+msgstr "Start doc fail"
+
+#: util.cpp:71
+msgid "PO_GSTR_START_PAGE_FAIL"
+msgstr "Start page fail"
+
+#: util.cpp:74
+msgid "PO_GSTR_END_PAGE_FAIL"
+msgstr "End page fail"
+
+#: util.cpp:77
+msgid "PO_GSTR_END_DOC_FAIL"
+msgstr "End doc fail"
+
+#: util.cpp:80
+msgid "PO_GSTR_WRITE_PRINTER_LESS"
+msgstr "Raw data send to printer is less than request"
+
+#: util.cpp:83
+msgid "PO_GSTR_OPEN_USB_FAIL"
+msgstr "Open usb printer fail"
+
+#: util.cpp:86
+msgid "PO_GSTR_WRITE_USB_FAIL"
+msgstr "Write usb printer fail"
+
+#: util.cpp:89
+msgid "PO_GSTR_READ_USB_FAIL"
+msgstr "Read usb printer fail"
+
+#: util.cpp:92
+msgid "PO_GSTR_WRITE_USB_LESS"
+msgstr "Raw data send to usb printer is less than request"
+
+#: util.cpp:95
+msgid "PO_GSTR_ENET_CONNECT_FAIL"
+msgstr "Net connection failure"
+
+#: util.cpp:98
+msgid "PO_GSTR_ENET_READ_LESS"
+msgstr "Raw data send to usb printer is less than request"
+
+#: 80CmdTestDlg.h:21
+msgid "PO_80_CMD_TEST_DLG_CAPTION"
+msgstr "80Cmd Test"
+
+#: 80CmdTestDlg.h:40
+msgid "PO_80_CMD_TEST_DLG_PRINT"
+msgstr "Print cmd test"
+
+#: 80CmdTestDlg.h:45
+msgid "PO_80_CMD_TEST_DLG_FORMAT"
+msgstr "Format Set"
+
+#: 80CmdTestDlg.h:49
+msgid "PO_80_CMD_TEST_DLG_CHAR"
+msgstr "Char Set"
+
+#: 80CmdTestDlg.h:53
+msgid "PO_80_CMD_TEST_DLG_GRAPHICAL"
+msgstr "Graphical Set"
+
+#: 80CmdTestDlg.h:57
+msgid "PO_80_CMD_TEST_DLG_BARCODE"
+msgstr "Barcode Set"
+
+#: 80CmdTestDlg.h:61
+msgid "PO_80_CMD_TEST_DLG_STATE"
+msgstr "Printer State"
+
+#: 80CmdTestDlg.h:65
+msgid "PO_80_CMD_TEST_DLG_CONTROL"
+msgstr "Control cmd"
+
+#: 80CmdTestDlg.h:69
+msgid "PO_80_CMD_TEST_DLG_PAGE_MODE"
+msgstr "Page Mode"
+
+#: Print80CmdDlg.h:34
+msgid "PO_IDC_STATIC_80_PRINT_FEED_LINE"
+msgstr "Feed Line:"
+
+#: Print80CmdDlg.h:35
+msgid "PO_IDC_STATIC_80_PRINT_FEED_POINTS"
+msgstr "Number Of Input Points:"
+
+#: Print80CmdDlg.h:36
+msgid "PO_IDC_STATIC_80_PRINT_LEVEL_LOCATION"
+msgstr "Horizontal Positioning Points:"
+
+#: Print80CmdDlg.h:37
+msgid "PO_IDC_STATIC_80_PRINT_ESC_N"
+msgstr "Printer Status:"
+
+#: Print80CmdDlg.h:39
+msgid "PO_IDC_BUTTON_80_PRINT_LF"
+msgstr "Print and newline"
+
+#: Print80CmdDlg.h:40
+msgid "PO_IDC_BUTTON_80_PRINT_CR"
+msgstr "Print and return"
+
+#: Print80CmdDlg.h:41
+msgid "PO_IDC_BUTTON_80_PRINT_HT"
+msgstr "Horizontal positioning"
+
+#: Print80CmdDlg.h:46
+msgid "PO_IDC_BUTTON_80_SELF_TEST"
+msgstr "Self Test"
+
+#: Print80CmdDlg.h:59
+msgid "PO_GSTR_80_PRINTER_INHIBIT"
+msgstr "Prohibit"
+
+#: Print80CmdDlg.h:60
+msgid "PO_GSTR_80_PRINTER_ACTIVATION"
+msgstr "Activation"
+
+#~ msgid "PO_DOWNLOAD_DLG_CHARACTER_LIB"
+#~ msgstr "Character Library"
+
+#~ msgid "PO_GSTR_NOTICE_DOWNLOAD_LOGO"
+#~ msgstr ""
+#~ "This operation refreshes all the logo in the printer.If you want to save "
+#~ "the original logo,please perform the acquisition operation first.Do you "
+#~ "want to continue downloading?"
+
+#~ msgid "PO_GSTR_PRINTER_CAPACITY"
+#~ msgstr ""
+#~ "The maximum amount of data supported by the current printer Logo download "
+#~ "is:"
+
+#~ msgid "PO_PRINTER_SET_DLG_SERVER"
+#~ msgstr "Cloud Server"
+
+#~ msgid "PO_IDC_BUTTON_80_CMD_TEST"
+#~ msgstr "80Cmd Test"
+
+#~ msgid "PO_GSTR_FACTORY_SETTING"
+#~ msgstr "--Factory Setting"
+
+#~ msgid "PO_GSTR_PRINT"
+#~ msgstr "Print"
+
+#~ msgid "PO_GSTR_COM"
+#~ msgstr "Com"
+
+#~ msgid "PO_GSTR_OPEN_COM_FAIL"
+#~ msgstr "Open com fail"
+
+#~ msgid "PO_IDC_BUTTON_80_STATE_ASB_STATE"
+#~ msgstr "ASB State"
+
+#~ msgid "IDC_STATIC_80_GRAPHICAL_PRINT_RASTER_BITMAP"
+#~ msgstr "Print Raster Bitmap:"
+
+#~ msgid "PO_GSTR_80_BITMAP_NL_ERROR"
+#~ msgstr "nH:Please specify a value between 0 and 3."
+
+#~ msgid "PO_GSTR_80_DEFINE_BITMAP_Y_ERROR"
+#~ msgstr "y:Please specify a value between 1 and 48."
+
+#~ msgid "PO_GSTR_80_DEFINE_BITMAP_XY_ERROR"
+#~ msgstr "x * y cannot be greater than 1536."
+
+#~ msgid "PO_IDC_STATIC_GRAPHICAL_DEFINE_BITMAP"
+#~ msgstr "Define Bitmap:"
+
+#~ msgid "PO_IDC_STATIC_80_FORMAT_LINE_SPECING"
+#~ msgstr "Line Specing:"
+
+#~ msgid "PO_IDC_BUTTON_80_SET_DEFAIT_LINE_SPECING"
+#~ msgstr "Defait Line Specing"
+
+#~ msgid "PO_GSTR_FEED_NUMBER_ERR"
+#~ msgstr "Please input a number between 0 and 255."
+
+#~ msgid "PO_GSTR_LEVEL_LOCATION_NUMBER_ERR"
+#~ msgstr "Please input a number between 1 and 255."
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_FEED_LINE"
+#~ msgstr "Set"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_FEED_POINTS"
+#~ msgstr "Set"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_LEVEL_LOCATION"
+#~ msgstr "Set"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_ESC_N"
+#~ msgstr "Set"
+
+#~ msgid "PO_IDC_BUTTON_80_PRINT_SET"
+#~ msgstr "Key Set"
+
+#~ msgid "PO_CMD_TEST_DLG_CAPTION"
+#~ msgstr "80Cmd Test"
+
+#~ msgid "PO_CMD_TEST_DLG_PRINT"
+#~ msgstr "Print cmd test"
+
+#~ msgid "PO_IDC_BUTTON_CMD_TEST"
+#~ msgstr "80Cmd Test"
+
+#~ msgid "PO_IDC_BUTTON_PRINT_80_LF"
+#~ msgstr "Print and newline"
+
+#~ msgid "PO_IDC_BUTTON_PRINT_80_CR"
+#~ msgstr "Print and return"
+
+#~ msgid "PO_IDC_IDC_RICHEDIT2_PRINT_TEST"
+#~ msgstr "Please enter the test content!"
+
+#~ msgid "PO_PRINTER_SET_DLG_CHECK_INFO"
+#~ msgstr "Check Infomation"
+
+#~ msgid "PO_IDC_STATIC_OTHER_MODE"
+#~ msgstr "Mode:"
+
+#~ msgid "PO_GSTR_INVALID_IP"
+#~ msgstr "Please enter a valid ip address"
+
+#~ msgid "PO_IDC_STATIC_SERIAL_DHCP"
+#~ msgstr "DHCP:"
+
+#~ msgid "PO_IDC_STATIC_SERIAL_512_DOTS"
+#~ msgstr "512 Dots:"
+
+#~ msgid "PO_GSTR_PRINTER_NOT_SELECT"
+#~ msgstr "Please select a existent printer!"
+
+#~ msgid "PO_GSTR_DLG_CAPTION"
+#~ msgstr "Ethernet Printer Config Tool"
+
+#~ msgid "PO_GSTR_STATIC_NOTICE"
+#~ msgstr ""
+#~ "Notice: After searched printers, please select the printer before other "
+#~ "operation."
+
+#~ msgid "PO_GSTR_STATIC_IP"
+#~ msgstr "Local IP Address: "
+
+#~ msgid "PO_GSTR_PRAAM_SET"
+#~ msgstr "Printer Parameter Settings"
+
+#~ msgid "PO_GSTR_PRINTER_STATUS"
+#~ msgstr "Printer Status"
+
+#~ msgid "PO_GSTR_SELFTEST"
+#~ msgstr "Printer Self Test Page"
+
+#~ msgid "PO_GSTR_DUPLEX_AUTO"
+#~ msgstr "Auto Detect"
+
+#~ msgid "PO_GSTR_10M_HALF"
+#~ msgstr "10Mbps Half Duplex"
+
+#~ msgid "PO_GSTR_100M_HALF"
+#~ msgstr "100Mbps Half Duplex"
+
+#~ msgid "PO_GSTR_10M_FULL"
+#~ msgstr "10Mbps Full Duplex"
+
+#~ msgid "PO_GSTR_100M_FULL"
+#~ msgstr "100Mbps Full Duplex"
+
+#~ msgid "PO_GSTR_INSTALL_DRIVER_ERROR"
+#~ msgstr "Driver install fail"
+
+#~ msgid "PO_GSTR_ADD_PRINTER_ERROR"
+#~ msgstr "Printer add fail"
+
+#~ msgid "PO_GSTR_INSTALL_SUCCESS"
+#~ msgstr "Install Success"
+
+#~ msgid "PO_GSTR_OPEN_LPT_ERROR"
+#~ msgstr "Open LPT port fail"
+
+#~ msgid "PO_GSTR_DRIVER_PORT_ERROR"
+#~ msgstr "Please select port for printer"
+
+#~ msgid "PO_GSTR_DRIVER_NAME_ERROR"
+#~ msgstr "Please input printer name"
+
+#~ msgid "PO_GSTR_OS_TYPE"
+#~ msgstr "OS Type:"
+
+#~ msgid "PO_GSTR_PRINTER_TYPE"
+#~ msgstr "Printer Type"
+
+#~ msgid "PO_GSTR_POS"
+#~ msgstr "POS Printer"
+
+#~ msgid "PO_GSTR_LAPTOP"
+#~ msgstr "Laptop Printer"
+
+#~ msgid "PO_GSTR_MICRO_PRINTER"
+#~ msgstr "Micro Printer"
+
+#~ msgid "PO_GSTR_PIN_PRINTER"
+#~ msgstr "Pin Printer"
+
+#~ msgid "PO_GSTR_PRINTER_DETAIL"
+#~ msgstr "Printer Type"
+
+#~ msgid "PO_GSTR_PRINTER_PORT"
+#~ msgstr "Printer Port"
+
+#~ msgid "PO_GSTR_PT_CONFIG_NAME"
+#~ msgstr "Printer Name:"
+
+#~ msgid "PO_GSTR_PT_CONFIG_PORT"
+#~ msgstr "Config Port"
+
+#~ msgid "PO_GSTR_PORT_STATIC"
+#~ msgstr "Port:"
